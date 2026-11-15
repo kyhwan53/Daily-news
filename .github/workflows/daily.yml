@@ -13,6 +13,10 @@ on:
         description: "Wait until 06:00 KST and skip if today's email was already sent"
         type: boolean
         default: false
+      estate_only:
+        description: "Send only the real estate briefing (test it without resending Daily study)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write           # commit docs/ (feed, review page) and state.json
@@ -45,6 +49,7 @@ jobs:
           wait=$(( $(TZ=KST-9 date -d "06:00" +%s) - $(date +%s) ))
           if [ "$wait" -gt 0 ]; then echo "waiting ${wait}s"; sleep "$wait"; else echo "already past 06:00 KST"; fi
       - name: Fetch portfolio buy candidates (owner's copy only; nothing is printed)
+        if: ${{ !inputs.estate_only }}
         id: portfolio
         # Runs portfolio_managing (private) in candidates mode and downloads its artifact to portfolio_out/.
         # Needs the PORTFOLIO_TOKEN secret: fine-grained token, that repo only, Actions read & write.
@@ -75,6 +80,7 @@ jobs:
           gh run download "$id" -R "$REPO" -n candidates -D portfolio_out
           echo "candidates downloaded"
       - name: Build queue, update feed, send email
+        if: ${{ !inputs.estate_only }}
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
