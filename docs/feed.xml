@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
-    <title>My Daily Language Queue</title>
-    <link>https://kyhwan53.github.io/language_learning</link>
+    <title>Daily news</title>
+    <link>https://kyhwan53.github.io/Daily-news</link>
     <language>en</language>
     <description>Personal daily listening queue (links to original podcasts).</description>
     <item>
@@ -100,22 +100,6 @@
       <link>http://go.ted.com/heatherberlin</link>
       <enclosure url="https://sphinx.acast.com/p/open/s/67587e77c705e441797aff96/e/6af1eb82e0d89bd85412a56b/media.mp3" type="audio/mpeg" length="0" />
       <itunes:duration>1020</itunes:duration>
-    </item>
-    <item>
-      <title>[11-09 1] EN Business | Office English: Ideas</title>
-      <guid isPermaLink="false">2026-11-09:urn:bbc:podcast:p0nb7z27</guid>
-      <pubDate>Mon, 09 Nov 2026 06:00:00 +0000</pubDate>
-      <link>http://www.bbc.co.uk/programmes/p0nb7z27</link>
-      <enclosure url="http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0nb7x78.mp3" type="audio/mpeg" length="0" />
-      <itunes:duration>540</itunes:duration>
-    </item>
-    <item>
-      <title>[11-09 2] EN All Ears | AEE: Beware of the Loaded Pause</title>
-      <guid isPermaLink="false">2026-11-09:c6cd6bc2-cabb-11f1-9927-93a5be7305c3</guid>
-      <pubDate>Mon, 09 Nov 2026 05:00:00 +0000</pubDate>
-      <link>https://www.allearsenglish.com/fluencyscore</link>
-      <enclosure url="https://traffic.megaphone.fm/ALLE4067129412.mp3" type="audio/mpeg" length="0" />
-      <itunes:duration>1200</itunes:duration>
     </item>
   </channel>
 </rss>

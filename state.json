@@ -1298,7 +1298,8 @@
         "minutes": 17,
         "pub": "2026-11-10T10:22:11+00:00"
       }
-    ]
+    ],
+    "2026-11-16": []
   },
   "articles": {
     "2026-10-11": [
@@ -1953,6 +1954,29 @@
         "link": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=RSS&at_campaign=rss",
         "summary": "The attempt follows an unsuccessful effort to catch of the rocket’s booster which instead came down in the ocean."
       }
+    ],
+    "2026-11-16": [
+      {
+        "label": "BBC Top Stories",
+        "guid": "https://www.bbc.co.uk/news/articles/cw1mdlv0k2r4o#1",
+        "title": "Thousands of US flights still cancelled or delayed two days after grounding of planes nationwide",
+        "link": "https://www.bbc.co.uk/news/articles/cw1mdlv0k2r4o?at_medium=RSS&at_campaign=rss",
+        "summary": "The US transport secretary says that normal air-traffic operations may not be restored until Monday."
+      },
+      {
+        "label": "Guardian Business",
+        "guid": "https://www.theguardian.com/technology/2026/nov/14/jensen-huang-affair-nvidia-nightmare",
+        "title": "‘Jensen Huang lost his mind’: how AI’s smartest man fell for the world’s oldest trick",
+        "link": "https://www.theguardian.com/technology/2026/nov/14/jensen-huang-affair-nvidia-nightmare",
+        "summary": "Jensen Huang’s affair with a suspected spy is Silicon Valley’s worst nightmare come true The resignation this week of Nvidia’s founder and CEO Jensen Huang is one of the most astonishing corporate scandals in memory, featuring allegations o…"
+      },
+      {
+        "label": "Guardian Environment",
+        "guid": "https://www.theguardian.com/environment/2026/nov/15/el-nino-cop31-turkey-climate",
+        "title": "‘Risk multiplier’: super El Niño looms over Cop31 as climate pattern fuels global disasters",
+        "link": "https://www.theguardian.com/environment/2026/nov/15/el-nino-cop31-turkey-climate",
+        "summary": "Strongest El Niño in centuries adds urgency to UN climate talks as vulnerable countries face ‘compounding’ crises If the galloping pace of the climate crisis isn’t enough to spur countries to act at UN climate talks under way in Turkey, the…"
+      }
     ]
   },
   "articles_used": [
@@ -1979,6 +2003,7 @@
     "https://www.bbc.co.uk/news/articles/cr0qk25p1yeno#3",
     "https://www.bbc.co.uk/news/articles/cr6240q1w136o#0",
     "https://www.bbc.co.uk/news/articles/cr93z1e87e0do#2",
+    "https://www.bbc.co.uk/news/articles/cw1mdlv0k2r4o#1",
     "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo#0",
     "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo#1",
     "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo#3",
@@ -2023,6 +2048,7 @@
     "https://www.theguardian.com/commentisfree/2026/nov/04/the-guardian-view-on-eu-made-in-europe-rules-a-fatal-blow-to-brexiter-delusions",
     "https://www.theguardian.com/environment/2026/nov/06/uk-dairy-farmers-face-squeeze-as-milk-processor-cuts-prices",
     "https://www.theguardian.com/environment/2026/nov/10/leadbeaters-possum-victoria-endangered-species-australia-wildlife-conservation-haining-farm",
+    "https://www.theguardian.com/environment/2026/nov/15/el-nino-cop31-turkey-climate",
     "https://www.theguardian.com/environment/2026/oct/20/jackdaw-north-sea-gas-field-to-get-go-ahead-in-blow-to-climate-campaigners",
     "https://www.theguardian.com/film/2026/nov/12/to-hold-a-mountain-film-mileva-gara-jovanovic",
     "https://www.theguardian.com/football/2026/oct/10/why-premier-league-in-clutches-of-global-mega-rich",
@@ -2033,6 +2059,7 @@
     "https://www.theguardian.com/politics/2026/oct/17/sarah-helm-jonathan-powell-palestine-action",
     "https://www.theguardian.com/sport/2026/oct/11/eliud-kipchoge-sends-message-melbourne-marathon-win-record",
     "https://www.theguardian.com/sport/live/2026/nov/07/sao-paulo-formula-one-grand-prix-qualifying-in-brazil-live",
+    "https://www.theguardian.com/technology/2026/nov/14/jensen-huang-affair-nvidia-nightmare",
     "https://www.theguardian.com/technology/2026/oct/26/iphone-duo-owners-cracks-apple-first-foldable-handset",
     "https://www.theguardian.com/technology/live/2026/nov/13/microsoft-outage-down-today-live-update-outlook-teams-365-when-fixed-latest-status-cause-news",
     "https://www.theguardian.com/us-news/2026/oct/23/father-killed-oregon-shooter-speaks-out",
@@ -3001,26 +3028,6 @@
     ]
   },
   "reports": {
-    "2026-11-02": [
-      {
-        "label": "증권사 경제분석",
-        "summary": "3Q GDP SAAR 3.4% 증가. 민간 국내최종수요 급증 vs. 순수출 기여도 악화 3분기 GDP는 전기대비연율 3.4% 증가해 2분기(+2.2%)보다 확대됐다. 컨센서스(+3.2%) 역시 상회했다. 개인소비는 3.8% 늘어 2분기와 같은 증가세를 유지했고 정부지출은 5.3% 증가 전환됐다. 반면 수입 급증 속에 수출은 감소해 순수출 성장기여도는 -3.3%p를 기록했다. 민간소비와 민간고정투자를 합한 민간 국내 최종수요는 4.9% 늘어 2분기(+4.6%)에 이어 4%대 증가세를 이어갔다.",
-        "date": "2026-10-30",
-        "guid": "naver:economy:13970",
-        "title": "데이터센터가 받친 내수",
-        "link": "https://stock.naver.com/research/economy/13970",
-        "by": "신한투자증권"
-      },
-      {
-        "label": "증권사 투자전략",
-        "summary": "[요약] 이익이 변하면, 주도주도 변한다 - 2027년 국제 유가와 시중금리는 2026년 대비 하락할 것으로 예상된다. 미국 중간선거 이후 정치적 불확실성도 감소할 것으로 판단된다. 다만 국제 유가와 시중금리 하락은 금융 긴축 환경 완화를 의미하기도 하지만, 경기 둔화(미국 Tech 투자와 국내 반도체 이익 사이클 하락)로 해석할 수도 있다. 최근 2번의 미국 중간선거 다음 년도의 경우 직전 년도에 주가 부진 업종 중심으로 지수가 상승했다는 점은 기존 주도업종 응집력 약화로도 보일 수 있다. …",
-        "date": "2026-10-30",
-        "guid": "naver:invest:40651",
-        "title": "[2027년 주식시장 전망과 전략] 이익이 변하면, 주도주도 변한다",
-        "link": "https://stock.naver.com/research/invest/40651",
-        "by": "하나증권"
-      }
-    ],
     "2026-11-03": [
       {
         "label": "증권사 경제분석",
@@ -3595,6 +3602,56 @@
         "link": "https://stock.naver.com/research/invest/40801",
         "by": "IBK투자증권"
       }
+    ],
+    "2026-11-16": [
+      {
+        "label": "밤사이 미국 시장",
+        "slot": "overnight",
+        "summary": [
+          "미국증시: Dow (-0.36%), S&P500 (-0.35%), Nasdaq (-0.39%)",
+          "미국증시, 젠슨 황 사퇴로 AI 산업을 둘러싼 불확실성이 확대된 가운데, 국제유가가 재차 상승하며 3대 지수 하락 마감",
+          "젠슨황 엔비디아 CEO가 사임을 발표.",
+          "엔비디아 측은 크레스 CFO를 임시 CEO로 임명",
+          "국채 30년물, 응찰률 2.36배(이전: 2.54배), 낙찰금리 5.441%(이전: 5.618%)에 250억달러 발행"
+        ],
+        "date": "2026-11-13",
+        "guid": "naver:market:38153",
+        "title": "Daily Morning Brief(2026.11.13)",
+        "link": "https://stock.naver.com/research/market/38153",
+        "by": "다올투자증권"
+      },
+      {
+        "label": "증권사 경제분석",
+        "slot": "",
+        "summary": [
+          "다음 주 금융시장은 미국 소매판매와 10 월 FOMC 의사록, 주요 연준 위원들의 발언을 통해 미국 경기 흐름과 통화정책 방향을 확인하는 한 주가 될 전망이다.",
+          "미국 10 월 소매판매는 전월보다 증가세가 둔화될 것으로 예상되며, 이는 소비경기 모멘텀 약화를 시사하면서 미 국채금리의 추가 상승 압력을 제한하는 요인으로 작용할 것으로 보인다.",
+          "특히 그동안 높은 금리 수준에도 견조했던 미국 소비가 점차 둔화될 경우 연준의 추가 긴축 필요성에 대한 시장의 기대도 일부 약화될 가능성이 있다.",
+          "다만, 최근 미국 소비자물가가 시장 예상을 웃돈 가운데 주요 연준 위원들이 인플레이션에 대한 경계감을 높이고 있어 통화정책 불확실성은 당분간 이어질 전망이다.",
+          "특히 10 월 FOMC 의사록에서도 물가 상승 위험에 대한 매파적인 시각이 확인될 가능성이 있으며, 이는 미 국채금리의 하락을 제한하는 요인으로 작용할 수 있다."
+        ],
+        "date": "2026-11-13",
+        "guid": "naver:economy:14026",
+        "title": "11/13 Weekly Macro : 소비 둔화와 연준 긴축 경계감의 공존",
+        "link": "https://stock.naver.com/research/economy/14026",
+        "by": "키움증권"
+      },
+      {
+        "label": "증권사 투자전략",
+        "slot": "",
+        "summary": [
+          "FX: 엔화, 정책당국 개입 경계에도 하락",
+          "달러화는 중동 지역의 지정학적 불안에 따른 국제유가 및 미 국채금리 상승과 미국 기술주 조정에 따른 안전자산 선호 등에 상승",
+          "중동 지역의 군사적 긴장이 고조되면서 원유 공급 차질 우려가 확대되고 국제유가가 상승해 인플레이션 경계감을 자극.",
+          "특히 국제유가 상승에 따른 물가 부담과 연준의 추가 긴축 가능성이 부각되면서 미 국채금리가 상승했고, 10년물 금리가 5%를 웃돌며 달러화 강세를 뒷받침.",
+          "한편 엔비디아 경영진 교체에 따른 경영 불확실성과 AI 투자 지속성에 대한 우려가 부각되면서 뉴욕증시는 기술주를 중심으로 조정을 보였으며, 위험회피 심리에 따른 안전자산 수요도 달러화 상승 …"
+        ],
+        "date": "2026-11-13",
+        "guid": "naver:invest:40810",
+        "title": "11/13 달러, 긴축 경계에 상승",
+        "link": "https://stock.naver.com/research/invest/40810",
+        "by": "키움증권"
+      }
     ]
   },
   "reports_used": [
@@ -3623,6 +3680,7 @@
     "naver:economy:14017",
     "naver:economy:14022",
     "naver:economy:14023",
+    "naver:economy:14026",
     "naver:economy:14029",
     "naver:invest:40559",
     "naver:invest:40569",
@@ -3646,6 +3704,7 @@
     "naver:invest:40781",
     "naver:invest:40801",
     "naver:invest:40808",
+    "naver:invest:40810",
     "naver:market:38041",
     "naver:market:38056",
     "naver:market:38069",
@@ -3656,7 +3715,8 @@
     "naver:market:38119",
     "naver:market:38121",
     "naver:market:38141",
-    "naver:market:38143"
+    "naver:market:38143",
+    "naver:market:38153"
   ],
   "sent": [
     "2026-11-04",
@@ -3670,7 +3730,8 @@
     "2026-11-12",
     "2026-11-13",
     "2026-11-14",
-    "2026-11-15"
+    "2026-11-15",
+    "2026-11-16"
   ],
   "markets_history": {
     "2026-11-05": {
@@ -3914,6 +3975,30 @@
       "VIX (공포 지수)": "19.21"
     },
     "2026-11-15": {
+      "KOSPI": "5,290.53",
+      "KOSDAQ": "699.66",
+      "KR 3Y": "3.76%",
+      "US 2Y": "4.88%",
+      "US 10Y": "5.15%",
+      "US 30Y": "5.47%",
+      "10Y-2Y spread": "+27bp",
+      "USD/KRW": "1,337.1",
+      "USD/JPY": "160.00",
+      "USD/EUR": "0.9048",
+      "S&P 500": "7,561.67",
+      "나스닥": "25,136.27",
+      "다우": "52,347.55",
+      "유로스톡스 50": "6,386.86",
+      "니케이 225": "61,142.35",
+      "상해종합": "3,634.35",
+      "항셍": "23,637.60",
+      "WTI": "$88.56",
+      "브렌트유": "$95.84",
+      "금": "$3,886.30",
+      "구리 (경기 선행)": "$6.0905",
+      "VIX (공포 지수)": "19.30"
+    },
+    "2026-11-16": {
       "KOSPI": "5,290.53",
       "KOSDAQ": "699.66",
       "KR 3Y": "3.76%",
@@ -6114,5 +6199,25 @@
     "ffa45c2b09fc",
     "ffd321cd6a1a",
     "fff26cd44f5c"
-  ]
+  ],
+  "news_english": {
+    "2026-11-16": [
+      {
+        "en": "fuel",
+        "ko": "(감정·현상을) 부추기다, 키우다",
+        "sentence": "‘Risk multiplier’: super El Niño looms over Cop31 as climate pattern fuels global disasters.",
+        "match": "fuels",
+        "link": "https://www.theguardian.com/environment/2026/nov/15/el-nino-cop31-turkey-climate",
+        "source": "Guardian Environment"
+      },
+      {
+        "en": "rate hike",
+        "ko": "금리 인상",
+        "sentence": "Euro zone inflation hits 4% for first time in three years as interest rate hike looms.",
+        "match": "rate hike",
+        "link": "https://www.cnbc.com/2026/11/04/euro-zone-cpi-inflation-october-ecb-rate-hike.html",
+        "source": "CNBC Economy"
+      }
+    ]
+  }
 }
