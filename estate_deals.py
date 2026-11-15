@@ -102,8 +102,9 @@ def summarize(deals, cfg, seen):
         new = sorted((d for d in near if d["id"] not in seen), key=lambda d: (d["date"], d["price"]), reverse=True)
         watch = []
         for w in a.get("watch", []):
-            mine = sorted((d for d in near if _norm(w["apt"]) in _norm(d["apt"]) and _area_ok(d, w.get("area"))),
-                          key=lambda d: d["date"], reverse=True)
+            named = sorted((d for d in near if _norm(w["apt"]) in _norm(d["apt"])), key=lambda d: d["date"], reverse=True)
+            # the chosen size if it traded, otherwise any size (shown with its real area)
+            mine = [d for d in named if _area_ok(d, w.get("area"))] or named
             last = mine[0] if mine else None
             prev = next((d for d in mine[1:] if abs(d["area"] - last["area"]) < 1), None) if last else None
             watch.append({"label": w["label"], "area": w.get("area"), "last": last, "prev": prev, "n": len(mine)})

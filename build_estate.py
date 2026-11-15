@@ -92,8 +92,9 @@ def _deal_row(d, cols):
 
 
 def _watch_row(w):
-    name = f"{escape(w['label'])}" + (f" <span style='{SUB}'>{w['area']}㎡</span>" if w.get("area") else "")
     last, prev = w["last"], w["prev"]
+    size = f"{last['area']:g}㎡" if last else (f"{w['area']}㎡" if w.get("area") else "")
+    name = f"{escape(w['label'])}" + (f" <span style='{SUB}'>{size}</span>" if size else "")
     if not last:
         return f"<tr><td style='padding:4px 8px 4px 0;border-top:1px solid #eef0f2'>{name}</td><td colspan='2' style='{SUB};border-top:1px solid #eef0f2'>최근 거래 없음</td></tr>"
     chg = ""
