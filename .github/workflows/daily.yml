@@ -45,6 +45,7 @@ jobs:
           wait=$(( $(TZ=KST-9 date -d "06:00" +%s) - $(date +%s) ))
           if [ "$wait" -gt 0 ]; then echo "waiting ${wait}s"; sleep "$wait"; else echo "already past 06:00 KST"; fi
       - name: Fetch portfolio buy candidates (owner's copy only; nothing is printed)
+        id: portfolio
         # Runs portfolio_managing (private) in candidates mode and downloads its artifact to portfolio_out/.
         # Needs the PORTFOLIO_TOKEN secret: fine-grained token, that repo only, Actions read & write.
         # Any failure just leaves the section out of the email.
@@ -61,7 +62,8 @@ jobs:
             echo "already sent today; skipping"; exit 0
           fi
           since=$(date -u +%Y-%m-%dT%H:%M:%SZ)
-          gh workflow run dashboard.yml -R "$REPO" -f mode=candidates
+          # --ref: without it gh asks GraphQL for the default branch, which the Actions-only token cannot read
+          gh workflow run dashboard.yml -R "$REPO" --ref main -f mode=candidates
           id=""
           for i in $(seq 1 24); do
             sleep 5
@@ -77,6 +79,7 @@ jobs:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           EXTRA_RECIPIENTS: ${{ secrets.EXTRA_RECIPIENTS }}   # optional, comma-separated
+          PORTFOLIO_FETCH: ${{ steps.portfolio.outcome }}     # 'failure' -> short notice in the owner's copy
         run: python build_daily.py --send ${{ (github.event_name == 'schedule' || inputs.scheduled) && '--skip-if-sent' || '' }}
       - name: Commit feed and state
         if: always()   # keep the feed/state even if the email step failed

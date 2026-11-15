@@ -5,6 +5,7 @@ portfolio_out/candidates.json. This repo is public, so nothing from that file is
 committed, or sent to EXTRA_RECIPIENTS.
 """
 import json
+import os
 from datetime import date, datetime
 from html import escape
 from pathlib import Path
@@ -31,11 +32,16 @@ def _won(n):
 
 
 def render(d) -> str:
-    if not d:
-        return ""
     head = "font-size:12px;font-weight:700;letter-spacing:.06em;color:#6b7280;margin:16px 0 6px"
     card = "background:#fff;border:1px solid #e3e6ea;border-radius:10px;padding:12px 16px;margin:0 0 10px"
     sub = "font-size:12px;color:#6b7280"
+    if not d:
+        # The fetch step failed (continue-on-error): say so instead of silently dropping the section.
+        if os.environ.get("PORTFOLIO_FETCH") == "failure":
+            return (f"<div style='{head}'>PORTFOLIO · 알파 매수 후보</div>"
+                    f"<div style='{card}'><span style='{sub}'>오늘은 후보를 가져오지 못했습니다 "
+                    f"(language_learning Actions 로그의 Fetch portfolio 단계 확인).</span></div>")
+        return ""
     rows = []
     for i, w in enumerate(d["items"], 1):
         px = f"${w['price']:,.2f}" if w["ccy"] == "USD" else f"{w['price']:,.0f}원"
