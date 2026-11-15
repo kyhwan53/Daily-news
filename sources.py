@@ -47,9 +47,12 @@ def load():
     if len({e["key"] for e in estate}) != len(estate):
         raise ConfigError("config.toml: duplicate estate keys")
     deals = cfg.get("estate_deals", {})
-    for w in deals.get("watch", []) + ([deals["nearby"]] if "nearby" in deals else []):
-        if not {"code", "label"} <= w.keys():
-            raise ConfigError(f"config.toml: estate_deals entry {w} needs code and label")
+    for a in deals.get("area", []):
+        if not {"code", "label"} <= a.keys():
+            raise ConfigError(f"config.toml: estate_deals.area {a.get('label', '?')} needs code and label")
+        for w in a.get("watch", []):
+            if not {"apt", "label"} <= w.keys():
+                raise ConfigError(f"config.toml: estate_deals watch {w} needs apt and label")
     st = cfg.get("settings", {})
     return {
         "estate": estate,

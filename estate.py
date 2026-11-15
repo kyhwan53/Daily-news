@@ -135,15 +135,23 @@ def pick(day, state):
     shown = []
     picks = {}
     for sec in ESTATE:
-        out = []
-        for c in _clusters(sec, now):
-            if len(out) >= sec.get("count", 3):
+        count = sec.get("count", 3)
+        clusters = _clusters(sec, now)
+        # spread: first the best story for each word group (one per area), then the rest by score
+        order = [next((c for c in clusters if any(w in c["rep"]["title"] for w in grp)), None) for grp in sec.get("spread", [])]
+        order = [c for c in order if c] + clusters
+        chosen = []
+        for c in order:
+            if len(chosen) >= count:
                 break
             mine = c["members"][:MEMBERS]
-            if any(similar(m, g) for m in mine for g in old + shown):
+            if any(c is x for x in chosen) or any(similar(m, g) for m in mine for g in old + shown):
                 continue
-            r = c["rep"]
             shown += mine
+            chosen.append(c)
+        out = []
+        for c in sorted(chosen, key=clusters.index):   # show in score order
+            r = c["rep"]
             out.append({"title": r["title"], "link": r["link"], "outlet": r["outlet"], "outlets": c["outlets"],
                         "date": r["pub"].astimezone(now.tzinfo).strftime("%m/%d") if r["pub"] else "",
                         "others": sorted({a["outlet"] for a in c["items"]} - {r["outlet"]})[:4]})

@@ -13,6 +13,7 @@ import tomllib
 from datetime import date, datetime, timedelta
 from html import escape
 from pathlib import Path
+from urllib.parse import quote
 
 import estate
 import estate_deals
@@ -90,50 +91,67 @@ def _deal_row(d, cols):
         "white-space:nowrap;color:#6b7280", "", "white-space:nowrap", "white-space:nowrap;text-align:right;font-weight:600"))) + "</tr>"
 
 
+def _watch_row(w):
+    name = f"{escape(w['label'])}" + (f" <span style='{SUB}'>{w['area']}㎡</span>" if w.get("area") else "")
+    last, prev = w["last"], w["prev"]
+    if not last:
+        return f"<tr><td style='padding:4px 8px 4px 0;border-top:1px solid #eef0f2'>{name}</td><td colspan='2' style='{SUB};border-top:1px solid #eef0f2'>최근 거래 없음</td></tr>"
+    chg = ""
+    if prev:
+        pct = (last["price"] / prev["price"] - 1) * 100
+        color = "#d93025" if pct >= 0 else "#1a73e8"
+        chg = f"<span style='color:{color}'>{pct:+.1f}%</span> <span style='{SUB}'>직전 {estate_deals.won(prev['price'])}</span>"
+    return (f"<tr><td style='padding:4px 8px 4px 0;border-top:1px solid #eef0f2'>{name}<div style='{SUB}'>"
+            f"{escape(last['date'][2:].replace('-', '.'))} · {escape(last['floor'])}층 · {w['n']}건</div></td>"
+            f"<td style='text-align:right;font-weight:700;white-space:nowrap;border-top:1px solid #eef0f2'>{estate_deals.won(last['price'])}</td>"
+            f"<td style='text-align:right;padding-left:8px;font-size:12.5px;border-top:1px solid #eef0f2'>{chg}</td></tr>")
+
+
 def render_deals(snap):
-    if not snap:
+    """One part per area (영등포 first and with the most rows): new deals in its dongs, then its watched complexes."""
+    if not snap or "areas" not in snap:   # "areas" missing: a cache from the old single-area format
         return ""
+    months = snap.get("months", 3)
     parts = []
-    nb = snap.get("nearby")
-    if nb:
-        rows = "".join(_deal_row(d, (escape(d["date"][5:].replace("-", "/")), f"{escape(d['apt'])} <span style='{SUB}'>{escape(d['dong'])}</span>",
-                                     f"{d['area']:g}㎡ · {escape(d['floor'])}층", estate_deals.won(d["price"]))) for d in nb["new"])
-        what = f"최근 {snap.get('months', 3)}개월 계약" if nb["first"] else "어제 이후 새로 신고된 거래"
-        parts.append(f"<div style='font-size:13px;font-weight:700;margin:0 0 4px'>{escape(nb['label'])} · {what} {nb['n_new']}건"
-                     f"<span style='{SUB};font-weight:400'> (최근 {snap.get('months', 3)}개월 총 {nb['total']}건)</span></div>"
-                     + (f"<table style='width:100%;font-size:13px;border-collapse:collapse'>{rows}</table>" if rows
-                        else f"<div style='{SUB}'>새로 신고된 거래가 없습니다.</div>"))
-    wrows = []
-    for w in snap.get("watch", []):
-        name = f"{escape(w['label'])}" + (f" <span style='{SUB}'>{w['area']}㎡</span>" if w.get("area") else "")
-        last, prev = w["last"], w["prev"]
-        if not last:
-            wrows.append(f"<tr><td style='padding:4px 8px 4px 0'>{name}</td><td colspan='2' style='{SUB}'>최근 거래 없음</td></tr>")
+    for i, a in enumerate(snap["areas"]):
+        what = f"최근 {months}개월 계약" if a["first"] else "새로 신고"
+        head = (f"<div style='font-size:14px;font-weight:700;margin:{'0' if i == 0 else '16px'} 0 4px'>{escape(a['label'])}"
+                f"<span style='{SUB};font-weight:400'> · {what} {a['n_new']}건 (최근 {months}개월 총 {a['total']}건)</span></div>")
+        if a.get("empty"):
+            parts.append(head + f"<div style='{SUB}'>거래 자료가 없습니다. config.toml의 시군구 코드를 확인하세요.</div>")
             continue
-        chg = ""
-        if prev:
-            pct = (last["price"] / prev["price"] - 1) * 100
-            color = "#d93025" if pct >= 0 else "#1a73e8"
-            chg = f"<span style='color:{color}'>{pct:+.1f}%</span> <span style='{SUB}'>직전 {estate_deals.won(prev['price'])}</span>"
-        wrows.append(f"<tr><td style='padding:4px 8px 4px 0;border-top:1px solid #eef0f2'>{name}<div style='{SUB}'>"
-                     f"{escape(last['date'][2:].replace('-', '.'))} · {escape(last['floor'])}층 · {w['n']}건</div></td>"
-                     f"<td style='text-align:right;font-weight:700;white-space:nowrap;border-top:1px solid #eef0f2'>{estate_deals.won(last['price'])}</td>"
-                     f"<td style='text-align:right;padding-left:8px;font-size:12.5px;border-top:1px solid #eef0f2'>{chg}</td></tr>")
-    if wrows:
-        parts.append(f"<div style='font-size:13px;font-weight:700;margin:12px 0 4px'>관심 단지 최근 거래</div>"
-                     f"<table style='width:100%;font-size:13.5px;border-collapse:collapse'>{''.join(wrows)}</table>")
-    note = f"<div style='{SUB};margin-top:8px'>국토부 실거래가 · 계약 후 30일 내 신고라 최근 거래는 늦게 채워집니다 · 해제 거래 제외 · 단위 만원→억</div>"
-    return f"<div style='{HEAD}'>실거래 · 시세</div><div style='{CARD}'>{''.join(parts)}{note}</div>"
+        rows = "".join(_deal_row(d, (escape(d["date"][5:].replace("-", "/")), f"{escape(d['apt'])} <span style='{SUB}'>{escape(d['dong'])}</span>",
+                                     f"{d['area']:g}㎡ · {escape(d['floor'])}층", estate_deals.won(d["price"]))) for d in a["new"])
+        body = (f"<table style='width:100%;font-size:13px;border-collapse:collapse'>{rows}</table>" if rows
+                else f"<div style='{SUB}'>새로 신고된 거래가 없습니다.</div>")
+        watch = "".join(_watch_row(w) for w in a["watch"])
+        if watch:
+            body += (f"<div style='font-size:12px;font-weight:700;color:#6b7280;margin:8px 0 2px'>관심 단지</div>"
+                     f"<table style='width:100%;font-size:13.5px;border-collapse:collapse'>{watch}</table>")
+        parts.append(head + body)
+    note = f"<div style='{SUB};margin-top:10px'>국토부 실거래가 · 계약 후 30일 내 신고라 최근 거래는 늦게 채워집니다 · 해제 거래 제외</div>"
+    return f"<div style='{HEAD}'>실거래 · 관심 지역 시세</div><div style='{CARD}'>{''.join(parts)}{note}</div>"
+
+
+def _card_link(c):
+    if c.get("link"):
+        return c["link"], c.get("link_label") or "관련 자료"
+    if c.get("term"):
+        return f"https://terms.naver.com/search.naver?query={quote(c['term'])}&searchType=text", f"네이버 지식백과: {c['term']}"
+    return None, None
 
 
 def render_card(c):
+    url, label = _card_link(c)
+    more = (f"<div style='margin-top:8px'><a style='{LINK};font-size:13px' href='{escape(url)}'>더 알아보기 · {escape(label)} →</a></div>"
+            if url else "")
     lines = "".join(f"<li style='margin:0 0 4px'>{escape(x)}</li>" for x in c["body"])
     return (f"<div style='{HEAD}'>CLAUDE 추천 · 오늘의 투자 공부</div><div style='{CARD}'>"
             f"<span style='display:inline-block;font-size:11px;font-weight:600;color:#fff;background:{ACCENT};border-radius:4px;padding:2px 7px'>"
             f"{escape(c['tag'])}</span><div style='font-size:16px;font-weight:700;margin:8px 0 6px'>{escape(c['title'])}</div>"
             f"<ul style='font-size:13.5px;color:#374151;line-height:1.6;margin:0;padding-left:18px'>{lines}</ul>"
             f"<div style='font-size:13px;margin-top:8px;background:#f8f9fa;border-radius:6px;padding:8px 10px'>"
-            f"<b>체크</b> · {escape(c['check'])}</div></div>")
+            f"<b>체크</b> · {escape(c['check'])}</div>{more}</div>")
 
 
 def render_weekly(state, day):
@@ -162,7 +180,7 @@ def render_email(day, state, news, deals):
     return (
         "<div style='max-width:600px;margin:0 auto;background:#f4f6f8;padding:18px;font-family:Segoe UI,Arial,sans-serif;color:#111'>"
         "<div style='font-size:20px;font-weight:700'>부동산 브리핑</div>"
-        f"<div style='{SUB};font-size:13px;margin:2px 0 16px'>{day} · 영등포역 일대 · 수도권 시세 · 투자 체크</div>"
+        f"<div style='{SUB};font-size:13px;margin:2px 0 16px'>{day} · 영등포역 일대 · 사당/이수 · 동탄2 · 수지 · 수도권 시세 · 투자 체크</div>"
         f"{render_weekly(state, day) if day.weekday() == 6 else ''}"
         f"{render_note(day)}{''.join(blocks)}{render_card(study_card(day))}"
         f"<div style='font-size:12px;color:#6b7280;margin-top:14px;line-height:1.7'>바로가기: {links}<br>"
