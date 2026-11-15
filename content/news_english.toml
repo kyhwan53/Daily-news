@@ -1,0 +1,526 @@
+# 기사 속 업무 영어: 그날 메일의 기사·헤드라인에 실제로 나온 표현을 최대 2개 골라 원문 문장과 함께 보여 줍니다.
+# en = 표현 (동사는 원형, 첫 단어의 -s/-ed/-ing 형태도 자동으로 찾음), ko = 뜻
+# forms = 불규칙 변화 등 자동으로 못 찾는 형태 (선택)
+
+[[expr]]
+en = "weigh on"
+ko = "~에 부담을 주다, 짓누르다"
+forms = ["weighed on", "weighing on", "weighs on"]
+
+[[expr]]
+en = "headwind"
+ko = "역풍, 불리한 요인"
+
+[[expr]]
+en = "tailwind"
+ko = "순풍, 유리한 요인"
+
+[[expr]]
+en = "outlook"
+ko = "전망"
+
+[[expr]]
+en = "guidance"
+ko = "(회사가 제시하는) 실적 전망치"
+
+[[expr]]
+en = "beat expectations"
+ko = "예상을 웃돌다"
+forms = ["beat expectations", "beats expectations", "beating expectations", "beat estimates", "beats estimates", "beat forecasts"]
+
+[[expr]]
+en = "miss estimates"
+ko = "예상치에 못 미치다"
+forms = ["missed estimates", "misses estimates", "missed expectations", "missed forecasts", "fell short of expectations"]
+
+[[expr]]
+en = "ramp up"
+ko = "(생산·투자를) 늘리다, 끌어올리다"
+
+[[expr]]
+en = "scale back"
+ko = "(규모를) 줄이다, 축소하다"
+
+[[expr]]
+en = "roll out"
+ko = "출시하다, 단계적으로 도입하다"
+
+[[expr]]
+en = "phase out"
+ko = "단계적으로 없애다"
+
+[[expr]]
+en = "crack down on"
+ko = "~을 단속하다, 엄중히 다스리다"
+
+[[expr]]
+en = "crackdown"
+ko = "단속, 엄중 조치"
+
+[[expr]]
+en = "shore up"
+ko = "(약한 것을) 떠받치다, 강화하다"
+
+[[expr]]
+en = "stave off"
+ko = "(위기 등을) 막다, 피하다"
+
+[[expr]]
+en = "in the wake of"
+ko = "~의 여파로, ~ 직후에"
+
+[[expr]]
+en = "amid"
+ko = "~ 가운데, ~ 속에서"
+
+[[expr]]
+en = "spark"
+ko = "(사태를) 촉발하다"
+
+[[expr]]
+en = "fuel"
+ko = "(감정·현상을) 부추기다, 키우다"
+
+[[expr]]
+en = "curb"
+ko = "억제하다; 억제책"
+
+[[expr]]
+en = "rein in"
+ko = "(지출·물가 등을) 억제하다, 고삐를 죄다"
+
+[[expr]]
+en = "rebound"
+ko = "반등하다; 반등"
+
+[[expr]]
+en = "slump"
+ko = "급락하다, 부진; 불황"
+
+[[expr]]
+en = "stall"
+ko = "멈추다, 정체되다"
+
+[[expr]]
+en = "pick up"
+ko = "(경기·속도가) 회복되다, 빨라지다"
+forms = ["picked up", "picks up", "picking up"]
+
+[[expr]]
+en = "level off"
+ko = "(상승·하락 후) 안정되다, 평탄해지다"
+
+[[expr]]
+en = "bottom out"
+ko = "바닥을 치다"
+
+[[expr]]
+en = "surge"
+ko = "급등하다; 급증"
+
+[[expr]]
+en = "soar"
+ko = "치솟다"
+
+[[expr]]
+en = "plunge"
+ko = "급락하다"
+
+[[expr]]
+en = "tumble"
+ko = "폭락하다, 굴러떨어지다"
+
+[[expr]]
+en = "edge up"
+ko = "소폭 오르다"
+
+[[expr]]
+en = "edge down"
+ko = "소폭 내리다"
+
+[[expr]]
+en = "rally"
+ko = "(주가 등이) 반등·상승하다; 랠리"
+forms = ["rallied", "rallies", "rallying", "rally"]
+
+[[expr]]
+en = "sell-off"
+ko = "대량 매도, 투매"
+forms = ["sell-off", "selloff", "sell-offs", "selloffs"]
+
+[[expr]]
+en = "volatility"
+ko = "변동성"
+
+[[expr]]
+en = "uncertainty"
+ko = "불확실성"
+
+[[expr]]
+en = "rate hike"
+ko = "금리 인상"
+
+[[expr]]
+en = "rate cut"
+ko = "금리 인하"
+
+[[expr]]
+en = "hold rates steady"
+ko = "금리를 동결하다"
+forms = ["held rates steady", "holds rates steady", "holding rates steady", "kept rates on hold", "keep rates on hold", "left rates unchanged", "leave rates unchanged"]
+
+[[expr]]
+en = "tighten"
+ko = "(통화정책·규제를) 조이다, 긴축하다"
+
+[[expr]]
+en = "ease"
+ko = "완화하다, 누그러지다"
+
+[[expr]]
+en = "inflation"
+ko = "물가 상승, 인플레이션"
+
+[[expr]]
+en = "cool"
+ko = "(과열된 것이) 식다, 둔화되다"
+forms = ["cooled", "cooling", "cools"]
+
+[[expr]]
+en = "overheat"
+ko = "과열되다"
+
+[[expr]]
+en = "slowdown"
+ko = "둔화, 감속"
+
+[[expr]]
+en = "downturn"
+ko = "(경기) 하강, 침체"
+
+[[expr]]
+en = "recession"
+ko = "경기 침체"
+
+[[expr]]
+en = "soft landing"
+ko = "연착륙 (침체 없이 물가만 잡는 것)"
+
+[[expr]]
+en = "supply chain"
+ko = "공급망"
+
+[[expr]]
+en = "bottleneck"
+ko = "병목, 걸림돌"
+
+[[expr]]
+en = "shortage"
+ko = "부족, 품귀"
+
+[[expr]]
+en = "backlog"
+ko = "밀린 주문·업무, 적체"
+
+[[expr]]
+en = "tariff"
+ko = "관세"
+
+[[expr]]
+en = "trade-off"
+ko = "상충 관계, 맞바꿈"
+
+[[expr]]
+en = "stake"
+ko = "지분; 이해관계"
+
+[[expr]]
+en = "acquisition"
+ko = "인수"
+
+[[expr]]
+en = "merger"
+ko = "합병"
+
+[[expr]]
+en = "take over"
+ko = "인수하다, 장악하다"
+forms = ["took over", "takes over", "taking over", "taken over", "takeover"]
+
+[[expr]]
+en = "spin off"
+ko = "(사업부를) 분사하다"
+forms = ["spun off", "spins off", "spinning off", "spin-off", "spinoff"]
+
+[[expr]]
+en = "lay off"
+ko = "해고하다 (구조조정)"
+forms = ["laid off", "lays off", "laying off", "layoffs", "layoff"]
+
+[[expr]]
+en = "cut jobs"
+ko = "일자리를 줄이다"
+forms = ["cutting jobs", "cuts jobs", "job cuts"]
+
+[[expr]]
+en = "hiring freeze"
+ko = "채용 동결"
+
+[[expr]]
+en = "workforce"
+ko = "인력, 노동력"
+
+[[expr]]
+en = "labor market"
+ko = "노동 시장"
+forms = ["labor market", "labour market", "jobs market", "job market"]
+
+[[expr]]
+en = "consumer spending"
+ko = "소비 지출"
+
+[[expr]]
+en = "consumer confidence"
+ko = "소비자 신뢰(심리)"
+
+[[expr]]
+en = "bottom line"
+ko = "순이익; 핵심, 결론"
+
+[[expr]]
+en = "profit margin"
+ko = "이익률"
+forms = ["profit margin", "profit margins", "margins"]
+
+[[expr]]
+en = "revenue"
+ko = "매출"
+
+[[expr]]
+en = "write-down"
+ko = "(자산) 평가 절하, 감액"
+forms = ["write-down", "write-downs", "writedown"]
+
+[[expr]]
+en = "bailout"
+ko = "구제 금융"
+
+[[expr]]
+en = "stimulus"
+ko = "경기 부양책"
+
+[[expr]]
+en = "subsidy"
+ko = "보조금"
+forms = ["subsidy", "subsidies", "subsidised", "subsidized"]
+
+[[expr]]
+en = "regulator"
+ko = "규제 당국"
+
+[[expr]]
+en = "scrutiny"
+ko = "(엄격한) 감시, 검토"
+
+[[expr]]
+en = "probe"
+ko = "조사; 조사하다"
+
+[[expr]]
+en = "lawsuit"
+ko = "소송"
+
+[[expr]]
+en = "settle"
+ko = "합의하다, (분쟁을) 해결하다"
+forms = ["settled", "settles", "settlement", "settling"]
+
+[[expr]]
+en = "comply with"
+ko = "~을 준수하다"
+forms = ["complied with", "complies with", "complying with", "compliance"]
+
+[[expr]]
+en = "push back"
+ko = "반발하다; 연기하다"
+forms = ["pushed back", "pushes back", "pushing back", "pushback"]
+
+[[expr]]
+en = "back down"
+ko = "물러서다, 입장을 굽히다"
+forms = ["backed down", "backs down", "backing down"]
+
+[[expr]]
+en = "step down"
+ko = "(자리에서) 물러나다, 사임하다"
+forms = ["stepped down", "steps down", "stepping down"]
+
+[[expr]]
+en = "take effect"
+ko = "효력이 발생하다, 시행되다"
+forms = ["took effect", "takes effect", "taking effect", "taken effect"]
+
+[[expr]]
+en = "come into force"
+ko = "(법·규정이) 발효되다"
+forms = ["came into force", "comes into force", "coming into force"]
+
+[[expr]]
+en = "on track"
+ko = "계획대로 진행 중인"
+
+[[expr]]
+en = "fall short"
+ko = "기대·목표에 못 미치다"
+forms = ["fell short", "falls short", "falling short", "fallen short"]
+
+[[expr]]
+en = "outpace"
+ko = "~을 앞지르다, ~보다 빠르다"
+
+[[expr]]
+en = "lag"
+ko = "뒤처지다"
+forms = ["lag", "lags", "lagged", "lagging"]
+
+[[expr]]
+en = "drive"
+ko = "(성장 등을) 이끌다, 견인하다"
+forms = ["driven by", "drove", "driving"]
+
+[[expr]]
+en = "boost"
+ko = "끌어올리다; 활성화"
+
+[[expr]]
+en = "dampen"
+ko = "(기세를) 꺾다, 약화시키다"
+
+[[expr]]
+en = "undermine"
+ko = "약화시키다, 훼손하다"
+
+[[expr]]
+en = "pose a risk"
+ko = "위험이 되다"
+forms = ["poses a risk", "posed a risk", "pose risks", "poses risks", "posing a risk"]
+
+[[expr]]
+en = "at stake"
+ko = "걸려 있는, 위태로운"
+
+[[expr]]
+en = "pledge"
+ko = "약속하다, 공약; 서약"
+
+[[expr]]
+en = "unveil"
+ko = "공개하다, 발표하다"
+
+[[expr]]
+en = "warn"
+ko = "경고하다"
+
+[[expr]]
+en = "emissions"
+ko = "배출(량)"
+
+[[expr]]
+en = "net zero"
+ko = "탄소 순배출 0"
+forms = ["net zero", "net-zero"]
+
+[[expr]]
+en = "renewable"
+ko = "재생 가능한 (에너지)"
+forms = ["renewable", "renewables"]
+
+[[expr]]
+en = "fossil fuel"
+ko = "화석 연료"
+
+[[expr]]
+en = "carbon capture"
+ko = "탄소 포집"
+
+[[expr]]
+en = "climate finance"
+ko = "기후 재원 (기후 대응 자금)"
+
+[[expr]]
+en = "transition"
+ko = "전환 (에너지 전환 등)"
+
+[[expr]]
+en = "stakeholder"
+ko = "이해관계자"
+
+[[expr]]
+en = "milestone"
+ko = "중요한 단계, 이정표"
+
+[[expr]]
+en = "breakthrough"
+ko = "돌파구, 획기적 진전"
+
+[[expr]]
+en = "deadlock"
+ko = "교착 상태"
+forms = ["deadlock", "deadlocked", "stalemate"]
+
+[[expr]]
+en = "concession"
+ko = "양보"
+
+[[expr]]
+en = "leverage"
+ko = "지렛대(협상력); 차입 투자"
+
+[[expr]]
+en = "showdown"
+ko = "대결, 정면 충돌"
+
+[[expr]]
+en = "fallout"
+ko = "(나쁜) 여파, 후폭풍"
+
+[[expr]]
+en = "spillover"
+ko = "파급 효과"
+forms = ["spillover", "spill over", "spilled over", "spilling over"]
+
+[[expr]]
+en = "ripple effect"
+ko = "파급 효과, 연쇄 반응"
+
+[[expr]]
+en = "safe haven"
+ko = "안전 자산, 피난처"
+forms = ["safe haven", "safe-haven"]
+
+[[expr]]
+en = "risk appetite"
+ko = "위험 선호 (투자 심리)"
+
+[[expr]]
+en = "investor sentiment"
+ko = "투자 심리"
+forms = ["investor sentiment", "market sentiment", "sentiment"]
+
+[[expr]]
+en = "earnings season"
+ko = "실적 발표 시즌"
+
+[[expr]]
+en = "price in"
+ko = "(시장 가격에) 미리 반영하다"
+forms = ["priced in", "prices in", "pricing in"]
+
+[[expr]]
+en = "bet on"
+ko = "~에 걸다, ~을 예상하고 투자하다"
+forms = ["bet on", "bets on", "betting on"]
+
+[[expr]]
+en = "hedge"
+ko = "위험을 분산하다, 헤지하다"

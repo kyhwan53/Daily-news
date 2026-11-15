@@ -9,6 +9,7 @@ Sources (free, no API key):
   - New York Fed Markets API (official): effective fed funds rate and target range
   - Bank of Korea monetary policy RSS (official): latest base rate decision
   - CNBC Economy RSS and Federal Reserve monetary policy press RSS: headlines (title + link only)
+  - Nasdaq earnings calendar JSON (unofficial): large US companies reporting in the next two sessions
 """
 import csv
 import io
@@ -192,6 +193,33 @@ def headlines(day):
     return out
 
 
+EARNINGS_MIN_CAP = 20e9   # only companies worth $20B+ (the ones that move the index)
+EARNINGS_PER_DAY = 8
+EARNINGS_TIME = {"time-pre-market": "장 전 · 한국 밤", "time-after-hours": "장 마감 후 · 한국 다음 날 새벽"}
+WEEK_KO = "월화수목금토일"
+
+
+def earnings(day, sessions=2):
+    """Largest US companies reporting in the next `sessions` US trading days (the US date equals the KST date
+    at send time: 06:00 KST is the previous US evening)."""
+    dates, d = [], day
+    while len(dates) < sessions:
+        if d.weekday() < 5:
+            dates.append(d)
+        d += timedelta(days=1)
+    out = []
+    for us in dates:
+        req = urllib.request.Request(f"https://api.nasdaq.com/api/calendar/earnings?date={us}",
+                                     headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)", "Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            rows = (json.loads(r.read()).get("data") or {}).get("rows") or []
+        cap = lambda x: float(re.sub(r"[^\d.]", "", x.get("marketCap") or "") or 0)  # noqa: E731
+        big = sorted((x for x in rows if cap(x) >= EARNINGS_MIN_CAP), key=cap, reverse=True)[:EARNINGS_PER_DAY]
+        out.append((us, [(x["symbol"], x["name"], EARNINGS_TIME.get(x.get("time"), "시간 미정"),
+                          x.get("epsForecast") or "", cap(x)) for x in big]))
+    return out
+
+
 def _calendar_items(day, cache):
     """Fetch the weekly calendar; this host rate-limits hard (429), so fall back to the last
     successful copy kept in `cache` (persisted in state.json) while it still covers `day`."""
@@ -229,7 +257,8 @@ def snapshot(day, cache=None, meetings=None):
     data = {}
     cache = cache if cache is not None else {}
     for key, fn in (("korea", korea), ("yields", treasury_yields), ("fx", fx), ("world", world), ("commodities", commodities),
-                    ("banks", lambda d: central_banks(d, meetings)), ("headlines", headlines), ("calendar", lambda d: calendar(d, cache))):
+                    ("banks", lambda d: central_banks(d, meetings)), ("headlines", headlines), ("earnings", earnings),
+                    ("calendar", lambda d: calendar(d, cache))):
         try:
             data[key] = fn(day)
         except Exception as e:  # noqa: BLE001 - best effort per block
@@ -318,3 +347,25 @@ def render(data):
         parts.append(f"<div style='{head}'>CALENDAR · next 3 days, KST, high impact</div>"
                      f"<div style='{card}'><table style='font-size:14px'>{lines}</table></div>")
     return "".join(parts)
+
+
+def render_earnings(data):
+    """EARNINGS · big US companies reporting in the next two sessions (top of the email, in place of the podcasts)."""
+    days = [(us, rows) for us, rows in data.get("earnings") or [] if rows]
+    if not days:
+        return ""
+    card = "background:#fff;border:1px solid #e3e6ea;border-radius:10px;padding:12px 16px;margin:0 0 10px"
+    head = "font-size:12px;font-weight:700;letter-spacing:.06em;color:#6b7280;margin:0 0 6px"
+    blocks = ""
+    for us, rows in days:
+        lines = "".join(
+            f"<tr><td style='padding:4px 10px 4px 0;vertical-align:top;white-space:nowrap'>"
+            f"<a style='color:#111;text-decoration:none;font-weight:700' href='https://www.nasdaq.com/market-activity/stocks/{escape(sym.lower())}/earnings'>{escape(sym)}</a></td>"
+            f"<td style='padding:4px 0'>{escape(name)}<br><span style='font-size:12px;color:#6b7280'>{escape(when)}"
+            f"{' · EPS 예상 ' + escape(eps) if eps else ''} · 시총 ${cap / 1e9:,.0f}B</span></td></tr>"
+            for sym, name, when, eps, cap in rows
+        )
+        blocks += (f"<div style='font-size:13px;font-weight:700;margin:6px 0 2px'>{us.month}/{us.day} ({WEEK_KO[us.weekday()]}) 미국</div>"
+                   f"<table style='width:100%;font-size:14px;border-collapse:collapse'>{lines}</table>")
+    return (f"<div style='{head}'>EARNINGS · 미국 주요 기업 실적 발표</div><div style='{card}'>{blocks}"
+            "<div style='font-size:11px;color:#9ca3af;margin-top:6px'>시가총액 $20B 이상, 날짜는 미국 기준</div></div>")

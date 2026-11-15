@@ -13,7 +13,7 @@ import ssl
 import time
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from email.message import EmailMessage
 from email.utils import format_datetime, parsedate_to_datetime
 import re
@@ -22,6 +22,7 @@ from pathlib import Path
 
 import indicators
 import cards
+import news_english
 import portfolio
 import reports
 from sources import ARTICLES, BASE_URL, FEED_DAYS, MAX_MINUTES, MEETINGS, RECIPIENT, REPORTS, SCHEDULE, SOURCES
@@ -150,38 +151,95 @@ def fetch_articles(rss):
     return out
 
 
+# Not a story to read: live blogs, video/audio, quizzes, galleries, newsletters
+SKIP_TITLE = re.compile(r"\blive\b|as it happened|\bvideo\b|\bwatch:|\bquiz\b|in pictures|newsletter|podcast|crossword", re.I)
+SKIP_LINK = re.compile(r"/live/|/videos?/|/audio/|/sounds/|/av/|/gallery/|/picture/|/commentisfree/", re.I)
+OPINION_TITLE = re.compile(r" \| [A-Z][\w'’.-]+( [A-Z][\w'’.-]+)+$")  # Guardian columns: "Headline | Author Name"
+BUSINESS_LINK = re.compile(r"/(business|money|economy|markets)/", re.I)
+STOPWORDS = {"says", "said", "with", "from", "that", "this", "will", "have", "over", "after", "into", "about", "what",
+             "their", "they", "more", "than", "were", "been", "amid", "first", "year", "years", "news", "could", "would"}
+FRESH_HOURS = 36
+# Importance signal only (never linked): a top story counts once per feed below that runs the same story
+SIGNAL_FEEDS = {
+    "top": ["https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en", "https://news.google.com/rss?hl=en-GB&gl=GB&ceid=GB:en"],
+    "business": ["https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-US&gl=US&ceid=US:en",
+                 "https://www.cnbc.com/id/100003114/device/rss/rss.html"],
+}
+
+
+def _words(title):
+    title = re.sub(r" - [^-]+$", "", title)  # Google News appends " - Publisher"
+    return {w for w in re.findall(r"[a-z]{4,}", title.lower()) if w not in STOPWORDS}
+
+
+def _same_story(a, b):
+    return len(_words(a) & _words(b)) >= 2
+
+
 def build_articles(day, state):
-    """One unseen article per section, rotating through that section's outlets (next outlet if one fails)."""
+    """One article per section: the most important unseen story, not the newest.
+
+    Importance = how many other outlets in the section run the same story (plus Google News US/UK top stories for
+    top news, Google News Business and CNBC for business), then the outlet's own placement in its feed. Live
+    blogs, video, quizzes, opinion columns and items older than 36 h are skipped. Top news draws on both the front pages and the world desks. Business is picked first so top news can exclude business stories and the same story; environment
+    then excludes both. Shown in config order with top news first.
+    """
     cache = state.setdefault("articles", {})
     if str(day) in cache:
         return cache[str(day)]
     seen = set(state.setdefault("articles_used", []))
-    picks = []
-    sections = {}
+    sections, feeds = {}, {}
     for src in ARTICLES:
         sections.setdefault(src["section"], []).append(src)
-    for _, outlets in sorted(sections.items(), key=lambda kv: kv[0] != "top"):  # top news first
-        n = len(outlets)
-        for j in range(n):
-            src = outlets[(day.toordinal() + j) % n]
+        try:
+            feeds[src["key"]] = fetch_articles(src["rss"])
+        except Exception as e:  # noqa: BLE001 - one dead outlet must not break the whole email
+            print(f"  (article source {src['key']} failed: {e})")
+    send_time = datetime(day.year, day.month, day.day, 6, tzinfo=indicators.KST)
+    business_links = {a["link"] for src in sections.get("business", []) for a in feeds.get(src["key"], [])}
+    signals = {}
+    for name, urls in SIGNAL_FEEDS.items():
+        for url in urls:
             try:
-                pool = [a for a in fetch_articles(src["rss"]) if a["guid"] not in seen]
-            except Exception as e:  # noqa: BLE001 - one dead outlet must not break the whole email
-                print(f"  (article source {src['key']} failed: {e})")
-                continue
-            pool.sort(key=lambda a: a["pub"].timestamp() if a["pub"] else 0, reverse=True)
-            if pool:
-                a = pool[0]
-                seen.add(a["guid"])
-                picks.append({"label": src["label"], **{k: a[k] for k in ("guid", "title", "link", "summary")}})
-                break
+                signals.setdefault(name, []).append([a["title"] for a in fetch_articles(url)[:20]])
+            except Exception as e:  # noqa: BLE001 - signal only
+                print(f"  (signal feed failed: {url[:40]}: {e})")
+
+    def choose(name, avoid):
+        outlets = sections[name]
+        lead = outlets[day.toordinal() % len(outlets)]["key"]  # ties go to the day's outlet, for variety
+        cands = []
+        for src in outlets:
+            for rank, a in enumerate(feeds.get(src["key"], [])):
+                if a["guid"] in seen or SKIP_TITLE.search(a["title"]) or SKIP_LINK.search(a["link"]) or OPINION_TITLE.search(a["title"]):
+                    continue
+                if any(_same_story(a["title"], t) for t in avoid):
+                    continue
+                if name == "top" and (a["link"] in business_links or BUSINESS_LINK.search(a["link"])):
+                    continue
+                fresh = a["pub"] is None or send_time - timedelta(hours=FRESH_HOURS) <= a["pub"] <= send_time + timedelta(hours=6)
+                others = [[b["title"] for b in feeds.get(o["key"], [])[:20]] for o in outlets if o["key"] != src["key"]]
+                others += signals.get(name, [])
+                coverage = sum(any(_same_story(a["title"], t) for t in titles) for titles in others)
+                cands.append(((not fresh, -coverage, rank, src["key"] != lead), src, a))
+        if not cands:
+            return None
+        _, src, a = min(cands, key=lambda c: c[0])
+        seen.add(a["guid"])
+        return {"label": src["label"], **{k: a[k] for k in ("guid", "title", "link", "summary")}}
+
+    chosen = {}
+    for name in sorted(sections, key=lambda n: (n != "business", n != "top")):  # business, top, then the rest
+        if pick := choose(name, [c["title"] for c in chosen.values()]):
+            chosen[name] = pick
+    picks = [chosen[n] for n in sorted(sections, key=lambda n: n != "top") if n in chosen]  # top news first
     state["articles_used"] = sorted(seen)[-500:]
     cache[str(day)] = picks
     return picks
 
 
 def render_email(queue, articles, day, markets_html="", reports_html="", cards_html="", weekly_html="", global_html="",
-                 portfolio_html=""):
+                 portfolio_html="", earnings_html=""):
     total = sum(e["minutes"] or 0 for e in queue)
     card = "background:#fff;border:1px solid #e3e6ea;border-radius:10px;padding:14px 16px;margin:0 0 10px"
     tag = "display:inline-block;font-size:11px;font-weight:600;color:#fff;background:#2f6fed;border-radius:4px;padding:2px 7px"
@@ -208,11 +266,12 @@ def render_email(queue, articles, day, markets_html="", reports_html="", cards_h
         "<div style='max-width:600px;margin:0 auto;background:#f4f6f8;padding:18px;"
         "font-family:Segoe UI,Arial,sans-serif;color:#111'>"
         f"<div style='font-size:20px;font-weight:700'>Daily Study</div>"
-        f"<div style='font-size:13px;color:#6b7280;margin:2px 0 16px'>{day} · listening about {total} min</div>"
+        f"<div style='font-size:13px;color:#6b7280;margin:2px 0 16px'>{day}</div>"
         f"{weekly_html}"
-        "<div style='font-size:12px;font-weight:700;letter-spacing:.06em;color:#6b7280;margin:0 0 6px'>LISTEN</div>"
-        f"{listen}"
-        "<div style='font-size:12px;font-weight:700;letter-spacing:.06em;color:#6b7280;margin:16px 0 6px'>READ</div>"
+        f"{earnings_html}"
+        + (("<div style='font-size:12px;font-weight:700;letter-spacing:.06em;color:#6b7280;margin:16px 0 6px'>LISTEN"
+            f" · about {total} min</div>{listen}") if queue else "")
+        + "<div style='font-size:12px;font-weight:700;letter-spacing:.06em;color:#6b7280;margin:16px 0 6px'>READ</div>"
         f"{read or '<div style=color:#6b7280>No new articles today.</div>'}"
         f"{cards_html}"
         f"{reports_html}"
@@ -220,8 +279,7 @@ def render_email(queue, articles, day, markets_html="", reports_html="", cards_h
         f"{markets_html}"
         f"{portfolio_html}"
         "<div style='font-size:12px;color:#6b7280;margin-top:14px;line-height:1.5'>"
-        "Tip: listen once without the transcript, then replay the hardest part. "
-        "While reading, note 3 phrases you could reuse in a meeting or presentation.</div></div>"
+        "Tip: while reading, note 3 phrases you could reuse in a meeting or presentation.</div></div>"
     )
 
 
@@ -282,14 +340,17 @@ def main():
     for old in sorted(hist)[:-21]:
         del hist[old]
     cards.write_study_page()
-    cards_html = cards.render_english(cards.english(day), day) + cards.render_japanese(cards.japanese(day), day)
+    news_en = news_english.pick(day, state, articles, markets.get("headlines") or [])
+    cards_html = (cards.render_english(cards.english(day), day) + news_english.render(news_en)
+                  + cards.render_japanese(cards.japanese(day), day))
     weekly_html = cards.render_weekly(state, day) if day.weekday() == 6 else ""
     global_html = indicators.render_global(markets, reports.render(korea, "overnight"))
     parts = (queue, articles, day, indicators.render(markets), reports.render(korea), cards_html, weekly_html, global_html)
-    html = render_email(*parts)
+    earnings_html = indicators.render_earnings(markets)
+    html = render_email(*parts, earnings_html=earnings_html)
     # Portfolio buy candidates go only into the owner's copy (never to EXTRA_RECIPIENTS, never printed: public repo)
     mine_html = portfolio.render(portfolio.load(day))
-    html_me = render_email(*parts, portfolio_html=mine_html) if mine_html else html
+    html_me = render_email(*parts, portfolio_html=mine_html, earnings_html=earnings_html) if mine_html else html
     print(f"  portfolio section: {'included (owner only)' if mine_html else 'none'}")
     OUT.mkdir(exist_ok=True)
     (OUT / "email.html").write_text(html_me, encoding="utf-8")

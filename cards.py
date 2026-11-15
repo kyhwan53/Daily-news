@@ -174,6 +174,9 @@ def render_weekly(state, day):
     week = [start + timedelta(days=i) for i in range((day - start).days + 1)]
     if week:
         en = "".join(f"<li style='{li}'><b>{escape(english(d)['en'])}</b> — {escape(english(d)['ko'])}</li>" for d in week)
+        news = state.get("news_english", {})
+        en += "".join(f"<li style='{li}'><b>{escape(x['en'])}</b> — {escape(x['ko'])} <span style='color:#6b7280'>(기사 속)</span></li>"
+                      for d in days for x in news.get(d, []))
         jp = " ".join(f"{k}({r})" for d in week for _, k, r in kana(d))
         parts.append(f"<div style='{sub}'>이번 주 업무 영어</div><ul style='font-size:13px;margin:0;padding-left:18px'>{en}</ul>")
         parts.append(f"<div style='{sub}'>이번 주 일본어 글자</div><div style='font-size:15px'>{escape(jp)}</div>")

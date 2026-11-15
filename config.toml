@@ -92,6 +92,24 @@ label = "Guardian Top Stories"
 rss = "https://www.theguardian.com/international/rss"
 
 [[article]]
+key = "bbc_world"
+section = "top"
+label = "BBC World"
+rss = "https://feeds.bbci.co.uk/news/world/rss.xml"
+
+[[article]]
+key = "guardian_world"
+section = "top"
+label = "Guardian World"
+rss = "https://www.theguardian.com/world/rss"
+
+[[article]]
+key = "npr_world"
+section = "top"
+label = "NPR World"
+rss = "https://feeds.npr.org/1004/rss.xml"
+
+[[article]]
 key = "bbc_environment"
 section = "environment"
 label = "BBC Science & Environment"
@@ -154,14 +172,16 @@ fomc = ["2026-01-28", "2026-03-18", "2026-04-29", "2026-06-17", "2026-07-29", "2
 bok = []   # 한국은행 금통위 통화정책방향 결정일 (한국은행 홈페이지 > 통화정책 > 금융통화위원회 일정)
 
 # --- 요일별 편성 (위에서 정의한 key 사용, 순서대로 재생) ---
+# 2026-11-15부터 메일에서 팟캐스트를 뺐습니다(빈 목록 = 듣기 칸 없음). 다시 넣으려면 아래에 key를 적으면 됩니다.
+# 예전 편성: mon biz,aee / tue easy,talk / wed biz,talk / thu easy,aee / fri biz,talk / sat easy,lifekit / sun biz,lifekit
 [schedule]
-mon = ["biz", "aee"]
-tue = ["easy", "talk"]
-wed = ["biz", "talk"]
-thu = ["easy", "aee"]
-fri = ["biz", "talk"]
-sat = ["easy", "lifekit"]
-sun = ["biz", "lifekit"]
+mon = []
+tue = []
+wed = []
+thu = []
+fri = []
+sat = []
+sun = []
 
 # ===== 부동산 주간 브리핑 (별도 메일: build_estate.py, 매주 금요일) =====
 # 뉴스는 Google News RSS 검색(무료, 키 없음)으로 모읍니다. 제목/언론사/링크만 사용합니다.

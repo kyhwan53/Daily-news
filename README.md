@@ -16,6 +16,7 @@
 | `build_daily.py` | 오늘의 큐 선정 → `docs/feed.xml` 생성 → 메일 HTML 생성/발송 |
 | `cards.py` | 업무 영어 표현·일본어 0단계 카드(하루 한 칸씩) + 일요일 주간 정리 |
 | `templates/study.html` | 복습 페이지 틀. 매일 실행 때 카드 데이터를 넣어 `docs/study.html`로 게시 (메일의 "어제 표현 / 모두 보기" 링크) |
+| `news_english.py` | 기사 속 업무 영어: `content/news_english.toml`의 표현 중 그날 기사·헤드라인에 실제로 나온 것을 원문 문장과 함께 하루 최대 2개 |
 | `content/*.toml` | 카드 내용: 업무 영어 표현(`business_english.toml`), 가나·여행 표현(`japanese.toml`). 직접 추가 가능 |
 | `reports.py` | 국내 리포트(네이버 증권 리서치의 증권사 리포트, 한국은행 RSS) 선정 → 메일 섹션 |
 | `manage.py` | 소스 추가/삭제/점검 CLI |
@@ -106,7 +107,7 @@ python manage.py add <key> "<이름>" <RSS주소> --mode newest   # newest | old
 python manage.py remove <key>
 python manage.py schedule mon biz,aee,jp
 ```
-외신 기사(`[[article]]`)는 `section`(top / business / environment)마다 하루 1건씩, 같은 section의 매체를 날마다 돌려 가며 고릅니다. 한 매체가 실패하면 같은 section의 다음 매체를 씁니다.
+외신 기사(`[[article]]`)는 `section`(top / business / environment)마다 하루 1건, **가장 중요한 기사**를 고릅니다. 중요도는 같은 이야기를 다룬 매체 수(주요 뉴스는 Google News 미국·영국 톱뉴스, 경제는 Google News Business·CNBC도 신호로 사용), 그다음 매체 피드 안의 배치 순서입니다. 실시간 업데이트·영상·퀴즈·칼럼과 36시간 넘은 기사는 제외하고, 주요 뉴스는 경제 기사나 경제와 같은 이야기를 피합니다.
 잘못된 설정은 저장 전에 검증되어 오류로 알려주고, `manage.py`는 실패 시 파일을 원복합니다.
 
 ## 현재 소스
@@ -134,3 +135,4 @@ python manage.py schedule mon biz,aee,jp
 - 부동산 브리핑은 Daily study와 별도 메일로, 주 1회(금) 보냄(이미 메일이 길고, 받는 사람을 따로 정할 수 있게). 기사는 제목·언론사·링크만 사용.
   Claude 코멘트는 API 호출 없이 세션에서 수동 갱신(구독 한도 내).
 - 일요일 메일 맨 위에는 주간 정리(지표 1주 변화, 그 주 기사·리포트 링크, 업무 영어·일본어 복습)를 넣음. 지표 기록은 `state.json`의 `markets_history`(21일 보관).
+- 팟캐스트(듣기 큐)는 2026-11-15 메일에서 제외(`[schedule]`을 비움). 그 자리 맨 위에는 미국 주요 기업 실적 발표 일정(Nasdaq 비공식 JSON, 시총 $20B 이상, 다음 2거래일)을 넣음.
