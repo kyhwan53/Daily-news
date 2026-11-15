@@ -4,7 +4,8 @@ Optional: without the MOLIT_API_KEY environment variable (GitHub Secret) the blo
 API: 국토교통부_아파트 매매 실거래가 상세 자료 (getRTMSDataSvcAptTradeDev), one call per district and contract month.
 Prices in the API are in 만원. Contracts must be reported within 30 days, so the latest month fills in slowly.
 Only sizes between min_area and max_area (전용 ㎡) are used. A 12-month trend per area is the median price per ㎡
-converted to an 84㎡ unit, so 59㎡ and 84㎡ deals can be pooled into one line.
+converted to an 84㎡ unit, so 59㎡ and 84㎡ deals can be pooled into one line. The current month is
+left out of the trend: with the 30-day reporting lag its few early deals would distort the scale.
 """
 import hashlib
 import os
@@ -135,7 +136,7 @@ def summarize(deals, cfg, seen, day):
             prev = next((d for d in mine[1:] if abs(d["area"] - last["area"]) < 1), None) if last else None
             watch.append({"label": w["label"], "area": w.get("area"), "last": last, "prev": prev, "n": len(mine)})
         out.append({"label": a["label"], "total": len(near), "new": new[:a.get("show", 3)], "n_new": len(new),
-                    "first": not seen, "watch": watch, "trend": trend(area_all, _months(day, cfg.get("trend_months", 12))),
+                    "first": not seen, "watch": watch, "trend": trend(area_all, _months(day, cfg.get("trend_months", 12) + 1)[1:]),
                     "empty": not any(d["code"] == a["code"] for d in deals)})  # no deal at all: wrong code?
     return out
 
@@ -149,7 +150,7 @@ def snapshot(day, state):
         return None
     key = _key()
     codes = sorted({a["code"] for a in ESTATE_DEALS["area"]})
-    n_months = max(ESTATE_DEALS.get("months", 3), ESTATE_DEALS.get("trend_months", 12))
+    n_months = max(ESTATE_DEALS.get("months", 3), ESTATE_DEALS.get("trend_months", 12) + 1)  # +1: this month (not in the trend)
     deals = []
     for code in codes:
         try:
