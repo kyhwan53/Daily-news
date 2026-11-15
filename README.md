@@ -1,4 +1,4 @@
-# Daily Language Queue
+# Daily news
 
 매일 아침 **영어 리스닝(비즈니스/환경공학 R&D 중심) + 외신 읽기 + 국내 리포트 + 시장 지표**를 메일로 보내고,
 같은 에피소드를 모은 **개인 팟캐스트 피드**(`docs/feed.xml`)를 GitHub Pages로 게시하는 도구입니다.
@@ -24,15 +24,15 @@
 | `state.json` | 이미 쓴 에피소드/기사 기록 (git 제외, 로컬 전용) |
 | `out/email.html` | 마지막으로 만든 메일 미리보기 (git 제외) |
 
-피드 주소: `https://kyhwan53.github.io/language_learning/feed.xml`
+피드 주소: `https://kyhwan53.github.io/Daily-news/feed.xml`
 
 ## 새 컴퓨터에서 이식하기
 1. **Python 3.11+ 설치** (표준 라이브러리만 사용, `pip install` 불필요). Windows는 python.org 설치본 권장.
    Microsoft Store 별칭(`WindowsApps\python.exe`)은 동작하지 않을 수 있으니 실제 경로로 실행하세요.
 2. **Git 설치** 후 클론:
    ```
-   git clone https://github.com/kyhwan53/language_learning.git
-   cd language_learning
+   git clone https://github.com/kyhwan53/Daily-news.git
+   cd Daily-news
    ```
    첫 `git push` 때 브라우저 로그인 창이 뜹니다 (GitHub `kyhwan53` 계정).
 3. **Gmail 앱 비밀번호를 환경변수로 설정** (파일에 저장 금지, 공개 저장소임):
@@ -55,7 +55,7 @@
    있으면 06:00에 portfolio_managing을 매수 후보 모드로 실행해 결과를 받아 본인 메일에만 넣습니다(약 1분 추가). 없거나 실패하면 그 섹션만 빠집니다.
    GitHub 예약 실행은 2~6시간씩 늦게 시작하므로, 실제 06:00 발송은 외부 스케줄러(cron-job.org, 무료)가 05:50 KST에
    API로 `scheduled=true` 실행을 요청해서 맞춥니다. 내장 cron은 예비용이고, 그날 이미 보냈으면 건너뜁니다(`state.json`의 `sent`).
-   수동 실행: 저장소 Actions 탭 → Daily language plan → Run workflow (체크박스를 비워 두면 즉시 발송).
+   수동 실행: 저장소 Actions 탭 → Daily news → Run workflow (체크박스를 비워 두면 즉시 발송).
    실행 결과(`docs/feed.xml`, `state.json`)는 봇이 저장소에 commit합니다.
 
 > **로컬에서 `--send`로 직접 보내지 마세요.** Actions가 `state.json`을 저장소에서 관리하므로, 로컬에서 실행하면 상태가 어긋납니다.

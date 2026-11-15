@@ -23,7 +23,7 @@ from email.utils import parsedate_to_datetime
 from html import escape, unescape
 
 KST = timezone(timedelta(hours=9))
-UA = {"User-Agent": "language-learning-queue/1.0"}
+UA = {"User-Agent": "daily-news/1.0"}
 CAL_CURRENCIES = {"USD", "EUR", "GBP", "JPY", "CNY"}
 WORLD = [(".INX", "S&P 500"), (".IXIC", "나스닥"), (".DJI", "다우"), (".STOXX50E", "유로스톡스 50"),
          (".N225", "니케이 225"), (".SSEC", "상해종합"), (".HSI", "항셍")]

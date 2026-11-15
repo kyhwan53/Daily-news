@@ -1,4 +1,4 @@
-name: Daily language plan
+name: Daily news
 
 on:
   schedule:

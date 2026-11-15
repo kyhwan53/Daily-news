@@ -14,7 +14,7 @@ from datetime import date, timedelta
 from email.utils import parsedate_to_datetime
 from html import escape
 
-UA = {"User-Agent": "Mozilla/5.0 (language-learning-queue/1.0)"}
+UA = {"User-Agent": "Mozilla/5.0 (daily-news/1.0)"}
 NAVER_API = "https://stock.naver.com/api/stockSecurity/researches/v2/{}?size=30"
 NAVER_PAGE = "https://stock.naver.com/research/{}/{}"
 RECENT_DAYS = 3        # only reports written within this many days are candidates

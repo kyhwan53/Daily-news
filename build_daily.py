@@ -34,7 +34,7 @@ ITUNES = "{http://www.itunes.com/dtds/podcast-1.0.dtd}"
 
 
 def fetch_episodes(rss):
-    req = urllib.request.Request(rss, headers={"User-Agent": "language-learning-queue/1.0"})
+    req = urllib.request.Request(rss, headers={"User-Agent": "daily-news/1.0"})
     with urllib.request.urlopen(req, timeout=30) as resp:
         root = ET.fromstring(resp.read())
     eps = []
@@ -108,7 +108,7 @@ def write_feed(state, today):
     ET.register_namespace("itunes", ITUNES[1:-1])
     rss = ET.Element("rss", version="2.0")
     ch = ET.SubElement(rss, "channel")
-    ET.SubElement(ch, "title").text = "My Daily Language Queue"
+    ET.SubElement(ch, "title").text = "Daily news"
     ET.SubElement(ch, "link").text = BASE_URL
     ET.SubElement(ch, "language").text = "en"
     ET.SubElement(ch, "description").text = "Personal daily listening queue (links to original podcasts)."
@@ -129,7 +129,7 @@ def write_feed(state, today):
 
 
 def fetch_articles(rss):
-    req = urllib.request.Request(rss, headers={"User-Agent": "language-learning-queue/1.0"})
+    req = urllib.request.Request(rss, headers={"User-Agent": "daily-news/1.0"})
     with urllib.request.urlopen(req, timeout=30) as resp:
         root = ET.fromstring(resp.read())
     out = []

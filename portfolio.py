@@ -40,7 +40,7 @@ def render(d) -> str:
         if os.environ.get("PORTFOLIO_FETCH") == "failure":
             return (f"<div style='{head}'>PORTFOLIO · 알파 매수 후보</div>"
                     f"<div style='{card}'><span style='{sub}'>오늘은 후보를 가져오지 못했습니다 "
-                    f"(language_learning Actions 로그의 Fetch portfolio 단계 확인).</span></div>")
+                    f"(Daily-news Actions 로그의 Fetch portfolio 단계 확인).</span></div>")
         return ""
     rows = []
     for i, w in enumerate(d["items"], 1):
