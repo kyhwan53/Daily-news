@@ -3,8 +3,12 @@
 Optional: without the MOLIT_API_KEY environment variable (GitHub Secret) the block is simply left out.
 API: 국토교통부_아파트 매매 실거래가 상세 자료 (getRTMSDataSvcAptTradeDev), one call per district and contract month.
 Prices in the API are in 만원. Contracts must be reported within 30 days, so the latest month fills in slowly.
+Only sizes between min_area and max_area (전용 ㎡) are used. A 12-month trend per area is the median price per ㎡
+converted to an 84㎡ unit, so 59㎡ and 84㎡ deals can be pooled into one line.
 """
+import hashlib
 import os
+import statistics
 import time
 import urllib.parse
 import urllib.request
@@ -92,52 +96,78 @@ def _area_ok(d, area):
     return area is None or abs(d["area"] - area) < 3
 
 
-def summarize(deals, cfg, seen):
-    """Pure part (testable without the API): per area, new deals in its dongs + one line per watched complex."""
-    live = [d for d in deals if not d["cancel"]]
+def _hid(d):
+    return hashlib.sha1(d["id"].encode()).hexdigest()[:12]
+
+
+def _match(w, d):
+    return _norm(w["apt"]) == _norm(d["apt"]) if w.get("exact") else _norm(w["apt"]) in _norm(d["apt"])
+
+
+def trend(deals, months):
+    """[{ym, v, n}] oldest first: median price per ㎡ × 84 for each contract month (v None when nothing traded)."""
+    out = []
+    for ym in reversed(months):
+        per = [d["price"] / d["area"] for d in deals if d["date"][:7].replace("-", "") == ym]
+        out.append({"ym": f"{ym[:4]}-{ym[4:]}", "v": round(statistics.median(per) * 84) if per else None, "n": len(per)})
+    return out
+
+
+def summarize(deals, cfg, seen, day):
+    """Pure part (testable without the API): per area, new deals in its dongs, watched complexes and the trend."""
+    lo, hi = cfg.get("min_area", 0), cfg.get("max_area", 1000)
+    recent = set(_months(day, cfg.get("months", 3)))
+    live = [d for d in deals if not d["cancel"] and lo <= d["area"] <= hi]
     out = []
     for a in cfg.get("area", []):
         dongs = a.get("dongs", [])
-        near = [d for d in live if d["code"] == a["code"] and (not dongs or any(d["dong"].startswith(x) for x in dongs))]
-        new = sorted((d for d in near if d["id"] not in seen), key=lambda d: (d["date"], d["price"]), reverse=True)
+        district = [d for d in live if d["code"] == a["code"] and d["date"][:7].replace("-", "") in recent]
+        area_all = [d for d in live if d["code"] == a["code"] and (not dongs or any(d["dong"].startswith(x) for x in dongs))]
+        near = [d for d in area_all if d["date"][:7].replace("-", "") in recent]
+        new = sorted((d for d in near if _hid(d) not in seen), key=lambda d: (d["date"], d["price"]), reverse=True)
         watch = []
         for w in a.get("watch", []):
-            named = sorted((d for d in near if _norm(w["apt"]) in _norm(d["apt"])), key=lambda d: d["date"], reverse=True)
-            # the chosen size if it traded, otherwise any size (shown with its real area)
+            # by name: anywhere in the district, not only the dongs above
+            named = sorted((d for d in district if _match(w, d)), key=lambda d: d["date"], reverse=True)
+            # the chosen size if it traded, otherwise another size in the range (shown with its real area)
             mine = [d for d in named if _area_ok(d, w.get("area"))] or named
             last = mine[0] if mine else None
             prev = next((d for d in mine[1:] if abs(d["area"] - last["area"]) < 1), None) if last else None
             watch.append({"label": w["label"], "area": w.get("area"), "last": last, "prev": prev, "n": len(mine)})
         out.append({"label": a["label"], "total": len(near), "new": new[:a.get("show", 3)], "n_new": len(new),
-                    "first": not seen, "watch": watch,
+                    "first": not seen, "watch": watch, "trend": trend(area_all, _months(day, cfg.get("trend_months", 12))),
                     "empty": not any(d["code"] == a["code"] for d in deals)})  # no deal at all: wrong code?
     return out
 
 
 def snapshot(day, state):
-    """Today's deal summary (cached per day), or None when there is no key or the API fails."""
+    """This run's deal summary (cached per day), or None when there is no key or the API fails."""
     cache = state.setdefault("estate_deals", {})
-    if str(day) in cache:
+    if str(day) in cache and "areas" in cache[str(day)] and "trend" in cache[str(day)]["areas"][0]:
         return cache[str(day)]
     if not os.environ.get("MOLIT_API_KEY") or not ESTATE_DEALS.get("area"):
         return None
     key = _key()
     codes = sorted({a["code"] for a in ESTATE_DEALS["area"]})
+    n_months = max(ESTATE_DEALS.get("months", 3), ESTATE_DEALS.get("trend_months", 12))
     deals = []
     for code in codes:
         try:
-            for ym in _months(day, ESTATE_DEALS.get("months", 3)):
+            for ym in _months(day, n_months):
                 deals += _fetch(code, ym, key)
         except Exception as e:  # noqa: BLE001 - that district is shown as empty, the rest still go out
             print(f"  (MOLIT deals for {code} failed: {type(e).__name__}: {e})")
     if not deals:
         return None
-    seen = set(state.get("estate_deals_seen", []))
-    out = {"areas": summarize(deals, ESTATE_DEALS, seen), "months": ESTATE_DEALS.get("months", 3)}
-    state["estate_deals_seen"] = sorted(seen | {d["id"] for d in deals})[-8000:]
+    state.pop("estate_deals_seen", None)          # old format (full ids)
+    seen = set(state.get("estate_deals_seen2", []))
+    out = {"areas": summarize(deals, ESTATE_DEALS, seen, day), "months": ESTATE_DEALS.get("months", 3)}
+    recent = set(_months(day, ESTATE_DEALS.get("months", 3)))
+    # only deals inside the recent window can still be "new" later, so only they are remembered
+    state["estate_deals_seen2"] = sorted({_hid(d) for d in deals if d["date"][:7].replace("-", "") in recent})
     cache.clear()
     cache[str(day)] = out
-    print(f"  MOLIT: {len(deals)} deals from {len(codes)} districts")
+    print(f"  MOLIT: {len(deals)} deals from {len(codes)} districts, {n_months} months")
     return out
 
 

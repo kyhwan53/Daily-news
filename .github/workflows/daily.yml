@@ -87,7 +87,7 @@ jobs:
           EXTRA_RECIPIENTS: ${{ secrets.EXTRA_RECIPIENTS }}   # optional, comma-separated
           PORTFOLIO_FETCH: ${{ steps.portfolio.outcome }}     # 'failure' -> short notice in the owner's copy
         run: python build_daily.py --send ${{ (github.event_name == 'schedule' || inputs.scheduled) && '--skip-if-sent' || '' }}
-      - name: Real estate briefing (separate email)
+      - name: Real estate briefing (weekly, separate email)
         # Runs even if the daily email failed, and its own failure never touches the daily email.
         if: always()
         continue-on-error: true
@@ -96,7 +96,9 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           ESTATE_RECIPIENTS: ${{ secrets.ESTATE_RECIPIENTS }}   # optional, comma-separated
           MOLIT_API_KEY: ${{ secrets.MOLIT_API_KEY }}           # optional: data.go.kr key for the deal-price block
-        run: python build_estate.py --send ${{ (github.event_name == 'schedule' || inputs.scheduled) && '--skip-if-sent' || '' }}
+        # Weekly: build_estate.py only sends on [estate_settings].weekday (Fri), once per week.
+        # estate_only (manual test) forces a send on any day.
+        run: python build_estate.py --send ${{ inputs.estate_only && '--force' || '' }}
       - name: Commit feed and state
         if: always()   # keep the feed/state even if the email step failed
         run: |

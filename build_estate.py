@@ -1,10 +1,12 @@
-"""The separate morning email "부동산 브리핑": Claude's note, real estate news, optional MOLIT deal prices,
-and a daily study card. Runs after build_daily.py in the same workflow and shares state.json.
+"""The weekly email "부동산 주간 브리핑": Claude's note, a week of real estate news, optional MOLIT deal prices
+with a 12-month trend chart, and study cards. Runs after build_daily.py in the same workflow every day and
+shares state.json, but only sends on [estate_settings].weekday (retrying until Sunday if that run failed).
 
 Usage:
-    python build_estate.py              # dry run: writes out/estate.html
-    python build_estate.py --send       # also sends (GMAIL_USER / GMAIL_APP_PASSWORD; extra: ESTATE_RECIPIENTS)
-    python build_estate.py --date 2026-11-15
+    python build_estate.py                  # dry run: writes out/estate.html (any day)
+    python build_estate.py --send           # sends if today is the send day and this week's email has not gone out
+    python build_estate.py --send --force   # sends now regardless (manual test)
+    python build_estate.py --date 2026-11-20
 """
 import argparse
 import json
@@ -19,11 +21,14 @@ import estate
 import estate_deals
 import indicators
 from build_daily import OUT, STATE, load_state, send_email
-from sources import CARDS_START, ESTATE
+from sources import CARDS_START, ESTATE, ESTATE_SETTINGS
 
 ROOT = Path(__file__).parent
 CONTENT = ROOT / "content"
 NOTE_STALE_DAYS = 14
+DAYS = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
+PLOT_H = 64          # trend chart plot height (px)
+DOT = 8
 
 HEAD = "font-size:12px;font-weight:700;letter-spacing:.06em;color:#6b7280;margin:16px 0 6px"
 CARD = "background:#fff;border:1px solid #e3e6ea;border-radius:10px;padding:14px 16px;margin:0 0 10px"
@@ -40,9 +45,12 @@ def _toml(name):
         return tomllib.load(f)
 
 
-def study_card(day):
+def study_cards(day):
+    """This week's cards: `cards` per email, advancing one email per week."""
     cards = _toml("real_estate.toml")["card"]
-    return cards[max((day - date.fromisoformat(CARDS_START)).days, 0) % len(cards)]
+    k = ESTATE_SETTINGS.get("cards", 2)
+    n = max((day - date.fromisoformat(CARDS_START)).days, 0) // 7 * k
+    return [cards[(n + i) % len(cards)] for i in range(k)]
 
 
 def render_note(day):
@@ -108,19 +116,66 @@ def _watch_row(w):
             f"<td style='text-align:right;padding-left:8px;font-size:12.5px;border-top:1px solid #eef0f2'>{chg}</td></tr>")
 
 
-def render_deals(snap):
+def _eok(v):
+    return f"{v / 10000:.1f}억"
+
+
+def render_trend(trend, day):
+    """12-month dot chart in plain HTML tables (email clients run no JS / SVG / positioning).
+    Dots, not bars: prices sit on a zoomed scale, and bars would have to start at zero."""
+    cur = f"{day.year}-{day.month:02d}"                    # this month: still being reported
+    pts = [p for p in trend if p["v"]]
+    full = [p for p in pts if p["ym"] != cur]
+    if len(full) < 3:
+        return ""
+    hi, lo = max(p["v"] for p in pts), min(p["v"] for p in pts)
+    span = (hi - lo) or 1
+    cells, labels = [], []
+    for i, p in enumerate(trend):
+        partial = p["ym"] == cur
+        dot = ""
+        if p["v"]:
+            gap = round((hi - p["v"]) / span * (PLOT_H - DOT)) if hi != lo else (PLOT_H - DOT) // 2
+            fill = "#fff" if partial else ACCENT
+            dot = (f"<div style='height:{gap}px;font-size:0;line-height:0'></div>"
+                   f"<div title='{p['ym']} · {_eok(p['v'])} · {p['n']}건{' (집계 중)' if partial else ''}' "
+                   f"style='width:{DOT}px;height:{DOT}px;margin:0 auto;border-radius:50%;background:{fill};"
+                   f"border:2px solid {ACCENT};box-sizing:border-box;font-size:0;line-height:0'></div>")
+        cells.append(f"<td style='height:{PLOT_H}px;vertical-align:top;padding:0;border-bottom:1px solid #e5e7eb'>{dot}</td>")
+        m = int(p["ym"][5:])
+        show = i == 0 or i == len(trend) - 1 or m in (1, 4, 7, 10)
+        text = (f"{p['ym'][2:4]}.{m}" if (m == 1 or i == 0) else f"{m}월") if show else ""
+        labels.append(f"<td style='font-size:10.5px;color:#9ca3af;text-align:center;padding-top:3px;white-space:nowrap'>{text}</td>")
+    axis = (f"<td rowspan='2' style='width:40px;font-size:10.5px;color:#9ca3af;vertical-align:top;padding-right:4px'>"
+            f"<div style='height:{PLOT_H - 6}px'>{_eok(hi)}</div><div>{_eok(lo)}</div></td>")
+    first, last = full[0], full[-1]
+    chg = (last["v"] / first["v"] - 1) * 100
+    color = "#d93025" if chg >= 0 else "#1a73e8"
+    done = [p for p in trend if p["ym"] != cur]
+    avg = round(sum(p["n"] for p in done) / max(len(done), 1))
+    hollow = " · 빈 점 = 이번 달 집계 중" if trend[-1]["ym"] == cur and trend[-1]["v"] else ""
+    caption = (f"<div style='font-size:12.5px;margin:4px 0 0'>84㎡ 환산 중위가 <b>{_eok(last['v'])}</b>"
+               f" <span style='{SUB}'>({last['ym'][2:].replace('-', '.')})</span> · "
+               f"{first['ym'][2:].replace('-', '.')} 대비 <b style='color:{color}'>{chg:+.1f}%</b>"
+               f" <span style='{SUB}'>· 월평균 {avg}건{hollow}</span></div>")
+    return (f"<table style='width:100%;border-collapse:collapse;table-layout:fixed;margin:4px 0 2px'>"
+            f"<tr>{axis}{''.join(cells)}</tr><tr>{''.join(labels)}</tr></table>{caption}")
+
+
+def render_deals(snap, day):
     """One part per area (영등포 first and with the most rows): new deals in its dongs, then its watched complexes."""
     if not snap or "areas" not in snap:   # "areas" missing: a cache from the old single-area format
         return ""
     months = snap.get("months", 3)
     parts = []
     for i, a in enumerate(snap["areas"]):
-        what = f"최근 {months}개월 계약" if a["first"] else "새로 신고"
+        what = f"최근 {months}개월 계약" if a["first"] else "지난 메일 이후 새로 신고"
         head = (f"<div style='font-size:14px;font-weight:700;margin:{'0' if i == 0 else '16px'} 0 4px'>{escape(a['label'])}"
                 f"<span style='{SUB};font-weight:400'> · {what} {a['n_new']}건 (최근 {months}개월 총 {a['total']}건)</span></div>")
         if a.get("empty"):
             parts.append(head + f"<div style='{SUB}'>거래 자료가 없습니다. config.toml의 시군구 코드를 확인하세요.</div>")
             continue
+        chart = render_trend(a.get("trend", []), day)
         rows = "".join(_deal_row(d, (escape(d["date"][5:].replace("-", "/")), f"{escape(d['apt'])} <span style='{SUB}'>{escape(d['dong'])}</span>",
                                      f"{d['area']:g}㎡ · {escape(d['floor'])}층", estate_deals.won(d["price"]))) for d in a["new"])
         body = (f"<table style='width:100%;font-size:13px;border-collapse:collapse'>{rows}</table>" if rows
@@ -129,8 +184,10 @@ def render_deals(snap):
         if watch:
             body += (f"<div style='font-size:12px;font-weight:700;color:#6b7280;margin:8px 0 2px'>관심 단지</div>"
                      f"<table style='width:100%;font-size:13.5px;border-collapse:collapse'>{watch}</table>")
-        parts.append(head + body)
-    note = f"<div style='{SUB};margin-top:10px'>국토부 실거래가 · 계약 후 30일 내 신고라 최근 거래는 늦게 채워집니다 · 해제 거래 제외</div>"
+        sub = f"<div style='font-size:12px;font-weight:700;color:#6b7280;margin:10px 0 2px'>새로 신고된 거래</div>" if chart else ""
+        parts.append(head + chart + sub + body)
+    note = (f"<div style='{SUB};margin-top:10px;line-height:1.5'>국토부 실거래가 · 전용 59~84㎡형만 · 해제 거래 제외 · "
+            "계약 후 30일 내 신고라 최근 거래는 늦게 채워집니다. 84㎡ 환산 중위가 = 그달 거래의 ㎡당 가격 중앙값 × 84</div>")
     return f"<div style='{HEAD}'>실거래 · 관심 지역 시세</div><div style='{CARD}'>{''.join(parts)}{note}</div>"
 
 
@@ -142,12 +199,16 @@ def _card_link(c):
     return None, None
 
 
+def render_cards(cards):
+    return f"<div style='{HEAD}'>CLAUDE 추천 · 이번 주 투자 공부</div>" + "".join(render_card(c) for c in cards)
+
+
 def render_card(c):
     url, label = _card_link(c)
     more = (f"<div style='margin-top:8px'><a style='{LINK};font-size:13px' href='{escape(url)}'>더 알아보기 · {escape(label)} →</a></div>"
             if url else "")
     lines = "".join(f"<li style='margin:0 0 4px'>{escape(x)}</li>" for x in c["body"])
-    return (f"<div style='{HEAD}'>CLAUDE 추천 · 오늘의 투자 공부</div><div style='{CARD}'>"
+    return (f"<div style='{CARD}'>"
             f"<span style='display:inline-block;font-size:11px;font-weight:600;color:#fff;background:{ACCENT};border-radius:4px;padding:2px 7px'>"
             f"{escape(c['tag'])}</span><div style='font-size:16px;font-weight:700;margin:8px 0 6px'>{escape(c['title'])}</div>"
             f"<ul style='font-size:13.5px;color:#374151;line-height:1.6;margin:0;padding-left:18px'>{lines}</ul>"
@@ -155,35 +216,19 @@ def render_card(c):
             f"<b>체크</b> · {escape(c['check'])}</div>{more}</div>")
 
 
-def render_weekly(state, day):
-    days = [str(day - timedelta(days=i)) for i in range(7, 0, -1)]  # the past 7 days (today's news is below anyway)
-    parts = []
-    for sec in ESTATE:
-        items = [a for d in days for a in state.get("estate", {}).get(d, {}).get(sec["key"], [])]
-        if items:
-            li = "".join(f"<li style='margin:0 0 3px'><a style='color:#111' href='{escape(a['link'])}'>{escape(a['title'])}</a>"
-                         f" <span style='color:#6b7280'>· {escape(a['date'])}</span></li>" for a in items)
-            parts.append(f"<div style='font-size:13px;font-weight:700;margin:10px 0 4px'>{escape(sec['label'])}</div>"
-                         f"<ul style='font-size:13px;margin:0;padding-left:18px'>{li}</ul>")
-    if not parts:
-        return ""
-    return (f"<div style='{HEAD}'>WEEKLY · 이번 주 부동산 기사 ({escape(days[0][5:])} ~ {escape(days[-1][5:])})</div>"
-            f"<div style='{CARD};border-color:#fcd9a8;background:#fffaf2'>{''.join(parts)}</div>")
-
-
 def render_email(day, state, news, deals):
     blocks = []
     for i, sec in enumerate(ESTATE):
         blocks.append(render_news(sec, news.get(sec["key"], [])))
         if i == 0:
-            blocks.append(render_deals(deals))  # prices right after the 영등포 news
+            blocks.append(render_deals(deals, day))  # prices right after the 영등포 news
     links = " · ".join(f"<a style='{LINK}' href='{u}'>{escape(t)}</a>" for t, u in LINKS)
     return (
         "<div style='max-width:600px;margin:0 auto;background:#f4f6f8;padding:18px;font-family:Segoe UI,Arial,sans-serif;color:#111'>"
-        "<div style='font-size:20px;font-weight:700'>부동산 브리핑</div>"
-        f"<div style='{SUB};font-size:13px;margin:2px 0 16px'>{day} · 영등포역 일대 · 사당/이수 · 동탄2 · 수지 · 수도권 시세 · 투자 체크</div>"
-        f"{render_weekly(state, day) if day.weekday() == 6 else ''}"
-        f"{render_note(day)}{''.join(blocks)}{render_card(study_card(day))}"
+        "<div style='font-size:20px;font-weight:700'>부동산 주간 브리핑</div>"
+        f"<div style='{SUB};font-size:13px;margin:2px 0 16px'>{day - timedelta(days=6):%m/%d} ~ {day:%m/%d} · "
+        "영등포역 일대 · 사당/이수 · 동탄2 · 수도권 시세 · 투자 체크</div>"
+        f"{render_note(day)}{''.join(blocks)}{render_cards(study_cards(day))}"
         f"<div style='font-size:12px;color:#6b7280;margin-top:14px;line-height:1.7'>바로가기: {links}<br>"
         "기사는 Google News 검색 결과의 제목·링크만 사용합니다. 투자 판단의 근거가 아닌 참고용입니다.</div></div>"
     )
@@ -192,15 +237,22 @@ def render_email(day, state, news, deals):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--send", action="store_true")
-    ap.add_argument("--skip-if-sent", action="store_true")
+    ap.add_argument("--skip-if-sent", action="store_true")  # accepted for the workflow; the weekly gate applies anyway
+    ap.add_argument("--force", action="store_true")         # send now whatever the weekday (manual test)
     ap.add_argument("--date", default=str(datetime.now(indicators.KST).date()))
     args = ap.parse_args()
     day = date.fromisoformat(args.date)
 
     state = load_state()
-    if args.skip_if_sent and str(day) in state.get("estate_sent", []):
-        print(f"{day}: real estate email already sent, nothing to do")
-        return
+    if args.send and not args.force:
+        send_wd = DAYS.index(ESTATE_SETTINGS.get("weekday", "fri"))
+        if day.weekday() < send_wd:
+            print(f"{day}: the weekly real estate email goes out on {DAYS[send_wd]}, nothing to do")
+            return
+        week_start = str(day - timedelta(days=day.weekday() - send_wd))   # this week's send day
+        if any(d >= week_start for d in state.get("estate_sent", [])):
+            print(f"{day}: this week's real estate email already went out, nothing to do")
+            return
     news = estate.pick(day, state)
     deals = estate_deals.snapshot(day, state)
     print(f"  deals section: {'included' if deals else 'none (no MOLIT_API_KEY or API failed)'}")
@@ -211,7 +263,7 @@ def main():
     if args.send:
         # Extra recipients only from the ESTATE_RECIPIENTS secret (comma-separated), never from the public config.
         extra = [a.strip() for a in os.environ.get("ESTATE_RECIPIENTS", "").split(",") if a.strip()]
-        send_email(html, day, ["me"] + extra, subject=f"부동산 브리핑 {day}")
+        send_email(html, day, ["me"] + extra, subject=f"부동산 주간 브리핑 {day}")
         state["estate_sent"] = sorted(set(state.get("estate_sent", [])) | {str(day)})[-14:]
         STATE.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"{day}: real estate briefing, {sum(len(v) for v in news.values())} articles")
