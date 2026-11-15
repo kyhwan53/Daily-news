@@ -20,6 +20,11 @@
 | `reports.py` | 국내 리포트(네이버 증권 리서치의 증권사 리포트, 한국은행 RSS) 선정 → 메일 섹션 |
 | `manage.py` | 소스 추가/삭제/점검 CLI |
 | `portfolio.py` | 포트폴리오(비공개 저장소 portfolio_managing)의 알파 매수 후보 상위 10개 → **본인에게 가는 메일에만** 넣는 섹션. 로그·저장소에는 남기지 않음 |
+| `build_estate.py` | **부동산 브리핑**(별도 메일): Claude 코멘트 + 부동산 뉴스 + 실거래(선택) + 투자 공부 카드 → 메일 HTML 생성/발송 |
+| `estate.py` | 부동산 뉴스 선정 (Google News RSS 검색 → 주제 필터 → 같은 사건 묶기 → 보도 매체 수로 순위) |
+| `estate_deals.py` | 국토부 아파트 실거래가(선택, `MOLIT_API_KEY`): 영등포역 인근 새 신고 거래 + 관심 단지 최근 거래 |
+| `content/real_estate.toml` | 주거용 부동산 투자 공부 카드 (하루 1장, Claude 작성, 직접 추가 가능) |
+| `content/estate_note.toml` | Claude의 시장 코멘트 (메일 맨 위). Claude Code에게 "부동산 코멘트 업데이트해줘"로 갱신 |
 | `docs/feed.xml` | GitHub Pages로 게시되는 개인 피드 (안드로이드 AntennaPod 등에서 구독) |
 | `state.json` | 이미 쓴 에피소드/기사 기록 (git 제외, 로컬 전용) |
 | `out/email.html` | 마지막으로 만든 메일 미리보기 (git 제외) |
@@ -71,6 +76,21 @@
 모든 블록은 실패해도 메일이 나가도록 개별 처리됩니다. 경제 일정 서버는 요청 제한(429)이 엄격해서
 마지막 성공 결과를 `state.json`의 `calendar_cache`에 보관하고 실패 시 그것을 씁니다.
 
+## 부동산 브리핑 (`build_estate.py`, 별도 메일 "부동산 브리핑 YYYY-MM-DD")
+Daily study 메일 다음 단계에서 같은 워크플로로 보냅니다(실패해도 Daily study에는 영향 없음, `state.json`의 `estate_sent`로 하루 1회).
+1. **CLAUDE · 이번 주 시장 코멘트**: `content/estate_note.toml`. 유료 API 금지 원칙에 따라 자동 생성하지 않고, Claude Code 세션에서
+   "부동산 코멘트 업데이트해줘"라고 요청하면 최근 기사(`state.json`의 `estate`)와 웹 검색으로 새로 씁니다. 작성 14일이 지나면 메일에 안내가 붙습니다.
+2. **뉴스 3칸** (`config.toml`의 `[[estate]]`): 영등포역 일대 재개발/시세(최근 7일), 수도권 아파트 시세(2일), 투자 체크 · 정책/대출/세금/청약(2일).
+   칸마다 검색어(`queries`)를 모두 Google News RSS로 검색 → 주제어(`topic`)·지역(`must`)·제외어(`exclude`) 필터 →
+   제목이 비슷한 기사를 한 사건으로 묶고 보도 매체 수 + `boost` 단어 + 24시간 이내로 점수 → 상위 `count`개. 최근 10일 안에 나온 사건은 다시 싣지 않습니다.
+3. **실거래 · 시세** (선택): data.go.kr에서 "국토교통부_아파트 매매 실거래가 상세 자료" 활용신청(무료, 보통 즉시 승인) 후
+   GitHub Secret `MOLIT_API_KEY`에 일반 인증키(Encoding/Decoding 아무거나)를 넣으면 생깁니다. 관심 단지·면적은 `[estate_deals]`에서 바꿉니다.
+4. **CLAUDE 추천 · 오늘의 투자 공부**: `content/real_estate.toml` 카드 하루 1장(재개발 단계, 토허제, DSR, 세금, 청약, 매수 실무 등).
+5. 일요일에는 맨 위에 지난 7일 부동산 기사 목록.
+
+미리보기: `python build_estate.py` → `out/estate.html` (발송 안 함, 끝나면 `git checkout state.json`).
+추가 수신자는 GitHub Secret `ESTATE_RECIPIENTS`(쉼표 구분). 기본은 본인(`GMAIL_USER`)에게만 갑니다.
+
 ## 소스 바꾸기
 `config.toml`을 직접 편집하거나 CLI를 씁니다.
 ```
@@ -106,4 +126,6 @@ python manage.py schedule mon biz,aee,jp
 - 국내 리포트 요약은 새로 생성하지 않고(유료 API 금지) 작성자가 붙인 요약문에서 문단별 첫 문장을 원문 순서대로 최대 5줄 뽑아 씀. 증권사 리포트는
   네이버 증권의 비공식 JSON API(`stock.naver.com/api/stockSecurity/researches/v2/...`)라 구조가 바뀌면 해당 섹션만 빠짐.
 - 증권사 리포트는 미국 시장 위주: `prefer` 단어(미국, 연준, FOMC, S&P 등)가 제목에 있는 리포트를 조회수보다 먼저 고름.
+- 부동산 브리핑은 Daily study와 별도 메일로 보냄(이미 메일이 길고, 받는 사람을 따로 정할 수 있게). 기사는 제목·언론사·링크만 사용.
+  Claude 코멘트는 API 호출 없이 세션에서 수동 갱신(구독 한도 내).
 - 일요일 메일 맨 위에는 주간 정리(지표 1주 변화, 그 주 기사·리포트 링크, 업무 영어·일본어 복습)를 넣음. 지표 기록은 `state.json`의 `markets_history`(21일 보관).

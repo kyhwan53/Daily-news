@@ -225,13 +225,13 @@ def render_email(queue, articles, day, markets_html="", reports_html="", cards_h
     )
 
 
-def send_email(html, day, to):
+def send_email(html, day, to, subject=None):
     # Strip BOM / zero-width chars / whitespace that sneak in when secrets are pasted or piped.
     clean = lambda v: "".join(c for c in v if c.isprintable() and not c.isspace() and c != "﻿")  # noqa: E731
     user, pw = clean(os.environ["GMAIL_USER"]), clean(os.environ["GMAIL_APP_PASSWORD"])
     msg = EmailMessage()
     to = [a if a != "me" else (RECIPIENT or user) for a in to]
-    msg["Subject"] = f"Daily study {day}"
+    msg["Subject"] = subject or f"Daily study {day}"
     msg["From"], msg["To"] = user, ", ".join(to)
     msg.set_content("HTML email")
     msg.add_alternative(html, subtype="html")

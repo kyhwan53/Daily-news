@@ -39,8 +39,22 @@ def load():
         for k in schedule.get(d, []):
             if k not in keys:
                 raise ConfigError(f"config.toml: schedule.{d} uses unknown source key '{k}' (defined: {keys})")
+    estate = cfg.get("estate", [])
+    for e in estate:
+        missing = {"key", "label", "queries"} - e.keys()
+        if missing:
+            raise ConfigError(f"config.toml: estate {e.get('key', '?')} missing {sorted(missing)}")
+    if len({e["key"] for e in estate}) != len(estate):
+        raise ConfigError("config.toml: duplicate estate keys")
+    deals = cfg.get("estate_deals", {})
+    for w in deals.get("watch", []) + ([deals["nearby"]] if "nearby" in deals else []):
+        if not {"code", "label"} <= w.keys():
+            raise ConfigError(f"config.toml: estate_deals entry {w} needs code and label")
     st = cfg.get("settings", {})
     return {
+        "estate": estate,
+        "estate_settings": cfg.get("estate_settings", {}),
+        "estate_deals": deals,
         "sources": sources,
         "articles": articles,
         "reports": reports,
@@ -65,3 +79,6 @@ RECIPIENT = _cfg["recipient"]
 BASE_URL = _cfg["base_url"]
 CARDS_START = _cfg["cards_start"]
 MEETINGS = _cfg["meetings"]
+ESTATE = _cfg["estate"]
+ESTATE_SETTINGS = _cfg["estate_settings"]
+ESTATE_DEALS = _cfg["estate_deals"]
