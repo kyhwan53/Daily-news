@@ -5,6 +5,8 @@ Every query of a section is searched, off-topic titles are dropped, and articles
 grouped by title similarity: the number of outlets in a group is the main importance signal. A story that was
 already shown on an earlier day (by any outlet) is not shown again. Picks are cached per day in state.json.
 """
+import hashlib
+import json
 import re
 import time
 import urllib.parse
@@ -126,8 +128,13 @@ def _clusters(sec, now):
 def pick(day, state):
     """{section key: [items]} for `day`, cached so every run on the same day shows the same news."""
     cache = state.setdefault("estate", {})
-    if str(day) in cache:
+    sigs = state.setdefault("estate_sig", {})
+    sig = hashlib.sha1(json.dumps(ESTATE, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:10]
+    if str(day) in cache and sigs.get(str(day)) == sig:   # a changed config picks again
         return cache[str(day)]
+    for d in [d for d in sigs if d not in cache or d < str(day - timedelta(days=KEEP_DAYS))]:
+        del sigs[d]
+    sigs[str(day)] = sig
     now = datetime.now().astimezone()
     seen = state.setdefault("estate_seen", [])   # [[date, title], ...]
     since = str(day - timedelta(days=SEEN_DAYS))
