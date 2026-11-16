@@ -1299,7 +1299,8 @@
         "pub": "2026-11-10T10:22:11+00:00"
       }
     ],
-    "2026-11-16": []
+    "2026-11-16": [],
+    "2026-11-17": []
   },
   "articles": {
     "2026-10-11": [
@@ -1977,6 +1978,29 @@
         "link": "https://www.theguardian.com/environment/2026/nov/15/el-nino-cop31-turkey-climate",
         "summary": "Strongest El Niño in centuries adds urgency to UN climate talks as vulnerable countries face ‘compounding’ crises If the galloping pace of the climate crisis isn’t enough to spur countries to act at UN climate talks under way in Turkey, the…"
       }
+    ],
+    "2026-11-17": [
+      {
+        "label": "BBC World",
+        "guid": "https://www.bbc.co.uk/news/articles/cw987343352go#0",
+        "title": "Five EU countries announce migrant deportation centre in Rwanda",
+        "link": "https://www.bbc.co.uk/news/articles/cw987343352go?at_medium=RSS&at_campaign=rss",
+        "summary": "Germany, Denmark, Austria, Greece and the Netherlands have announced a \"return hub\" for failed asylum seekers."
+      },
+      {
+        "label": "Guardian Business",
+        "guid": "https://www.theguardian.com/technology/2026/nov/16/trump-backs-calls-for-reinstatement-of-jensen-huang-as-nvidia-ceo",
+        "title": "Trump backs calls for reinstatement of Jensen Huang as Nvidia CEO",
+        "link": "https://www.theguardian.com/technology/2026/nov/16/trump-backs-calls-for-reinstatement-of-jensen-huang-as-nvidia-ceo",
+        "summary": "As tech industry pushes for return, US president says he thinks Huang ‘learned a big lesson’ Donald Trump has expressed support for the return of Jensen Huang as the chief executive of Nvidia, joining Silicon Valley heavyweights in backing …"
+      },
+      {
+        "label": "NPR Climate",
+        "guid": "https://www.npr.org/2026/11/16/nx-s1-6020923/arctic-bird-migration-alaska-climate-change",
+        "title": "These birds fly 17,000 miles every year. Climate change could make it harder",
+        "link": "https://www.npr.org/2026/11/16/nx-s1-6020923/arctic-bird-migration-alaska-climate-change",
+        "summary": "Migratory birds cross the entire globe, carefully timing their journeys with the seasons. In a hotter climate, that timing is increasingly out of sync."
+      }
     ]
   },
   "articles_used": [
@@ -2004,6 +2028,7 @@
     "https://www.bbc.co.uk/news/articles/cr6240q1w136o#0",
     "https://www.bbc.co.uk/news/articles/cr93z1e87e0do#2",
     "https://www.bbc.co.uk/news/articles/cw1mdlv0k2r4o#1",
+    "https://www.bbc.co.uk/news/articles/cw987343352go#0",
     "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo#0",
     "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo#1",
     "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo#3",
@@ -2035,6 +2060,7 @@
     "https://www.npr.org/2026/11/11/nx-s1-6037588/gasoline-price-below-4-dollars-gallon",
     "https://www.npr.org/2026/11/12/nx-s1-6038940/punch-in-the-gut-homes-sales-fall-to-their-lowest-in-16-years",
     "https://www.npr.org/2026/11/13/nx-s1-6032777/rivers-in-the-sky-are-raining-down-on-the-pacific-northwest-what-are-they",
+    "https://www.npr.org/2026/11/16/nx-s1-6020923/arctic-bird-migration-alaska-climate-change",
     "https://www.npr.org/sections/planet-money/2026/10/09/nx-s1-5995606/why-american-investors-love-european-defense-startups",
     "https://www.npr.org/sections/planet-money/2026/10/16/nx-s1-6001828/what-this-bankruptcy-says-about-ai-startups",
     "https://www.npr.org/sections/planet-money/2026/11/02/g-s1-151009/two-economists-studied-californias-billionaire-tax-they-reached-wildly-different-conclusions",
@@ -2060,6 +2086,7 @@
     "https://www.theguardian.com/sport/2026/oct/11/eliud-kipchoge-sends-message-melbourne-marathon-win-record",
     "https://www.theguardian.com/sport/live/2026/nov/07/sao-paulo-formula-one-grand-prix-qualifying-in-brazil-live",
     "https://www.theguardian.com/technology/2026/nov/14/jensen-huang-affair-nvidia-nightmare",
+    "https://www.theguardian.com/technology/2026/nov/16/trump-backs-calls-for-reinstatement-of-jensen-huang-as-nvidia-ceo",
     "https://www.theguardian.com/technology/2026/oct/26/iphone-duo-owners-cracks-apple-first-foldable-handset",
     "https://www.theguardian.com/technology/live/2026/nov/13/microsoft-outage-down-today-live-update-outlook-teams-365-when-fixed-latest-status-cause-news",
     "https://www.theguardian.com/us-news/2026/oct/23/father-killed-oregon-shooter-speaks-out",
@@ -2236,7 +2263,7 @@
       {
         "title": "Cleveland Fed Inflation Expectations",
         "country": "USD",
-        "date": "2026-11-16T09:48:00-05:00",
+        "date": "2026-11-16T09:45:00-05:00",
         "impact": "Low",
         "forecast": "",
         "previous": "3.3%"
@@ -2246,6 +2273,14 @@
         "country": "USD",
         "date": "2026-11-16T12:00:00-05:00",
         "impact": "High",
+        "forecast": "",
+        "previous": ""
+      },
+      {
+        "title": "FOMC Member Hammack Speaks",
+        "country": "USD",
+        "date": "2026-11-16T14:15:00-05:00",
+        "impact": "Low",
         "forecast": "",
         "previous": ""
       },
@@ -2270,6 +2305,22 @@
         "country": "AUD",
         "date": "2026-11-16T17:50:00-05:00",
         "impact": "High",
+        "forecast": "",
+        "previous": ""
+      },
+      {
+        "title": "FOMC Member Barkin Speaks",
+        "country": "USD",
+        "date": "2026-11-16T18:10:00-05:00",
+        "impact": "Low",
+        "forecast": "",
+        "previous": ""
+      },
+      {
+        "title": "FOMC Member Goolsbee Speaks",
+        "country": "USD",
+        "date": "2026-11-16T18:30:00-05:00",
+        "impact": "Low",
         "forecast": "",
         "previous": ""
       },
@@ -2573,7 +2624,7 @@
         "title": "BOE Gov Bailey Speaks",
         "country": "GBP",
         "date": "2026-11-18T02:30:00-05:00",
-        "impact": "High",
+        "impact": "Medium",
         "forecast": "",
         "previous": ""
       },
@@ -2834,6 +2885,14 @@
         "previous": ""
       },
       {
+        "title": "FOMC Member Jefferson Speaks",
+        "country": "USD",
+        "date": "2026-11-19T09:25:00-05:00",
+        "impact": "Low",
+        "forecast": "",
+        "previous": ""
+      },
+      {
         "title": "CB Leading Index m/m",
         "country": "USD",
         "date": "2026-11-19T10:00:00-05:00",
@@ -2855,7 +2914,7 @@
         "date": "2026-11-19T10:30:00-05:00",
         "impact": "Low",
         "forecast": "",
-        "previous": ""
+        "previous": "61B"
       },
       {
         "title": "FOMC Member Goolsbee Speaks",
@@ -2973,7 +3032,7 @@
         "title": "FOMC Member Waller Speaks",
         "country": "USD",
         "date": "2026-11-20T08:25:00-05:00",
-        "impact": "Medium",
+        "impact": "Low",
         "forecast": "",
         "previous": ""
       },
@@ -3028,26 +3087,6 @@
     ]
   },
   "reports": {
-    "2026-11-03": [
-      {
-        "label": "증권사 경제분석",
-        "summary": "일평균 수출 2개월 연속 50억 달러 상회 10월 한국 수출은 1,152.8억 달러로 전년동월대비 93.7% 증가, 수입은 727.8억 달러로 36.0% 증가. 일평균 수출은 52.4억 달러로 전년동월대비 76.1% 증가했고, 반도체와 선박 제외 일평균 수출도 30.6% 증가 20대 품목 중 선박, 가전 등을 제외한 16개 품목 일평균 수출이 전년 동월대비 증가. 직전 3개월 대비 흐름이 양호한 품목은 자동차, 디스플레이, 전기기기, 반도체. …",
-        "date": "2026-11-02",
-        "guid": "naver:economy:13985",
-        "title": "10월 한국 수출: 반도체 의존도 감소",
-        "link": "https://stock.naver.com/research/economy/13985",
-        "by": "한화투자증권"
-      },
-      {
-        "label": "증권사 투자전략",
-        "summary": "[투자환경 ②] 침체 없는 감속: 상반기 금리 정점·물가 둔화, 하반기 유가발 물가 재가속 침체 위험은 낮음(美 2.2%·韓 2.6%). 최대 변수는 하반기 WTI 125~130달러 - 2027년 투자환경은 '침체 없는 감속' 속 상반기 금리 하향 안정, 하반기 유가발 물가 재가속. 美 성장 2.2%·한국 2.6%로 침체 위험은 낮지만, 연준 4.50% 동결의 '인하 없는 해'가 밸류에이션 상단을 제한 - Upside Potential은 상반기 금리 정점 통과·AI capex(2027년 1.2조 달러)·외국인 UnderWeight 해소, 그리고 이에 근거한 밸류에이션 …",
-        "date": "2026-11-02",
-        "guid": "naver:invest:40670",
-        "title": "전화위복(轉禍爲福) 비정상의 정상화, 그 이후의 시간표",
-        "link": "https://stock.naver.com/research/invest/40670",
-        "by": "대신증권"
-      }
-    ],
     "2026-11-04": [
       {
         "label": "증권사 경제분석",
@@ -3652,6 +3691,53 @@
         "link": "https://stock.naver.com/research/invest/40810",
         "by": "키움증권"
       }
+    ],
+    "2026-11-17": [
+      {
+        "label": "밤사이 미국 시장",
+        "slot": "overnight",
+        "summary": [
+          "AI 제국의 설계자 젠슨 황의 전격 퇴진에 성장 핵심주 엔비디아가 흔들렸지만, 경쟁사 AMD·브로드컴이 반사이익을 누리며 AI 거래의 지형이 재편된 하루였습니다.",
+          "여기에 연준의 추가 금리인상 우려가 국채금리를 밀어올리며 안전자산인 금마저 3% 넘게 밀렸습니다."
+        ],
+        "date": "2026-11-16",
+        "guid": "naver:market:38176",
+        "title": "유안타 AI 미국 주식시장 마감 시황 (26.11.13)",
+        "link": "https://stock.naver.com/research/market/38176",
+        "by": "유안타증권"
+      },
+      {
+        "label": "증권사 경제분석",
+        "slot": "",
+        "summary": [
+          "주간 동향: 미 연준 추가 긴축우려 강화로 달러 강세",
+          "미국 10월 소비자물가와 생산자물가 발표이후 미 연준의 금리인상 우려가 강화되면서 달러화는 전주대비 1% 이상 상승함.",
+          "유로화는 양호한 3분기 성장률 발표에도 불구하고 미 연준의 금리인상 기조 강화 우려로 전주대비 1% 넘는 약세를 보임",
+          "달러-엔 환율이 재차 160엔 수준에 육박한 가운데 일본 정부의 추가 시장 개입 우려 경계감으로 159엔대에서 눈치보기 장세를 보임",
+          "위안화도 약보합세를 보임."
+        ],
+        "date": "2026-11-16",
+        "guid": "naver:economy:14034",
+        "title": "다시 강화된 달러와 미 국채 금리간 상관관계",
+        "link": "https://stock.naver.com/research/economy/14034",
+        "by": "iM증권"
+      },
+      {
+        "label": "증권사 투자전략",
+        "slot": "",
+        "summary": [
+          "RISE 미국 초대형주 TOP10: 미국 증시의 시가총액 상위 10개 종목으로 구성하는 패시브 ETF이다.",
+          "AI와 반도체, 클라우드, 플랫폼 등 주요 산업을 주도하는 대형기업들의 성장 기회를 반영하되, 특정 테마의 키워드나 고정된 기업 명단을 기준으로 종목을 선정하지 않는다.",
+          "미국 증시에 상장된 보통주와 ADR 가운데 최근 3개월 평균 거래대금이 100만달러 이상의 조건을 충족하는 종목들을 투자 대상 유니버스로 설정한다.",
+          "개별 종목의 편입 비중은 시가총액 가중방식으로 결정하고, 최대 비중은 25%의 Cap Rate을 적용하며, 상위 4개 종목의 합산 비중은 80%로 제한한다.",
+          "상장일(11/17) 기준의 포트폴리오는 NVIDIA, Apple, Alphabet, Microsoft, Amazon, SpaceX, TSMC, Meta, Broadcom, Tesla의 10개 …"
+        ],
+        "date": "2026-11-16",
+        "guid": "naver:invest:40836",
+        "title": "[New K-ETF] 미국 초대형주 TOP10",
+        "link": "https://stock.naver.com/research/invest/40836",
+        "by": "하나증권"
+      }
     ]
   },
   "reports_used": [
@@ -3682,6 +3768,7 @@
     "naver:economy:14023",
     "naver:economy:14026",
     "naver:economy:14029",
+    "naver:economy:14034",
     "naver:invest:40559",
     "naver:invest:40569",
     "naver:invest:40571",
@@ -3705,6 +3792,7 @@
     "naver:invest:40801",
     "naver:invest:40808",
     "naver:invest:40810",
+    "naver:invest:40836",
     "naver:market:38041",
     "naver:market:38056",
     "naver:market:38069",
@@ -3716,7 +3804,8 @@
     "naver:market:38121",
     "naver:market:38141",
     "naver:market:38143",
-    "naver:market:38153"
+    "naver:market:38153",
+    "naver:market:38176"
   ],
   "sent": [
     "2026-11-04",
@@ -3731,7 +3820,8 @@
     "2026-11-13",
     "2026-11-14",
     "2026-11-15",
-    "2026-11-16"
+    "2026-11-16",
+    "2026-11-17"
   ],
   "markets_history": {
     "2026-11-05": {
@@ -4021,6 +4111,30 @@
       "금": "$3,886.30",
       "구리 (경기 선행)": "$6.0905",
       "VIX (공포 지수)": "19.30"
+    },
+    "2026-11-17": {
+      "KOSPI": "5,100.50",
+      "KOSDAQ": "665.65",
+      "KR 3Y": "3.74%",
+      "US 2Y": "4.83%",
+      "US 10Y": "5.12%",
+      "US 30Y": "5.46%",
+      "10Y-2Y spread": "+29bp",
+      "USD/KRW": "1,334.9",
+      "USD/JPY": "159.60",
+      "USD/EUR": "0.9079",
+      "S&P 500": "7,416.99",
+      "나스닥": "24,509.76",
+      "다우": "51,608.88",
+      "유로스톡스 50": "6,348.35",
+      "니케이 225": "59,662.02",
+      "상해종합": "3,602.57",
+      "항셍": "23,753.84",
+      "WTI": "$85.57",
+      "브렌트유": "$92.42",
+      "금": "$3,856.80",
+      "구리 (경기 선행)": "$5.9905",
+      "VIX (공포 지수)": "24.00"
     }
   },
   "estate": {
@@ -6217,6 +6331,24 @@
         "match": "rate hike",
         "link": "https://www.cnbc.com/2026/11/04/euro-zone-cpi-inflation-october-ecb-rate-hike.html",
         "source": "CNBC Economy"
+      }
+    ],
+    "2026-11-17": [
+      {
+        "en": "labor market",
+        "ko": "노동 시장",
+        "sentence": "Job openings posted big September gain in positive sign for labor market ahead of payrolls report.",
+        "match": "labor market",
+        "link": "https://www.cnbc.com/2026/11/03/job-openings-posted-big-september-gain-in-positive-sign-for-labor-market-ahead-of-payrolls-report.html",
+        "source": "CNBC Economy"
+      },
+      {
+        "en": "take over",
+        "ko": "인수하다, 장악하다",
+        "sentence": "Who is Nvidia's interim CEO Colette Kress - and who could take over permanently?",
+        "match": "take over",
+        "link": "https://www.bbc.co.uk/news/articles/cqgm37dv20e8o?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Business"
       }
     ]
   }

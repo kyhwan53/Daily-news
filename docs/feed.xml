@@ -85,21 +85,5 @@
       <enclosure url="https://sphinx.acast.com/p/open/s/67587e77c705e441797aff96/e/6af23934e1219d878fcb3b47/media.mp3" type="audio/mpeg" length="0" />
       <itunes:duration>1020</itunes:duration>
     </item>
-    <item>
-      <title>[11-10 1] EN Easy | Who does the housework?</title>
-      <guid isPermaLink="false">2026-11-10:urn:bbc:podcast:p0p478fw</guid>
-      <pubDate>Tue, 10 Nov 2026 06:00:00 +0000</pubDate>
-      <link>http://www.bbc.co.uk/programmes/p0p478fw</link>
-      <enclosure url="http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0p4779b.mp3" type="audio/mpeg" length="0" />
-      <itunes:duration>420</itunes:duration>
-    </item>
-    <item>
-      <title>[11-10 2] EN Talk | How to rewire your brain — and find your flow | Heather Berlin</title>
-      <guid isPermaLink="false">2026-11-10:6af1eb82e0d89bd85412a56b</guid>
-      <pubDate>Tue, 10 Nov 2026 05:00:00 +0000</pubDate>
-      <link>http://go.ted.com/heatherberlin</link>
-      <enclosure url="https://sphinx.acast.com/p/open/s/67587e77c705e441797aff96/e/6af1eb82e0d89bd85412a56b/media.mp3" type="audio/mpeg" length="0" />
-      <itunes:duration>1020</itunes:duration>
-    </item>
   </channel>
 </rss>
