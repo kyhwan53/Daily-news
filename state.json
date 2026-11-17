@@ -1300,7 +1300,8 @@
       }
     ],
     "2026-11-16": [],
-    "2026-11-17": []
+    "2026-11-17": [],
+    "2026-11-18": []
   },
   "articles": {
     "2026-10-11": [
@@ -2001,6 +2002,29 @@
         "link": "https://www.npr.org/2026/11/16/nx-s1-6020923/arctic-bird-migration-alaska-climate-change",
         "summary": "Migratory birds cross the entire globe, carefully timing their journeys with the seasons. In a hotter climate, that timing is increasingly out of sync."
       }
+    ],
+    "2026-11-18": [
+      {
+        "label": "Guardian World",
+        "guid": "https://www.theguardian.com/world/2026/nov/17/how-ukraine-struck-kerch-bridge-symbol-vladimir-putin-rule",
+        "title": "How Ukraine struck the Kerch bridge, a symbol of Putin’s rule",
+        "link": "https://www.theguardian.com/world/2026/nov/17/how-ukraine-struck-kerch-bridge-symbol-vladimir-putin-rule",
+        "summary": "With the SpaceX satellite system faltering, Ukraine’s military launched a surprise, multi-pronged attack to take down vital bridge to Crimea At 10pm on Monday evening a Ukrainian soldier scrawled a message on a kamikaze drone. It said simpl…"
+      },
+      {
+        "label": "BBC Business",
+        "guid": "https://www.bbc.co.uk/news/articles/cwx2en2vrxmdo#0",
+        "title": "Jensen Huang says he would be 'honoured' to return as Nvidia CEO if board asked him",
+        "link": "https://www.bbc.co.uk/news/articles/cwx2en2vrxmdo?at_medium=RSS&at_campaign=rss",
+        "summary": "Huang says he has had an \"outpouring\" of calls from investors and others calling for him to return."
+      },
+      {
+        "label": "NPR Climate",
+        "guid": "https://www.npr.org/2026/11/16/nx-s1-6042888/how-the-u-s-influence-is-and-isnt-felt-at-this-years-un-climate-talks",
+        "title": "What influence does the U.S. have at this year's U.N. climate talks?",
+        "link": "https://www.npr.org/2026/11/16/nx-s1-6042888/how-the-u-s-influence-is-and-isnt-felt-at-this-years-un-climate-talks",
+        "summary": "The U.S. isn't at the negotiating table at the UN climate conference but attendees are talking about the midterms. Democratic members Congress are vowing to undo actions by the Trump administration."
+      }
     ]
   },
   "articles_used": [
@@ -2032,6 +2056,7 @@
     "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo#0",
     "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo#1",
     "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo#3",
+    "https://www.bbc.co.uk/news/articles/cwx2en2vrxmdo#0",
     "https://www.bbc.co.uk/news/videos/ckq6nqqlj8nro#5",
     "https://www.bbc.co.uk/news/videos/cm0e0del4jewo#2",
     "https://www.carbonbrief.org/?p=83641",
@@ -2061,6 +2086,7 @@
     "https://www.npr.org/2026/11/12/nx-s1-6038940/punch-in-the-gut-homes-sales-fall-to-their-lowest-in-16-years",
     "https://www.npr.org/2026/11/13/nx-s1-6032777/rivers-in-the-sky-are-raining-down-on-the-pacific-northwest-what-are-they",
     "https://www.npr.org/2026/11/16/nx-s1-6020923/arctic-bird-migration-alaska-climate-change",
+    "https://www.npr.org/2026/11/16/nx-s1-6042888/how-the-u-s-influence-is-and-isnt-felt-at-this-years-un-climate-talks",
     "https://www.npr.org/sections/planet-money/2026/10/09/nx-s1-5995606/why-american-investors-love-european-defense-startups",
     "https://www.npr.org/sections/planet-money/2026/10/16/nx-s1-6001828/what-this-bankruptcy-says-about-ai-startups",
     "https://www.npr.org/sections/planet-money/2026/11/02/g-s1-151009/two-economists-studied-californias-billionaire-tax-they-reached-wildly-different-conclusions",
@@ -2094,6 +2120,7 @@
     "https://www.theguardian.com/us-news/live/2026/oct/29/midterm-elections-politics-trump-obama-california-alaska-latest-news-updates",
     "https://www.theguardian.com/world/2026/nov/07/paraguay-ueno-bank-collapse-santiago-pena",
     "https://www.theguardian.com/world/2026/nov/10/french-police-raid-ritz-hotel-in-mohamed-al-fayed-sexual-abuse-investigation",
+    "https://www.theguardian.com/world/2026/nov/17/how-ukraine-struck-kerch-bridge-symbol-vladimir-putin-rule",
     "https://www.theguardian.com/world/2026/oct/10/isaias-weakens-to-post-tropical-cyclone",
     "https://www.theguardian.com/world/2026/oct/14/student-protests-tirana-albania-police-clashes",
     "https://www.theguardian.com/world/live/2026/oct/12/ukraine-russia-trump-energy-ceasefire-nato-zelenskyy-nobel-latest-news-updates"
@@ -2325,6 +2352,14 @@
         "previous": ""
       },
       {
+        "title": "RBNZ Gov Breman Speaks",
+        "country": "NZD",
+        "date": "2026-11-16T19:00:00-05:00",
+        "impact": "Medium",
+        "forecast": "",
+        "previous": ""
+      },
+      {
         "title": "Monetary Policy Meeting Minutes",
         "country": "AUD",
         "date": "2026-11-16T19:30:00-05:00",
@@ -2345,7 +2380,7 @@
         "country": "JPY",
         "date": "2026-11-16T23:30:00-05:00",
         "impact": "Low",
-        "forecast": "0.0%",
+        "forecast": "0.1%",
         "previous": "-0.1%"
       },
       {
@@ -2361,7 +2396,7 @@
         "country": "GBP",
         "date": "2026-11-17T02:00:00-05:00",
         "impact": "Low",
-        "forecast": "28.1K",
+        "forecast": "25.4K",
         "previous": "30.3K"
       },
       {
@@ -2385,7 +2420,7 @@
         "country": "EUR",
         "date": "2026-11-17T05:00:00-05:00",
         "impact": "Low",
-        "forecast": "18.3",
+        "forecast": "19.1",
         "previous": "18.5"
       },
       {
@@ -2393,7 +2428,7 @@
         "country": "EUR",
         "date": "2026-11-17T05:00:00-05:00",
         "impact": "Low",
-        "forecast": "28.3",
+        "forecast": "28.8",
         "previous": "28.1"
       },
       {
@@ -2409,7 +2444,7 @@
         "country": "CAD",
         "date": "2026-11-17T08:15:00-05:00",
         "impact": "Low",
-        "forecast": "243K",
+        "forecast": "241K",
         "previous": "249K"
       },
       {
@@ -2441,7 +2476,7 @@
         "country": "USD",
         "date": "2026-11-17T08:30:00-05:00",
         "impact": "High",
-        "forecast": "0.2%",
+        "forecast": "0.1%",
         "previous": "0.8%"
       },
       {
@@ -2473,8 +2508,16 @@
         "country": "USD",
         "date": "2026-11-17T09:15:00-05:00",
         "impact": "Low",
-        "forecast": "0.1%",
+        "forecast": "0.0%",
         "previous": "0.7%"
+      },
+      {
+        "title": "GDT Price Index",
+        "country": "NZD",
+        "date": "2026-11-17T09:29:00-05:00",
+        "impact": "Low",
+        "forecast": "",
+        "previous": "3.0%"
       },
       {
         "title": "FOMC Member Hammack Speaks",
@@ -2499,14 +2542,6 @@
         "impact": "Low",
         "forecast": "29",
         "previous": "29"
-      },
-      {
-        "title": "GDT Price Index",
-        "country": "NZD",
-        "date": "2026-11-17T10:50:00-05:00",
-        "impact": "Low",
-        "forecast": "",
-        "previous": "3.0%"
       },
       {
         "title": "FOMC Member Williams Speaks",
@@ -2553,7 +2588,7 @@
         "country": "JPY",
         "date": "2026-11-17T18:50:00-05:00",
         "impact": "Low",
-        "forecast": "-0.88T",
+        "forecast": "-0.90T",
         "previous": "-0.70T"
       },
       {
@@ -2561,7 +2596,7 @@
         "country": "AUD",
         "date": "2026-11-17T19:30:00-05:00",
         "impact": "Medium",
-        "forecast": "0.9%",
+        "forecast": "1.0%",
         "previous": "0.8%"
       },
       {
@@ -2705,7 +2740,7 @@
         "country": "USD",
         "date": "2026-11-18T10:00:00-05:00",
         "impact": "Low",
-        "forecast": "-2.3%",
+        "forecast": "-1.8%",
         "previous": "-7.3%"
       },
       {
@@ -2713,8 +2748,16 @@
         "country": "USD",
         "date": "2026-11-18T10:30:00-05:00",
         "impact": "Low",
-        "forecast": "",
+        "forecast": "-0.3M",
         "previous": "4.7M"
+      },
+      {
+        "title": "FOMC Member Daly Speaks",
+        "country": "USD",
+        "date": "2026-11-18T12:15:00-05:00",
+        "impact": "Low",
+        "forecast": "",
+        "previous": ""
       },
       {
         "title": "Gov Council Member Gravelle Speaks",
@@ -2785,7 +2828,7 @@
         "country": "JPY",
         "date": "2026-11-18T18:50:00-05:00",
         "impact": "Low",
-        "forecast": "1.4%",
+        "forecast": "1.3%",
         "previous": "5.2%"
       },
       {
@@ -2793,7 +2836,7 @@
         "country": "AUD",
         "date": "2026-11-18T19:30:00-05:00",
         "impact": "High",
-        "forecast": "25.2K",
+        "forecast": "25.5K",
         "previous": "-39.3K"
       },
       {
@@ -3087,26 +3130,6 @@
     ]
   },
   "reports": {
-    "2026-11-04": [
-      {
-        "label": "증권사 경제분석",
-        "summary": "10월 ISM 제조업 지수 예상치 상회 10월 미국 ISM 제조업 PMI는 55.5로 전월대비 1.0 상승. 생산(+2.3)과 재고(+2.8)가 반등한 가운데, 신규 주문(+0.2)과 신규 수출(+0.3) 등 수요 지표도 대체로 양호한 흐름. 다만 고용(-0.3)이 소폭 둔화됐고, 생산원가(-2.7)는 하락했으나 75.2의 높은 수준을 유지. 기계류를 제외한 산업 담당자들 또한 여전히 불확실성을 크게 느끼고 있는 모습. 화학제품과 운송장비, 컴퓨터 담당자는 물가 우려와 정책 불확실성으로 통상적인 연말 예산 소진 효과도 사라졌다고 지적. …",
-        "date": "2026-11-03",
-        "guid": "naver:economy:13988",
-        "title": "10월 미국 ISM 제조업: 남아있는 부담",
-        "link": "https://stock.naver.com/research/economy/13988",
-        "by": "한화투자증권"
-      },
-      {
-        "label": "증권사 투자전략",
-        "summary": "시장 주도 테마 1: 보험 - 해외 시장 개척과 M&A 로 성장 활로 모색 - 고령화 및 질병 증가로 맞춤형 보장 수요 확대",
-        "date": "2026-11-02",
-        "guid": "naver:invest:40669",
-        "title": "이번 주 포커 s",
-        "link": "https://stock.naver.com/research/invest/40669",
-        "by": "대신증권"
-      }
-    ],
     "2026-11-05": [
       {
         "label": "밤사이 미국 시장",
@@ -3738,6 +3761,68 @@
         "link": "https://stock.naver.com/research/invest/40836",
         "by": "하나증권"
       }
+    ],
+    "2026-11-18": [
+      {
+        "label": "밤사이 미국 시장",
+        "slot": "overnight",
+        "summary": [
+          "엔비디아 실적 발표를 앞둔 긴장과 AI 생태계 자금줄 우려가 반도체주 투매로 번진 가운데, 필수소비재·유틸리티 같은 방어주만 홀로 버틴 전형적인 리스크오프 하루였습니다."
+        ],
+        "date": "2026-11-17",
+        "guid": "naver:market:38196",
+        "title": "유안타 AI 미국 주식시장 마감 시황 (26.11.17)",
+        "link": "https://stock.naver.com/research/market/38196",
+        "by": "유안타증권"
+      },
+      {
+        "label": "증권사 경제분석",
+        "slot": "",
+        "summary": [
+          "한국과 대만은 AI 수출 의존도가 높다.",
+          "AI 수출의 미국 의존도는 대만이 한국보다 높다.",
+          "IT가 올해 상반기 한국과 대만 성장의 절반 정도를 창출했다.",
+          "AI 투자 불확실성이 커지는 국면에서는 AI와 연관이 적고 미국 의존도가 낮은 국가와 업종에 관심을 가져야 한다.",
+          "국내에서는 소비재와 바이오가 Non-AI 및 비미국 포트폴리오로 적합한 것 같다."
+        ],
+        "date": "2026-11-16",
+        "guid": "naver:economy:14037",
+        "title": "AI 의존도와 Non-AI",
+        "link": "https://stock.naver.com/research/economy/14037",
+        "by": "한화투자증권"
+      },
+      {
+        "label": "증권사 투자전략",
+        "slot": "",
+        "summary": [
+          "AI 인프라 수요 강세 재확인: 하이퍼스케일러에 이어 네오클라우드 업체들도 호실적을 기록.",
+          "MW 당 계약 단가는 2,000 만달러 이상으로 상승했으며, 3 분기 계약 선급금의 캐팩스 커버율은 최대 90~100% 수준.",
+          "젠슨황 CEO 사임: 젠슨황의 사임도 밸류체인 전반의 불확실성을 확대하는 요인.",
+          "젠슨황은 엔비디아를 넘어 AI 산업의 중심축으로, 그 역할은 ① 공급망 병목 해소와 ② 금융 지원을 통한 수요 창출로 구분.",
+          "앤트로픽 IPO 임박: IPO 공모가 밴드는 70~78 달러, 희석 기준 밸류에이션은 1.23~1.36 조달러로 예상."
+        ],
+        "date": "2026-11-17",
+        "guid": "naver:invest:40850",
+        "title": "글로벌 테크 - 기장 잃은 야간비행",
+        "link": "https://stock.naver.com/research/invest/40850",
+        "by": "유진투자증권"
+      },
+      {
+        "label": "한국은행 이슈노트",
+        "slot": "",
+        "summary": [
+          "지난해에 이어 근로자 대표 표본을 구성하고 생성형 AI 활용 조사를 실시하였다.",
+          "둘째, 개인의 유료 구독이 확산되고 있다.",
+          "셋째, 업무시간 절감 효과가 크게 확대되었다.",
+          "넷째, 업무시간 절감이 실제 산출이나 품질 개선으로 이어지는 효과는 아직 제한적이다.",
+          "이러한 결과는 AI 활용을 통해 앞으로 실현할 수 있는 경제적 가치가 상당히 크다는 점을 시사한다."
+        ],
+        "date": "2026-11-17",
+        "guid": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=11066699&menuNo=200433",
+        "title": "[제2026-29호] AI 확산과 생산성 효과: 더 널리, 더 효율적으로, 그러나 아직 얕게",
+        "link": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=11066699&menuNo=200433",
+        "by": ""
+      }
     ]
   },
   "reports_used": [
@@ -3745,6 +3830,7 @@
     "https://www.bok.or.kr/portal/bbs/P0000559/view.do?nttId=11066447&menuNo=200690",
     "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=11065913&menuNo=200433",
     "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=11065979&menuNo=200433",
+    "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=11066699&menuNo=200433",
     "naver:economy:13935",
     "naver:economy:13939",
     "naver:economy:13941",
@@ -3769,6 +3855,7 @@
     "naver:economy:14026",
     "naver:economy:14029",
     "naver:economy:14034",
+    "naver:economy:14037",
     "naver:invest:40559",
     "naver:invest:40569",
     "naver:invest:40571",
@@ -3793,6 +3880,7 @@
     "naver:invest:40808",
     "naver:invest:40810",
     "naver:invest:40836",
+    "naver:invest:40850",
     "naver:market:38041",
     "naver:market:38056",
     "naver:market:38069",
@@ -3805,10 +3893,10 @@
     "naver:market:38141",
     "naver:market:38143",
     "naver:market:38153",
-    "naver:market:38176"
+    "naver:market:38176",
+    "naver:market:38196"
   ],
   "sent": [
-    "2026-11-04",
     "2026-11-05",
     "2026-11-06",
     "2026-11-07",
@@ -3821,7 +3909,8 @@
     "2026-11-14",
     "2026-11-15",
     "2026-11-16",
-    "2026-11-17"
+    "2026-11-17",
+    "2026-11-18"
   ],
   "markets_history": {
     "2026-11-05": {
@@ -4135,6 +4224,30 @@
       "금": "$3,856.80",
       "구리 (경기 선행)": "$5.9905",
       "VIX (공포 지수)": "24.00"
+    },
+    "2026-11-18": {
+      "KOSPI": "4,968.48",
+      "KOSDAQ": "650.06",
+      "KR 3Y": "3.73%",
+      "US 2Y": "4.80%",
+      "US 10Y": "5.10%",
+      "US 30Y": "5.46%",
+      "10Y-2Y spread": "+30bp",
+      "USD/KRW": "1,336.2",
+      "USD/JPY": "159.30",
+      "USD/EUR": "0.9100",
+      "S&P 500": "7,340.84",
+      "나스닥": "24,328.38",
+      "다우": "50,761.92",
+      "유로스톡스 50": "6,212.11",
+      "니케이 225": "58,860.43",
+      "상해종합": "3,584.58",
+      "항셍": "23,508.17",
+      "WTI": "$85.65",
+      "브렌트유": "$92.81",
+      "금": "$3,848.80",
+      "구리 (경기 선행)": "$5.9660",
+      "VIX (공포 지수)": "25.78"
     }
   },
   "estate": {
@@ -6349,6 +6462,24 @@
         "match": "take over",
         "link": "https://www.bbc.co.uk/news/articles/cqgm37dv20e8o?at_medium=RSS&at_campaign=rss",
         "source": "BBC Business"
+      }
+    ],
+    "2026-11-18": [
+      {
+        "en": "comply with",
+        "ko": "~을 준수하다",
+        "sentence": "International investigation using trove of leaked internal data allegedly shows German bank overlooked compliance concerns to safeguard profits Deutsche Bank reportedly dismissed warnings about its dealings with risky clients, including high-profile Russian oligarchs, to protect profits, the finding",
+        "match": "compliance",
+        "link": "https://www.theguardian.com/business/2026/nov/17/deutsche-bank-dimissed-warnings-risky-clients-reports-claim",
+        "source": "Guardian Business"
+      },
+      {
+        "en": "subsidy",
+        "ko": "보조금",
+        "sentence": "Energy subsidies for households had reportedly expired in September, exposing the economy to the higher energy prices brought about by the Iran war.",
+        "match": "subsidies",
+        "link": "https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html",
+        "source": "CNBC Economy"
       }
     ]
   }
