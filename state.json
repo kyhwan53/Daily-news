@@ -1301,7 +1301,8 @@
     ],
     "2026-11-16": [],
     "2026-11-17": [],
-    "2026-11-18": []
+    "2026-11-18": [],
+    "2026-11-19": []
   },
   "articles": {
     "2026-10-11": [
@@ -2025,6 +2026,29 @@
         "link": "https://www.npr.org/2026/11/16/nx-s1-6042888/how-the-u-s-influence-is-and-isnt-felt-at-this-years-un-climate-talks",
         "summary": "The U.S. isn't at the negotiating table at the UN climate conference but attendees are talking about the midterms. Democratic members Congress are vowing to undo actions by the Trump administration."
       }
+    ],
+    "2026-11-19": [
+      {
+        "label": "NPR World",
+        "guid": "https://www.npr.org/2026/11/18/nx-s1-6044242/putin-to-meet-with-trump-and-xi-after-ukrainian-attack-on-russian-bridge",
+        "title": "Putin to meet with Trump and Xi after Ukrainian attack on Russian bridge",
+        "link": "https://www.npr.org/2026/11/18/nx-s1-6044242/putin-to-meet-with-trump-and-xi-after-ukrainian-attack-on-russian-bridge",
+        "summary": "Russian President Vladimir Putin will meet Thursday with President Trump and Chinese President Xi, escaping the aftermath of a Ukrainian attack that partially collapsed a prized bridge."
+      },
+      {
+        "label": "BBC Business",
+        "guid": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo#0",
+        "title": "Typical energy bill forecast to go up by £443 a year from January as inflation rate rises again",
+        "link": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo?at_medium=RSS&at_campaign=rss",
+        "summary": "Energy bills are expected to jump by 26% a year for a typical household as UK inflation hits its highest rate for a year."
+      },
+      {
+        "label": "Guardian Environment",
+        "guid": "https://www.theguardian.com/environment/2026/nov/18/uk-government-angela-eagle-natural-england-wild-birds-decline-",
+        "title": "UK government ‘breaking the law’ by not stopping decline of wild birds",
+        "link": "https://www.theguardian.com/environment/2026/nov/18/uk-government-angela-eagle-natural-england-wild-birds-decline-",
+        "summary": "Populations at lowest level on record with 45% of native breeding species in decline, environment watchdog says The environment secretary, Angela Eagle, her ministers and Natural England are breaking the law by failing to intervene to slow …"
+      }
     ]
   },
   "articles_used": [
@@ -2042,6 +2066,7 @@
     "https://www.bbc.co.uk/news/articles/cmn06w5x9g25o#0",
     "https://www.bbc.co.uk/news/articles/cmp8ggn9gpjjo#1",
     "https://www.bbc.co.uk/news/articles/cmq8n513x523o#1",
+    "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo#0",
     "https://www.bbc.co.uk/news/articles/cmzxjvpqrjxro#0",
     "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo#0",
     "https://www.bbc.co.uk/news/articles/cqm2l304w0x9o#2",
@@ -2087,6 +2112,7 @@
     "https://www.npr.org/2026/11/13/nx-s1-6032777/rivers-in-the-sky-are-raining-down-on-the-pacific-northwest-what-are-they",
     "https://www.npr.org/2026/11/16/nx-s1-6020923/arctic-bird-migration-alaska-climate-change",
     "https://www.npr.org/2026/11/16/nx-s1-6042888/how-the-u-s-influence-is-and-isnt-felt-at-this-years-un-climate-talks",
+    "https://www.npr.org/2026/11/18/nx-s1-6044242/putin-to-meet-with-trump-and-xi-after-ukrainian-attack-on-russian-bridge",
     "https://www.npr.org/sections/planet-money/2026/10/09/nx-s1-5995606/why-american-investors-love-european-defense-startups",
     "https://www.npr.org/sections/planet-money/2026/10/16/nx-s1-6001828/what-this-bankruptcy-says-about-ai-startups",
     "https://www.npr.org/sections/planet-money/2026/11/02/g-s1-151009/two-economists-studied-californias-billionaire-tax-they-reached-wildly-different-conclusions",
@@ -2101,6 +2127,7 @@
     "https://www.theguardian.com/environment/2026/nov/06/uk-dairy-farmers-face-squeeze-as-milk-processor-cuts-prices",
     "https://www.theguardian.com/environment/2026/nov/10/leadbeaters-possum-victoria-endangered-species-australia-wildlife-conservation-haining-farm",
     "https://www.theguardian.com/environment/2026/nov/15/el-nino-cop31-turkey-climate",
+    "https://www.theguardian.com/environment/2026/nov/18/uk-government-angela-eagle-natural-england-wild-birds-decline-",
     "https://www.theguardian.com/environment/2026/oct/20/jackdaw-north-sea-gas-field-to-get-go-ahead-in-blow-to-climate-campaigners",
     "https://www.theguardian.com/film/2026/nov/12/to-hold-a-mountain-film-mileva-gara-jovanovic",
     "https://www.theguardian.com/football/2026/oct/10/why-premier-league-in-clutches-of-global-mega-rich",
@@ -2578,7 +2605,7 @@
       {
         "title": "MI Leading Index m/m",
         "country": "AUD",
-        "date": "2026-11-17T18:30:00-05:00",
+        "date": "2026-11-17T18:39:00-05:00",
         "impact": "Low",
         "forecast": "",
         "previous": "-0.1%"
@@ -2646,14 +2673,6 @@
         "impact": "Low",
         "forecast": "4.1%",
         "previous": "3.9%"
-      },
-      {
-        "title": "Foreign Direct Investment ytd/y",
-        "country": "CNY",
-        "date": "2026-11-18T02:02:00-05:00",
-        "impact": "Low",
-        "forecast": "",
-        "previous": "-4.3%"
       },
       {
         "title": "BOE Gov Bailey Speaks",
@@ -2740,7 +2759,7 @@
         "country": "USD",
         "date": "2026-11-18T10:00:00-05:00",
         "impact": "Low",
-        "forecast": "-1.8%",
+        "forecast": "-2.0%",
         "previous": "-7.3%"
       },
       {
@@ -2748,7 +2767,7 @@
         "country": "USD",
         "date": "2026-11-18T10:30:00-05:00",
         "impact": "Low",
-        "forecast": "-0.3M",
+        "forecast": "0.4M",
         "previous": "4.7M"
       },
       {
@@ -2884,7 +2903,7 @@
         "country": "CAD",
         "date": "2026-11-19T08:30:00-05:00",
         "impact": "Low",
-        "forecast": "1.2%",
+        "forecast": "0.4%",
         "previous": "2.0%"
       },
       {
@@ -2892,7 +2911,7 @@
         "country": "CAD",
         "date": "2026-11-19T08:30:00-05:00",
         "impact": "Low",
-        "forecast": "2.0%",
+        "forecast": "0.9%",
         "previous": "4.8%"
       },
       {
@@ -2908,7 +2927,7 @@
         "country": "USD",
         "date": "2026-11-19T08:30:00-05:00",
         "impact": "Medium",
-        "forecast": "19.2",
+        "forecast": "20.6",
         "previous": "20.9"
       },
       {
@@ -2916,7 +2935,7 @@
         "country": "USD",
         "date": "2026-11-19T08:30:00-05:00",
         "impact": "Medium",
-        "forecast": "199K",
+        "forecast": "198K",
         "previous": "200K"
       },
       {
@@ -2956,7 +2975,7 @@
         "country": "USD",
         "date": "2026-11-19T10:30:00-05:00",
         "impact": "Low",
-        "forecast": "",
+        "forecast": "25B",
         "previous": "61B"
       },
       {
@@ -3056,6 +3075,14 @@
         "previous": "24.5B"
       },
       {
+        "title": "Foreign Direct Investment ytd/y",
+        "country": "CNY",
+        "date": "2026-11-20T02:02:00-05:00",
+        "impact": "Low",
+        "forecast": "",
+        "previous": "-4.3%"
+      },
+      {
         "title": "ECB President Lagarde Speaks",
         "country": "EUR",
         "date": "2026-11-20T03:15:00-05:00",
@@ -3108,7 +3135,7 @@
         "country": "USD",
         "date": "2026-11-20T10:00:00-05:00",
         "impact": "Medium",
-        "forecast": "52.1",
+        "forecast": "51.7",
         "previous": "51.0"
       },
       {
@@ -3130,52 +3157,6 @@
     ]
   },
   "reports": {
-    "2026-11-05": [
-      {
-        "label": "밤사이 미국 시장",
-        "slot": "overnight",
-        "summary": [
-          "AMD의 데이터센터 매출 급증 실적에 AI 성장주가 반등하며 나스닥을 끌어올렸지만, 10년물 금리가 4.95%까지 치솟고 블루칩(다우)은 약세로 돌아선 엇갈린 하루였습니다.",
-          "중간선거 결과를 앞둔 관망 속에 안전자산인 금마저 밀렸습니다."
-        ],
-        "date": "2026-11-04",
-        "guid": "naver:market:38041",
-        "title": "유안타 AI 미국 주식시장 마감 시황 (26.11.04)",
-        "link": "https://stock.naver.com/research/market/38041",
-        "by": "유안타증권"
-      },
-      {
-        "label": "증권사 경제분석",
-        "slot": "",
-        "summary": [
-          "11월 달러화, 안전자산 선호 강화 가능성도 있지만 각종 불확실성 리스크 완화로 완만한 하락세 예상",
-          "11월 달러화 변동성 확대 요인 1) 중간선거 결과, 2) AI발 신용 리스크, 3) 프랑스 재정 리스크 확산 여부, 4) 중간선거 이후 ‘장대한 분노‘ 리스크 등임.",
-          "이들 리스크의 전개 양상에 따라 안전자산 선호의 강도가 달라질 것임",
-          "다만, 11월 중 각종 리스크가 해소 국면에 접어들면서 안전자산 선호는 약화될 것으로 예상"
-        ],
-        "date": "2026-11-03",
-        "guid": "naver:economy:13986",
-        "title": "갈림길에 선 달러 : 중간선거, AI 신용 우려, 프랑스 및 이란 리스크",
-        "link": "https://stock.naver.com/research/economy/13986",
-        "by": "iM증권"
-      },
-      {
-        "label": "증권사 투자전략",
-        "slot": "",
-        "summary": [
-          "\" 알파벳은 3분기 클라우드 매출 성장률이 사상 처음 세 자릿수(103%)를 기록했고, RPO도 5,677억달러로 전년비 260% 급증.",
-          "\" 아마존은 3분기 AWS 매출 성장률이 39%로 전분기 대비 2.5%p 가속.",
-          "\" 마이크로소프트는 3P(Nscale 추정) 데이터센터 구축 지연에도 불구하고 1분기 Azure 매출 성장률이 48%로 전분기 대비 6.1%p 가속.",
-          "\" 하이퍼스케일러 3사 합산 클라우드 매출 성장률은 56%로 전분기 대비 7.9%p 가속, 합산 RPO도 1조 8,290억달러로 1,290억달러 증가.",
-          "\" 다만 3분기 합산 FCF는 -264억달러로 사상 처음 음전했고, 견조한 성장과 투자 의지에도 시장의 시선은 현금흐름으로 이동."
-        ],
-        "date": "2026-11-03",
-        "guid": "naver:invest:40682",
-        "title": "글로벌 테크 - AI, 지출과 확신의 이격",
-        "link": "https://stock.naver.com/research/invest/40682",
-        "by": "유진투자증권"
-      }
-    ],
     "2026-11-06": [
       {
         "label": "밤사이 미국 시장",
@@ -3823,6 +3804,53 @@
         "link": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=11066699&menuNo=200433",
         "by": ""
       }
+    ],
+    "2026-11-19": [
+      {
+        "label": "밤사이 미국 시장",
+        "slot": "overnight",
+        "summary": [
+          "엔비디아 실적 발표를 앞두고 황 CEO 사임 여파와 SEC 조사, 전방위 기술 장애까지 겹친 가운데 연준 인사들의 추가 인상 시사가 더해지며 블루칩(다우 -1.64%)이 가장 크게 밀렸습니다.",
+          "성장주(나스닥 -0.74%)보다 금융주(XLF -1.91%)가 흔들린 리스크오프 하루였습니다."
+        ],
+        "date": "2026-11-18",
+        "guid": "naver:market:38212",
+        "title": "유안타 AI 미국 주식시장 마감 시황 (26.11.18)",
+        "link": "https://stock.naver.com/research/market/38212",
+        "by": "유안타증권"
+      },
+      {
+        "label": "증권사 경제분석",
+        "slot": "",
+        "summary": [
+          "10월 미국 소매판매는 전월대비 0.2%(전년동월대비 6.8%) 증가하며 예상치 부합.",
+          "주유소(+1.5%) 판매 증가세가 이어졌고, 무점포(+1.2%) 판매가 늘었음.",
+          "헬스케어(+1.5%) 판매도 9개월 연속 증가.",
+          "반면 가구(-2.3%)와 자동차(-1.6%) 판매는 감소.",
+          "자동차를 제외한 소매판매는 전월대비 0.6% 증가"
+        ],
+        "date": "2026-11-18",
+        "guid": "naver:economy:14045",
+        "title": "10월 미국 소매판매: 선별적인 소비와 신중한 회복",
+        "link": "https://stock.naver.com/research/economy/14045",
+        "by": "한화투자증권"
+      },
+      {
+        "label": "증권사 투자전략",
+        "slot": "",
+        "summary": [
+          "TPU 밸류체인, AI모델사에는기회.",
+          "11월 11일, NVIDIA를 30년 넘게 이끌어온 젠슨 황이 CEO와 이사직에서 사임했다.",
+          "젠슨 황이 이끈 NVIDIA는 기술을 선도하는 빅테크를 넘어 세 가지 역할을 수행해왔다.",
+          "젠슨 황의 부재로 가장 큰 부담이 예상되는 기업은 NVIDIA의 금융지원에 의존해온 네오클라우드다.",
+          "NVIDIA의 생태계 금융지원 축소 기조가 확인되면 주주환원 여력이 확대될 수 있어 단기 주가에 긍정적일 수 있다."
+        ],
+        "date": "2026-11-18",
+        "guid": "naver:invest:40871",
+        "title": "[DS 미국주식] 젠슨 황이 떠난 자리, 흔들리는 AI 산업의 지형도",
+        "link": "https://stock.naver.com/research/invest/40871",
+        "by": "DS투자증권"
+      }
     ]
   },
   "reports_used": [
@@ -3856,6 +3884,7 @@
     "naver:economy:14029",
     "naver:economy:14034",
     "naver:economy:14037",
+    "naver:economy:14045",
     "naver:invest:40559",
     "naver:invest:40569",
     "naver:invest:40571",
@@ -3881,6 +3910,7 @@
     "naver:invest:40810",
     "naver:invest:40836",
     "naver:invest:40850",
+    "naver:invest:40871",
     "naver:market:38041",
     "naver:market:38056",
     "naver:market:38069",
@@ -3894,10 +3924,10 @@
     "naver:market:38143",
     "naver:market:38153",
     "naver:market:38176",
-    "naver:market:38196"
+    "naver:market:38196",
+    "naver:market:38212"
   ],
   "sent": [
-    "2026-11-05",
     "2026-11-06",
     "2026-11-07",
     "2026-11-08",
@@ -3910,7 +3940,8 @@
     "2026-11-15",
     "2026-11-16",
     "2026-11-17",
-    "2026-11-18"
+    "2026-11-18",
+    "2026-11-19"
   ],
   "markets_history": {
     "2026-11-05": {
@@ -4248,6 +4279,30 @@
       "금": "$3,848.80",
       "구리 (경기 선행)": "$5.9660",
       "VIX (공포 지수)": "25.78"
+    },
+    "2026-11-19": {
+      "KOSPI": "5,067.44",
+      "KOSDAQ": "662.81",
+      "KR 3Y": "3.75%",
+      "US 2Y": "4.80%",
+      "US 10Y": "5.07%",
+      "US 30Y": "5.41%",
+      "10Y-2Y spread": "+27bp",
+      "USD/KRW": "1,332.3",
+      "USD/JPY": "159.42",
+      "USD/EUR": "0.9117",
+      "S&P 500": "7,323.52",
+      "나스닥": "24,429.89",
+      "다우": "50,197.78",
+      "유로스톡스 50": "6,154.39",
+      "니케이 225": "59,024.28",
+      "상해종합": "3,587.83",
+      "항셍": "23,294.75",
+      "WTI": "$82.95",
+      "브렌트유": "$91.65",
+      "금": "$3,732.30",
+      "구리 (경기 선행)": "$5.6665",
+      "VIX (공포 지수)": "24.59"
     }
   },
   "estate": {
@@ -6480,6 +6535,24 @@
         "match": "subsidies",
         "link": "https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html",
         "source": "CNBC Economy"
+      }
+    ],
+    "2026-11-19": [
+      {
+        "en": "inflation",
+        "ko": "물가 상승, 인플레이션",
+        "sentence": "Typical energy bill forecast to go up by £443 a year from January as inflation rate rises again.",
+        "match": "inflation",
+        "link": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Business"
+      },
+      {
+        "en": "ramp up",
+        "ko": "(생산·투자를) 늘리다, 끌어올리다",
+        "sentence": "China worries the scandal could ramp up pressure on the US to further restrict the sale of advanced chips.",
+        "match": "ramp up",
+        "link": "https://www.bbc.co.uk/news/articles/c5vg23g92rj4o?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Business"
       }
     ]
   }

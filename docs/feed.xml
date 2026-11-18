@@ -53,21 +53,5 @@
       <enclosure url="https://sphinx.acast.com/p/open/s/67587e77c705e441797aff96/e/6af5e8e843d8776fbbb21b34/media.mp3" type="audio/mpeg" length="0" />
       <itunes:duration>900</itunes:duration>
     </item>
-    <item>
-      <title>[11-12 1] EN Easy | How do climate scientists make predictions?</title>
-      <guid isPermaLink="false">2026-11-12:urn:bbc:podcast:p0p2yh63</guid>
-      <pubDate>Thu, 12 Nov 2026 06:00:00 +0000</pubDate>
-      <link>http://www.bbc.co.uk/programmes/p0p2yh63</link>
-      <enclosure url="http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0p2ygrc.mp3" type="audio/mpeg" length="0" />
-      <itunes:duration>420</itunes:duration>
-    </item>
-    <item>
-      <title>[11-12 2] EN All Ears | AEE 2720: Are You Spiteful? How to Discuss Revenge in English</title>
-      <guid isPermaLink="false">2026-11-12:0a7cf9c2-d11b-11f1-a28a-d79820cd68d1</guid>
-      <pubDate>Thu, 12 Nov 2026 05:00:00 +0000</pubDate>
-      <link>https://www.allearsenglish.com/fluencyscore</link>
-      <enclosure url="https://traffic.megaphone.fm/ALLE8451433385.mp3" type="audio/mpeg" length="0" />
-      <itunes:duration>1140</itunes:duration>
-    </item>
   </channel>
 </rss>
