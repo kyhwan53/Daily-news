@@ -226,7 +226,7 @@ def build_articles(day, state):
             return None
         _, src, a = min(cands, key=lambda c: c[0])
         seen.add(a["guid"])
-        return {"label": src["label"], **{k: a[k] for k in ("guid", "title", "link", "summary")}}
+        return {"label": src["label"], "section": name, **{k: a[k] for k in ("guid", "title", "link", "summary")}}
 
     chosen = {}
     for name in sorted(sections, key=lambda n: (n != "business", n != "top")):  # business, top, then the rest
@@ -254,29 +254,34 @@ def render_email(queue, articles, day, markets_html="", reports_html="", cards_h
         "</div></div>"
         for e in queue
     )
-    read = "".join(
-        f"<div style='{card}'><span style='{tag.replace('#2f6fed', '#0f9d58')}'>{escape(a['label'])}</span>"
-        f"<div style='font-size:16px;font-weight:600;margin:8px 0 4px'>"
-        f"<a style='color:#111;text-decoration:none' href='{escape(a['link'])}'>{escape(a['title'])}</a></div>"
-        f"<div style='font-size:13px;color:#4b5563;line-height:1.5'>{escape(a['summary'])}</div>"
-        f"<div style='font-size:13px;margin-top:8px'><a style='{link}' href='{escape(a['link'])}'>Read the article →</a></div></div>"
-        for a in articles
-    )
+    def article_cards(items):
+        return "".join(
+            f"<div style='{card}'><span style='{tag.replace('#2f6fed', '#0f9d58')}'>{escape(a['label'])}</span>"
+            f"<div style='font-size:16px;font-weight:600;margin:8px 0 4px'>"
+            f"<a style='color:#111;text-decoration:none' href='{escape(a['link'])}'>{escape(a['title'])}</a></div>"
+            f"<div style='font-size:13px;color:#4b5563;line-height:1.5'>{escape(a['summary'])}</div>"
+            f"<div style='font-size:13px;margin-top:8px'><a style='{link}' href='{escape(a['link'])}'>Read the article →</a></div></div>"
+            for a in items
+        )
+    read = article_cards([a for a in articles if a.get("section") != "business"])
+    econ_article = article_cards([a for a in articles if a.get("section") == "business"])
+    # All economy content together, after the reading and study cards; earnings sit at the bottom of the block
+    banner = ("<div style='font-size:15px;font-weight:700;color:#fff;background:#1f2937;border-radius:8px;"
+              "padding:8px 14px;margin:26px 0 4px'>ECONOMY · 경제</div>")
+    economy = (banner + econ_article + global_html + reports_html + markets_html + earnings_html) if (
+        econ_article or global_html or reports_html or markets_html or earnings_html) else ""
     return (
         "<div style='max-width:600px;margin:0 auto;background:#f4f6f8;padding:18px;"
         "font-family:Segoe UI,Arial,sans-serif;color:#111'>"
         f"<div style='font-size:20px;font-weight:700'>Daily Study</div>"
         f"<div style='font-size:13px;color:#6b7280;margin:2px 0 16px'>{day}</div>"
         f"{weekly_html}"
-        f"{earnings_html}"
         + (("<div style='font-size:12px;font-weight:700;letter-spacing:.06em;color:#6b7280;margin:16px 0 6px'>LISTEN"
             f" · about {total} min</div>{listen}") if queue else "")
         + "<div style='font-size:12px;font-weight:700;letter-spacing:.06em;color:#6b7280;margin:16px 0 6px'>READ</div>"
         f"{read or '<div style=color:#6b7280>No new articles today.</div>'}"
         f"{cards_html}"
-        f"{reports_html}"
-        f"{global_html}"
-        f"{markets_html}"
+        f"{economy}"
         f"{portfolio_html}"
         "<div style='font-size:12px;color:#6b7280;margin-top:14px;line-height:1.5'>"
         "Tip: while reading, note 3 phrases you could reuse in a meeting or presentation.</div></div>"
