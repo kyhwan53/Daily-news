@@ -21,21 +21,5 @@
       <enclosure url="https://tracking.swap.fm/track/XvDEoI11TR00olTUO8US/prfx.byspotify.com/e/play.podtrac.com/npr-510338/npr.simplecastaudio.com/8ae5a040-e346-4b89-ba6b-625f91f1fbd4/episodes/3267271c-7c17-46f9-a00a-63448aab0018/audio/128/default.mp3?awCollectionId=8ae5a040-e346-4b89-ba6b-625f91f1fbd4&amp;awEpisodeId=3267271c-7c17-46f9-a00a-63448aab0018&amp;feed=XkY2SBZJ&amp;t=podcast&amp;e=nx-s1-6034949&amp;p=510338&amp;d=1024&amp;size=16386133" type="audio/mpeg" length="0" />
       <itunes:duration>1020</itunes:duration>
     </item>
-    <item>
-      <title>[11-14 1] EN Easy | Learning from different generations</title>
-      <guid isPermaLink="false">2026-11-14:urn:bbc:podcast:p0pmkr5c</guid>
-      <pubDate>Sat, 14 Nov 2026 06:00:00 +0000</pubDate>
-      <link>http://www.bbc.co.uk/programmes/p0pmkr5c</link>
-      <enclosure url="http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0pmkqml.mp3" type="audio/mpeg" length="0" />
-      <itunes:duration>420</itunes:duration>
-    </item>
-    <item>
-      <title>[11-14 2] EN Life Kit | Life is easier with neighbors. Here’s how to get to know them</title>
-      <guid isPermaLink="false">2026-11-14:94b722c0-0d7e-4b01-bd70-5e5e9a99a0d7</guid>
-      <pubDate>Sat, 14 Nov 2026 05:00:00 +0000</pubDate>
-      <link>https://www.npr.org/2026/11/12/nx-s1-6037839/life-is-easier-with-neighbors-heres-how-to-get-to-know-them</link>
-      <enclosure url="https://tracking.swap.fm/track/XvDEoI11TR00olTUO8US/prfx.byspotify.com/e/play.podtrac.com/npr-510338/npr.simplecastaudio.com/8ae5a040-e346-4b89-ba6b-625f91f1fbd4/episodes/4433f11c-95df-4e64-971c-f6802d3386b9/audio/128/default.mp3?awCollectionId=8ae5a040-e346-4b89-ba6b-625f91f1fbd4&amp;awEpisodeId=4433f11c-95df-4e64-971c-f6802d3386b9&amp;feed=XkY2SBZJ&amp;t=podcast&amp;e=nx-s1-6037839&amp;p=510338&amp;d=1145&amp;size=18327137" type="audio/mpeg" length="0" />
-      <itunes:duration>1140</itunes:duration>
-    </item>
   </channel>
 </rss>
