@@ -1,25 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+<rss version="2.0">
   <channel>
     <title>Daily news</title>
     <link>https://kyhwan53.github.io/Daily-news</link>
     <language>en</language>
     <description>Personal daily listening queue (links to original podcasts).</description>
-    <item>
-      <title>[11-15 1] EN Business | Office English: Disagreements</title>
-      <guid isPermaLink="false">2026-11-15:urn:bbc:podcast:p0n6xmrn</guid>
-      <pubDate>Sun, 15 Nov 2026 06:00:00 +0000</pubDate>
-      <link>http://www.bbc.co.uk/programmes/p0n6xmrn</link>
-      <enclosure url="http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0n6xlsx.mp3" type="audio/mpeg" length="0" />
-      <itunes:duration>360</itunes:duration>
-    </item>
-    <item>
-      <title>[11-15 2] EN Life Kit | I got what I wanted. Why am I unhappy?</title>
-      <guid isPermaLink="false">2026-11-15:f807523d-469d-46dc-908b-654e114f53fb</guid>
-      <pubDate>Sun, 15 Nov 2026 05:00:00 +0000</pubDate>
-      <link>https://www.npr.org/2026/11/10/nx-s1-6034949/i-got-what-i-wanted-why-am-i-unhappy</link>
-      <enclosure url="https://tracking.swap.fm/track/XvDEoI11TR00olTUO8US/prfx.byspotify.com/e/play.podtrac.com/npr-510338/npr.simplecastaudio.com/8ae5a040-e346-4b89-ba6b-625f91f1fbd4/episodes/3267271c-7c17-46f9-a00a-63448aab0018/audio/128/default.mp3?awCollectionId=8ae5a040-e346-4b89-ba6b-625f91f1fbd4&amp;awEpisodeId=3267271c-7c17-46f9-a00a-63448aab0018&amp;feed=XkY2SBZJ&amp;t=podcast&amp;e=nx-s1-6034949&amp;p=510338&amp;d=1024&amp;size=16386133" type="audio/mpeg" length="0" />
-      <itunes:duration>1020</itunes:duration>
-    </item>
   </channel>
 </rss>
