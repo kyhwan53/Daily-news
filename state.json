@@ -1306,7 +1306,8 @@
     "2026-11-20": [],
     "2026-11-21": [],
     "2026-11-22": [],
-    "2026-11-23": []
+    "2026-11-23": [],
+    "2026-11-24": []
   },
   "articles": {
     "2026-10-11": [
@@ -2157,6 +2158,32 @@
         "link": "https://www.theguardian.com/environment/2026/nov/21/alaska-bering-sea-heatwave-snow-tanner-hybrid-crabs-fishing-quotas",
         "summary": "A heatwave in the Bering Sea that killed 10bn snow crabs has led to a new hybrid emerging that has no fishing quotas Somewhere out on the Bering Sea, hundreds of miles off the coast of Alaska, a group of researchers onboard the trawler Alas…"
       }
+    ],
+    "2026-11-24": [
+      {
+        "label": "BBC World",
+        "section": "top",
+        "guid": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo#0",
+        "title": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
+        "link": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+        "summary": "The Kremlin warns of an \"escalation of tensions in the region\", but declines to comment directly on the attacks in Libya."
+      },
+      {
+        "label": "BBC Business",
+        "section": "business",
+        "guid": "https://www.bbc.co.uk/news/articles/ckr5g8edl94eo#0",
+        "title": "Faisal Islam: Why Jensen Huang proved too big to fire",
+        "link": "https://www.bbc.co.uk/news/articles/ckr5g8edl94eo?at_medium=RSS&at_campaign=rss",
+        "summary": "Huang's role at the centre of his company's journey to lynchpin of AI proved crucial."
+      },
+      {
+        "label": "NPR Climate",
+        "section": "environment",
+        "guid": "https://www.npr.org/2026/11/23/nx-s1-6050273/cop31-ends-with-no-deal-after-negotiators-fail-to-reach-an-agreement-on-fossil-fuels",
+        "title": "COP31 ends with no deal after negotiators fail to reach an agreement on fossil fuels",
+        "link": "https://www.npr.org/2026/11/23/nx-s1-6050273/cop31-ends-with-no-deal-after-negotiators-fail-to-reach-an-agreement-on-fossil-fuels",
+        "summary": "International climate talks in Turkey ended in disappointment with countries failing to reach agreement over fossil fuels -- the primary driver of climate change."
+      }
     ]
   },
   "articles_used": [
@@ -2172,6 +2199,7 @@
     "https://www.bbc.co.uk/news/articles/c9p8gz7zx4peo#0",
     "https://www.bbc.co.uk/news/articles/ck20v651473qo#3",
     "https://www.bbc.co.uk/news/articles/ck79py02p1jlo#0",
+    "https://www.bbc.co.uk/news/articles/ckr5g8edl94eo#0",
     "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo#0",
     "https://www.bbc.co.uk/news/articles/cm4g1zrl2nrqo#0",
     "https://www.bbc.co.uk/news/articles/cmewv2kzq2e5o#3",
@@ -2188,6 +2216,7 @@
     "https://www.bbc.co.uk/news/articles/cqrkyyd2j8mvo#1",
     "https://www.bbc.co.uk/news/articles/cr0qk25p1yeno#3",
     "https://www.bbc.co.uk/news/articles/cr6240q1w136o#0",
+    "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo#0",
     "https://www.bbc.co.uk/news/articles/cr93z1e87e0do#2",
     "https://www.bbc.co.uk/news/articles/cw1mdlv0k2r4o#1",
     "https://www.bbc.co.uk/news/articles/cw987343352go#0",
@@ -2226,6 +2255,7 @@
     "https://www.npr.org/2026/11/16/nx-s1-6020923/arctic-bird-migration-alaska-climate-change",
     "https://www.npr.org/2026/11/16/nx-s1-6042888/how-the-u-s-influence-is-and-isnt-felt-at-this-years-un-climate-talks",
     "https://www.npr.org/2026/11/18/nx-s1-6044242/putin-to-meet-with-trump-and-xi-after-ukrainian-attack-on-russian-bridge",
+    "https://www.npr.org/2026/11/23/nx-s1-6050273/cop31-ends-with-no-deal-after-negotiators-fail-to-reach-an-agreement-on-fossil-fuels",
     "https://www.npr.org/sections/planet-money/2026/10/09/nx-s1-5995606/why-american-investors-love-european-defense-startups",
     "https://www.npr.org/sections/planet-money/2026/10/16/nx-s1-6001828/what-this-bankruptcy-says-about-ai-startups",
     "https://www.npr.org/sections/planet-money/2026/11/02/g-s1-151009/two-economists-studied-californias-billionaire-tax-they-reached-wildly-different-conclusions",
@@ -2389,7 +2419,7 @@
       {
         "title": "Corporate Profits q/q",
         "country": "CAD",
-        "date": "2026-11-23T08:30:00-05:00",
+        "date": "2026-11-23T08:32:00-05:00",
         "impact": "Low",
         "forecast": "",
         "previous": "8.7%"
@@ -2427,19 +2457,11 @@
         "previous": "53.3"
       },
       {
-        "title": "Foreign Direct Investment ytd/y",
-        "country": "CNY",
-        "date": "2026-11-24T02:02:00-05:00",
-        "impact": "Low",
-        "forecast": "",
-        "previous": "-4.3%"
-      },
-      {
         "title": "German ifo Business Climate",
         "country": "EUR",
         "date": "2026-11-24T04:00:00-05:00",
         "impact": "Low",
-        "forecast": "90.6",
+        "forecast": "90.5",
         "previous": "90.2"
       },
       {
@@ -2447,7 +2469,7 @@
         "country": "GBP",
         "date": "2026-11-24T06:00:00-05:00",
         "impact": "Low",
-        "forecast": "-24",
+        "forecast": "-27",
         "previous": "-10"
       },
       {
@@ -2479,7 +2501,7 @@
         "country": "EUR",
         "date": "2026-11-24T09:00:00-05:00",
         "impact": "Low",
-        "forecast": "-9.3",
+        "forecast": "-9.4",
         "previous": "-9.8"
       },
       {
@@ -2503,7 +2525,7 @@
         "country": "USD",
         "date": "2026-11-24T10:00:00-05:00",
         "impact": "Medium",
-        "forecast": "92.1",
+        "forecast": "92.4",
         "previous": "91.7"
       },
       {
@@ -2511,7 +2533,7 @@
         "country": "USD",
         "date": "2026-11-24T10:00:00-05:00",
         "impact": "Low",
-        "forecast": "-3",
+        "forecast": "-2",
         "previous": "-2"
       },
       {
@@ -2551,7 +2573,7 @@
         "country": "AUD",
         "date": "2026-11-24T19:30:00-05:00",
         "impact": "High",
-        "forecast": "4.8%",
+        "forecast": "4.7%",
         "previous": "4.3%"
       },
       {
@@ -2627,14 +2649,6 @@
         "previous": "2.3%"
       },
       {
-        "title": "Unemployment Claims",
-        "country": "USD",
-        "date": "2026-11-25T08:30:00-05:00",
-        "impact": "Medium",
-        "forecast": "201K",
-        "previous": "203K"
-      },
-      {
         "title": "Core Durable Goods Orders m/m",
         "country": "USD",
         "date": "2026-11-25T08:30:00-05:00",
@@ -2647,7 +2661,7 @@
         "country": "USD",
         "date": "2026-11-25T08:30:00-05:00",
         "impact": "Low",
-        "forecast": "0.5%",
+        "forecast": "0.7%",
         "previous": "1.8%"
       },
       {
@@ -2667,11 +2681,19 @@
         "previous": "0.5%"
       },
       {
+        "title": "Unemployment Claims",
+        "country": "USD",
+        "date": "2026-11-25T08:30:00-05:00",
+        "impact": "Low",
+        "forecast": "201K",
+        "previous": "203K"
+      },
+      {
         "title": "New Home Sales",
         "country": "USD",
         "date": "2026-11-25T10:00:00-05:00",
         "impact": "Low",
-        "forecast": "649K",
+        "forecast": "650K",
         "previous": "676K"
       },
       {
@@ -2687,7 +2709,7 @@
         "country": "USD",
         "date": "2026-11-25T12:00:00-05:00",
         "impact": "Low",
-        "forecast": "",
+        "forecast": "-19B",
         "previous": "20B"
       },
       {
@@ -2703,7 +2725,7 @@
         "country": "AUD",
         "date": "2026-11-25T19:30:00-05:00",
         "impact": "Low",
-        "forecast": "4.4%",
+        "forecast": "4.5%",
         "previous": "-3.6%"
       },
       {
@@ -2877,54 +2899,6 @@
     ]
   },
   "reports": {
-    "2026-11-10": [
-      {
-        "label": "밤사이 미국 시장",
-        "slot": "overnight",
-        "summary": [
-          "KOSPI 5,059pt (-6.02%), KOSDAQ 644pt (-5.03%)",
-          "지수는 이틀 연속 급락, KOSPI는 5,000선을 하회하기도 했으나 오후 중 지수 소폭 반등",
-          "증시는 3대 지수 급락 마감.",
-          "국내 증시 또한 미 증시 영향에 장 초반부터 빠르게 매물 출회.",
-          "삼성전자, SK하이닉스는 4거래일 연속 하락하며 반도체 투자심리 악화 지속."
-        ],
-        "date": "2026-11-09",
-        "guid": "naver:market:38080",
-        "title": "11/6 KB 리서치 장마감코멘트",
-        "link": "https://stock.naver.com/research/market/38080",
-        "by": "KB증권"
-      },
-      {
-        "label": "증권사 경제분석",
-        "slot": "",
-        "summary": [
-          "10월 미국 비농업부문 고용은 전월대비 16.5만 명 증가하면서 예상치(+7.0만 명, Bloomberg 기준) 상회.",
-          "8월과 9월 고용도 상향 조정.",
-          "실업률은 4.1%로 전월대비 0.1%p 하락, 경제활동참가율은 61.9%로 0.1%p 상승.",
-          "취업자가 풀타임 중심으로 3개월 연속 늘었고, 실업자는 감소 전환.",
-          "시간당 평균임금은 전월대비 0.4%(전년동월대비 3.1%) 상승."
-        ],
-        "date": "2026-11-09",
-        "guid": "naver:economy:14012",
-        "title": "10월 미국 고용: 본격적인 회복은 아직",
-        "link": "https://stock.naver.com/research/economy/14012",
-        "by": "한화투자증권"
-      },
-      {
-        "label": "증권사 투자전략",
-        "slot": "",
-        "summary": [
-          "중간선거 불확실성 해소로 하루 반등했으나 데이터센터 규제 우려에 AI·반도체 투매로 하락 전환, 재생에너지·헬스케어는 정책 기대에 강세",
-          "차주 증시는 고용·물가 지표와 주요 기업 실적을 주시하는 가운데 반도체 기술적 반등 가능성이 있으나, 네오클라우드 기업의 자금조달 및 AI 부채 우려가 부담",
-          "중간선거 이후 메디케이드 삭감 완화 기대와 고령화에 따른 의료서비스 수요 증가에 주목해, 미국 헬스케어 산업 전반에 분산 투자하는 ETF ‘XHS’ 소개"
-        ],
-        "date": "2026-11-09",
-        "guid": "naver:invest:40743",
-        "title": "키움 글로벌 키차트(11월 1주)",
-        "link": "https://stock.naver.com/research/invest/40743",
-        "by": "키움증권"
-      }
-    ],
     "2026-11-11": [
       {
         "label": "밤사이 미국 시장",
@@ -3588,6 +3562,54 @@
         "link": "https://stock.naver.com/research/invest/40884",
         "by": "키움증권"
       }
+    ],
+    "2026-11-24": [
+      {
+        "label": "밤사이 미국 시장",
+        "slot": "overnight",
+        "summary": [
+          "지난 주는 AI 반도체·인프라·소프트웨어가 동반 급락하며 나스닥이 주간 -10.02%로 2020년 이후 최악의 한 주를 기록한 'AI 트레이드 되돌림' 국면이었습니다.",
+          "엔비디아와 마이크론이 20% 넘게 무너지며 하락을 이끌었고, 충격은 금·원자재·신흥국으로 광범위하게 번졌습니다.",
+          "[이번 주 키워드: AI 버블 논쟁 · 광범위한 디레버리징 · PCE]"
+        ],
+        "date": "2026-11-23",
+        "guid": "naver:market:38266",
+        "title": "유안타 AI 미국 주식시장 주간 시황 (26.11.23)",
+        "link": "https://stock.naver.com/research/market/38266",
+        "by": "유안타증권"
+      },
+      {
+        "label": "증권사 경제분석",
+        "slot": "",
+        "summary": [
+          "성장률 전망 상향은 반도체 가중치 확대, 2027년 성장은 물량 증가율이 좌우",
+          "2027년 성장률 전망에 대한 눈높이가 올라가고 있음, 이는 경기 가속이 아닌 반도체 가중치의 확대에 기인.",
+          "실질 GDP 성장률은 업종별 물량 증가율을 전년 명목 비중으로 가중 합산한 값인데, 반도체 가격 급등으로 반도체가 속한 업종이 명목 GDP에서 차지하는 비중이 2025년 9.0%에서 2026년 …",
+          "결국 2027년 성장률 전망의 차이는 반도체 물량 가정의 차이.",
+          "당사는 2027년 반도체 물량 증가율이 횡보할 것으로 판단하며 성장률 전망 2.8%를 유지."
+        ],
+        "date": "2026-11-23",
+        "guid": "naver:economy:14057",
+        "title": "[11월 3주차] 경제의 판도를 움직이는 변수들: 성장률 상향 조정에도 금리와 환율의 경로는 바뀌지 않는다",
+        "link": "https://stock.naver.com/research/economy/14057",
+        "by": "유안타증권"
+      },
+      {
+        "label": "증권사 투자전략",
+        "slot": "",
+        "summary": [
+          "금주 증시는 젠슨 황 복귀 거부, 중국 AI 규제 우려, 금리 인상 경계 등이 기술주를 압박.",
+          "엔비디아 호실적·앤트로픽 상장에도 지수 반등 제한",
+          "차주는 추수감사절 단축 주간으로 유동성이 줄어드는 가운데 GDP·근원 PCE가 금리 기대를 좌우할 전망.",
+          "물가 둔화 시 성장·기술주 반등 여지가 있으나, HPE·Dell 실적을 통한 AI 서버 수요 확인 필요",
+          "미·일 금리차에 따른 환헤지 캐리와 AI주 조정 국면의 방어력에 주목해, 일본 수출·배당주에 환헤지로 투자하는 ETF ‘DXJ’ 소개"
+        ],
+        "date": "2026-11-23",
+        "guid": "naver:invest:40897",
+        "title": "키움 글로벌 키차트(11월 3주)",
+        "link": "https://stock.naver.com/research/invest/40897",
+        "by": "키움증권"
+      }
     ]
   },
   "reports_used": [
@@ -3627,6 +3649,7 @@
     "naver:economy:14048",
     "naver:economy:14049",
     "naver:economy:14050",
+    "naver:economy:14057",
     "naver:invest:40559",
     "naver:invest:40569",
     "naver:invest:40571",
@@ -3657,6 +3680,7 @@
     "naver:invest:40882",
     "naver:invest:40884",
     "naver:invest:40887",
+    "naver:invest:40897",
     "naver:market:38041",
     "naver:market:38056",
     "naver:market:38069",
@@ -3675,10 +3699,10 @@
     "naver:market:38221",
     "naver:market:38232",
     "naver:market:38245",
-    "naver:market:38246"
+    "naver:market:38246",
+    "naver:market:38266"
   ],
   "sent": [
-    "2026-11-10",
     "2026-11-11",
     "2026-11-12",
     "2026-11-13",
@@ -3691,7 +3715,8 @@
     "2026-11-20",
     "2026-11-21",
     "2026-11-22",
-    "2026-11-23"
+    "2026-11-23",
+    "2026-11-24"
   ],
   "markets_history": {
     "2026-11-05": {
@@ -4149,6 +4174,30 @@
       "금": "$3,515.40",
       "구리 (경기 선행)": "$5.4850",
       "VIX (공포 지수)": "35.89"
+    },
+    "2026-11-24": {
+      "KOSPI": "4,708.54",
+      "KOSDAQ": "635.45",
+      "KR 3Y": "3.63%",
+      "US 2Y": "4.63%",
+      "US 10Y": "4.92%",
+      "US 30Y": "5.29%",
+      "10Y-2Y spread": "+29bp",
+      "USD/KRW": "1,348.8",
+      "USD/JPY": "159.07",
+      "USD/EUR": "0.9142",
+      "S&P 500": "7,237.83",
+      "나스닥": "24,089.56",
+      "다우": "49,598.97",
+      "유로스톡스 50": "6,074.47",
+      "니케이 225": "56,436.65",
+      "상해종합": "3,538.95",
+      "항셍": "22,383.74",
+      "WTI": "$80.06",
+      "브렌트유": "$89.18",
+      "금": "$3,632.90",
+      "구리 (경기 선행)": "$5.6145",
+      "VIX (공포 지수)": "26.72"
     }
   },
   "estate": {
@@ -6920,6 +6969,24 @@
         "match": "showdown",
         "link": "https://www.theguardian.com/environment/2026/nov/21/climate-talks-stall-countries-mull-showdown-saudi-arabia-over-fossil-fuels",
         "source": "Guardian Business"
+      }
+    ],
+    "2026-11-24": [
+      {
+        "en": "warn",
+        "ko": "경고하다",
+        "sentence": "The Kremlin warns of an \"escalation of tensions in the region\", but declines to comment directly on the attacks in Libya.",
+        "match": "warns",
+        "link": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+        "source": "BBC World"
+      },
+      {
+        "en": "weigh on",
+        "ko": "~에 부담을 주다, 짓누르다",
+        "sentence": "Pressures weighed on US markets, with the S&P 500 and the Dow Jones Industrial Average pushed into correction territory.",
+        "match": "weighed on",
+        "link": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss",
+        "source": "BBC Business"
       }
     ]
   }
