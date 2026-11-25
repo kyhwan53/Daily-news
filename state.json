@@ -1308,7 +1308,8 @@
     "2026-11-22": [],
     "2026-11-23": [],
     "2026-11-24": [],
-    "2026-11-25": []
+    "2026-11-25": [],
+    "2026-11-26": []
   },
   "articles": {
     "2026-10-11": [
@@ -2211,6 +2212,32 @@
         "link": "https://www.theguardian.com/environment/2026/nov/24/summer-heat-deaths-record-high-england",
         "summary": "Figure for May to September is far higher than previous peak of 2,985 since records began a decade ago More than 5,200 deaths in England in 2026 were linked to summer heat, the highest provisional annual total since records began a decade a…"
       }
+    ],
+    "2026-11-26": [
+      {
+        "label": "Guardian Top Stories",
+        "section": "top",
+        "guid": "https://www.theguardian.com/technology/2026/nov/24/nvidia-staff-what-do-you-think-jensen-huang-return-chief-executive",
+        "title": "Nvidia staff: what do you think of Jensen Huang’s return as chief executive?",
+        "link": "https://www.theguardian.com/technology/2026/nov/24/nvidia-staff-what-do-you-think-jensen-huang-return-chief-executive",
+        "summary": "Do you work for the the world’s biggest chipmaker? Share your views on the surprise reinstatement of its CEO Jensen Huang made his return to Nvidia’s headquarters with a hero’s welcome on Monday, hours after being reinstated as the chief ex…"
+      },
+      {
+        "label": "Guardian Business",
+        "section": "business",
+        "guid": "https://www.theguardian.com/us-news/2026/nov/25/trump-new-china-tariffs-europe",
+        "title": "Trump proposing new tariffs on 14 partners including China and EU",
+        "link": "https://www.theguardian.com/us-news/2026/nov/25/trump-new-china-tariffs-europe",
+        "summary": "Administration is suggesting an added 20% tax on Chinese imports, which would bring the total to about 40% US politics live – latest updates Donald Trump is proposing new tariffs on 14 trading partners, including China and the European Unio…"
+      },
+      {
+        "label": "Guardian Environment",
+        "section": "environment",
+        "guid": "https://www.theguardian.com/environment/2026/nov/24/missed-opportunities-cop31-oceans-fossil-fuels",
+        "title": "Oceans, fossil fuels and keeping 1.5 alive: the missed opportunities at Cop31",
+        "link": "https://www.theguardian.com/environment/2026/nov/24/missed-opportunities-cop31-oceans-fossil-fuels",
+        "summary": "The collapse of the ‘Antalya pact’ took away the chance of a unifying effort to deal with a number of issues The “Antalya pact” was supposed to be the keystone document agreed at the UN’s Cop31 climate summit in Turkey, but in the final day…"
+      }
     ]
   },
   "articles_used": [
@@ -2302,6 +2329,7 @@
     "https://www.theguardian.com/environment/2026/nov/18/uk-government-angela-eagle-natural-england-wild-birds-decline-",
     "https://www.theguardian.com/environment/2026/nov/21/alaska-bering-sea-heatwave-snow-tanner-hybrid-crabs-fishing-quotas",
     "https://www.theguardian.com/environment/2026/nov/21/climate-talks-stall-countries-mull-showdown-saudi-arabia-over-fossil-fuels",
+    "https://www.theguardian.com/environment/2026/nov/24/missed-opportunities-cop31-oceans-fossil-fuels",
     "https://www.theguardian.com/environment/2026/nov/24/summer-heat-deaths-record-high-england",
     "https://www.theguardian.com/environment/2026/oct/20/jackdaw-north-sea-gas-field-to-get-go-ahead-in-blow-to-climate-campaigners",
     "https://www.theguardian.com/film/2026/nov/12/to-hold-a-mountain-film-mileva-gara-jovanovic",
@@ -2317,8 +2345,10 @@
     "https://www.theguardian.com/technology/2026/nov/14/jensen-huang-affair-nvidia-nightmare",
     "https://www.theguardian.com/technology/2026/nov/16/trump-backs-calls-for-reinstatement-of-jensen-huang-as-nvidia-ceo",
     "https://www.theguardian.com/technology/2026/nov/24/donald-trump-nvidia-stock-jensen-huang-stock-market",
+    "https://www.theguardian.com/technology/2026/nov/24/nvidia-staff-what-do-you-think-jensen-huang-return-chief-executive",
     "https://www.theguardian.com/technology/2026/oct/26/iphone-duo-owners-cracks-apple-first-foldable-handset",
     "https://www.theguardian.com/technology/live/2026/nov/13/microsoft-outage-down-today-live-update-outlook-teams-365-when-fixed-latest-status-cause-news",
+    "https://www.theguardian.com/us-news/2026/nov/25/trump-new-china-tariffs-europe",
     "https://www.theguardian.com/us-news/2026/oct/23/father-killed-oregon-shooter-speaks-out",
     "https://www.theguardian.com/us-news/live/2026/oct/26/donald-trump-abdul-el-sayed-midterms-michigan-rally-space-latest-us-politics-news-updates",
     "https://www.theguardian.com/us-news/live/2026/oct/29/midterm-elections-politics-trump-obama-california-alaska-latest-news-updates",
@@ -2649,10 +2679,18 @@
       {
         "title": "German 10-y Bond Auction",
         "country": "EUR",
-        "date": "2026-11-25T05:42:00-05:00",
+        "date": "2026-11-25T05:32:00-05:00",
         "impact": "Low",
         "forecast": "",
         "previous": "3.37|1.1"
+      },
+      {
+        "title": "FOMC Member Bowman Speaks",
+        "country": "USD",
+        "date": "2026-11-25T07:25:00-05:00",
+        "impact": "Low",
+        "forecast": "",
+        "previous": ""
       },
       {
         "title": "Core PCE Price Index m/m",
@@ -2719,6 +2757,14 @@
         "previous": "203K"
       },
       {
+        "title": "Monetary Policy Report Hearings",
+        "country": "GBP",
+        "date": "2026-11-25T09:15:00-05:00",
+        "impact": "Medium",
+        "forecast": "",
+        "previous": ""
+      },
+      {
         "title": "New Home Sales",
         "country": "USD",
         "date": "2026-11-25T10:00:00-05:00",
@@ -2731,7 +2777,7 @@
         "country": "USD",
         "date": "2026-11-25T10:30:00-05:00",
         "impact": "Low",
-        "forecast": "",
+        "forecast": "2.0M",
         "previous": "3.4M"
       },
       {
@@ -2892,7 +2938,7 @@
         "date": "2026-11-27T05:33:00-05:00",
         "impact": "Low",
         "forecast": "",
-        "previous": ""
+        "previous": "4.49|1.6"
       },
       {
         "title": "German Buba President Nagel Speaks",
@@ -2929,52 +2975,6 @@
     ]
   },
   "reports": {
-    "2026-11-12": [
-      {
-        "label": "밤사이 미국 시장",
-        "slot": "overnight",
-        "summary": [
-          "예상을 웃돈 10월 물가에 10년물 금리가 5% 문턱까지 치솟으며 연준 추가 긴축 공포가 되살아난 가운데, 젠슨 황 스캔들로 AI 대장주까지 흔들리며 위험자산이 일제히 밀린 리스크오프 하루였습니다."
-        ],
-        "date": "2026-11-11",
-        "guid": "naver:market:38121",
-        "title": "유안타 AI 미국 주식시장 마감 시황 (26.11.11)",
-        "link": "https://stock.naver.com/research/market/38121",
-        "by": "유안타증권"
-      },
-      {
-        "label": "증권사 경제분석",
-        "slot": "",
-        "summary": [
-          "10월 미국 소비자물가는 전월대비 0.4%, 근원 물가는 0.3% 상승하며 예상치 상회(각각 YoY +3.8~3.9%, +2.7~2.8% 상승 추정).",
-          "에너지 및 주거 제외 서비스 물가(Supercore CPI)는 전월대비 0.40% 상승",
-          "상품: MoM +0.4%.",
-          "차량 연료(+0.7%) 물가 상승 압력이 약해진 데다 중고차(-1.2%) 물가도 하락하며 상품 물가는 둔화.",
-          "서비스: MoM +0.4%."
-        ],
-        "date": "2026-11-11",
-        "guid": "naver:economy:14023",
-        "title": "10월 미국 CPI: 여전히 더딘 발걸음",
-        "link": "https://stock.naver.com/research/economy/14023",
-        "by": "한화투자증권"
-      },
-      {
-        "label": "증권사 투자전략",
-        "slot": "",
-        "summary": [
-          "\" ① 중간선거 민주당 우세에 따른 데이터센터 구축 지연 우려, ② 네오클라우드의 자금 조달 우려, ③ 프론티어 ARR 둔화에 따른 AI 전방 수요 우려가 중첩되며 SOX 지수는 지난주 12% …",
-          "\" 민주당 우세의 중간선거 결과 자체는 예상 범위 이내였으나, 전통적 공화당 강세 지역이자 데이터센터의 핵심 거점인 텍사스를 민주당이 탈환하며 시장에 충격으로 작용.",
-          "\" 다만 데이터센터 전면 착공 금지의 현실화 가능성은 낮다고 판단.",
-          "\" 규제 강화는 사업자의 AI 캐팩스 ROI를 낮추는 요인으로 작용.",
-          "\" 지난주 실적을 발표한 아이렌은 컴퓨트 초과수요 환경 속에서 5년 계약 기준 MW당 연매출을 약 2,200만달러에 체결, 상반기 네오클라우드 평균(1,200만달러) 대비 80% 이상 높은 수준."
-        ],
-        "date": "2026-11-10",
-        "guid": "naver:invest:40778",
-        "title": "글로벌 테크 - 조정 이후를 결정할 변수",
-        "link": "https://stock.naver.com/research/invest/40778",
-        "by": "유진투자증권"
-      }
-    ],
     "2026-11-13": [
       {
         "label": "밤사이 미국 시장",
@@ -3627,6 +3627,52 @@
         "link": "https://stock.naver.com/research/invest/40921",
         "by": "DS투자증권"
       }
+    ],
+    "2026-11-26": [
+      {
+        "label": "밤사이 미국 시장",
+        "slot": "overnight",
+        "summary": [
+          "하루 만에 꺼진 젠슨 황 복귀 랠리와 마이크론 공급과잉 경고(-11%), IPO가를 깨고 내려앉은 앤트로픽이 겹치며 AI·성장주가 짓눌린 하루였지만, 헬스케어 방어주와 중소형주(러셀2000 …"
+        ],
+        "date": "2026-11-25",
+        "guid": "naver:market:38295",
+        "title": "유안타 AI 미국 주식시장 마감 시황 (26.11.25)",
+        "link": "https://stock.naver.com/research/market/38295",
+        "by": "유안타증권"
+      },
+      {
+        "label": "증권사 경제분석",
+        "slot": "",
+        "summary": [
+          "Review: 경기 방어 속 긴축 경계 강화",
+          "10월 FOMC 의사록은 금융여건 악화에도 추가 인상 기조 유효함을 재확인.",
+          "미국 10월 실물지표는 헤드라인 둔화에도 세부 항목에서 경기 방어력 확인.",
+          "중국은 산업생산 전년대비 4.8% 증가하고 수출 관련 업종 생산 지지했으나 소매판매 0.4% 느는 데 그쳤으며 고정자산투자 부진 지속.",
+          "미-중-러 정상회담에서는 석유제품 공급 확대와 안정적 에너지 흐름 중요성 강조."
+        ],
+        "date": "2026-11-23",
+        "guid": "naver:economy:14055",
+        "title": "신한 Econ Check-up",
+        "link": "https://stock.naver.com/research/economy/14055",
+        "by": "신한투자증권"
+      },
+      {
+        "label": "증권사 투자전략",
+        "slot": "",
+        "summary": [
+          "11.20일 미국 증시 급락.",
+          "미시적 요인에 기인.",
+          "추세 훼손 이유 미해당.",
+          "20일 미국 증시는 공통적으로 장대 음봉이라는 투매를 동반한 급락세를 보여줬다(S&P500 -3.70%, 나스닥 -5.28%, 다우 -1.93%).",
+          "일간 하락폭으로서 의미는 있을지언정, 추세를 훼손했다고 분석하기에는 한계가 있다."
+        ],
+        "date": "2026-11-25",
+        "guid": "naver:invest:40952",
+        "title": "현 미국 증시, 끝이 아니라 끝을 향해 나아가는 과정 - 막바지 진통 구간. 견뎌내야 한다",
+        "link": "https://stock.naver.com/research/invest/40952",
+        "by": "대신증권"
+      }
     ]
   },
   "reports_used": [
@@ -3666,6 +3712,7 @@
     "naver:economy:14048",
     "naver:economy:14049",
     "naver:economy:14050",
+    "naver:economy:14055",
     "naver:economy:14056",
     "naver:economy:14057",
     "naver:invest:40559",
@@ -3700,6 +3747,7 @@
     "naver:invest:40887",
     "naver:invest:40897",
     "naver:invest:40921",
+    "naver:invest:40952",
     "naver:market:38041",
     "naver:market:38056",
     "naver:market:38069",
@@ -3720,10 +3768,10 @@
     "naver:market:38245",
     "naver:market:38246",
     "naver:market:38266",
-    "naver:market:38278"
+    "naver:market:38278",
+    "naver:market:38295"
   ],
   "sent": [
-    "2026-11-12",
     "2026-11-13",
     "2026-11-14",
     "2026-11-15",
@@ -3736,33 +3784,10 @@
     "2026-11-22",
     "2026-11-23",
     "2026-11-24",
-    "2026-11-25"
+    "2026-11-25",
+    "2026-11-26"
   ],
   "markets_history": {
-    "2026-11-05": {
-      "KOSPI": "5,683.80",
-      "KOSDAQ": "714.95",
-      "KR 3Y": "3.71%",
-      "US 2Y": "4.58%",
-      "US 10Y": "4.90%",
-      "US 30Y": "5.28%",
-      "10Y-2Y spread": "+32bp",
-      "USD/KRW": "1,338.6",
-      "USD/JPY": "158.25",
-      "USD/EUR": "0.8875",
-      "S&P 500": "7,688.87",
-      "나스닥": "25,736.51",
-      "다우": "53,357.19",
-      "유로스톡스 50": "6,265.71",
-      "니케이 225": "62,188.63",
-      "상해종합": "3,686.17",
-      "항셍": "23,919.50",
-      "WTI": "$88.67",
-      "브렌트유": "$95.23",
-      "금": "$4,068.90",
-      "구리 (경기 선행)": "$6.4130",
-      "VIX (공포 지수)": "16.83"
-    },
     "2026-11-06": {
       "KOSPI": "5,383.80",
       "KOSDAQ": "678.41",
@@ -4242,6 +4267,30 @@
       "금": "$3,553.40",
       "구리 (경기 선행)": "$5.4005",
       "VIX (공포 지수)": "26.78"
+    },
+    "2026-11-26": {
+      "KOSPI": "4,697.51",
+      "KOSDAQ": "650.64",
+      "KR 3Y": "3.58%",
+      "US 2Y": "4.63%",
+      "US 10Y": "4.91%",
+      "US 30Y": "5.30%",
+      "10Y-2Y spread": "+28bp",
+      "USD/KRW": "1,345.4",
+      "USD/JPY": "159.32",
+      "USD/EUR": "0.9145",
+      "S&P 500": "7,182.87",
+      "나스닥": "23,585.80",
+      "다우": "50,184.02",
+      "유로스톡스 50": "5,894.46",
+      "니케이 225": "57,011.62",
+      "상해종합": "3,476.47",
+      "항셍": "21,966.01",
+      "WTI": "$84.08",
+      "브렌트유": "$94.46",
+      "금": "$3,575.00",
+      "구리 (경기 선행)": "$5.4010",
+      "VIX (공포 지수)": "28.25"
     }
   },
   "estate": {
@@ -7048,6 +7097,24 @@
         "sentence": "Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist",
         "match": "Consumer confidence",
         "link": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html",
+        "source": "CNBC"
+      }
+    ],
+    "2026-11-26": [
+      {
+        "en": "tariff",
+        "ko": "관세",
+        "sentence": "Trump proposing new tariffs on 14 partners including China and EU.",
+        "match": "tariffs",
+        "link": "https://www.theguardian.com/us-news/2026/nov/25/trump-new-china-tariffs-europe",
+        "source": "Guardian Business"
+      },
+      {
+        "en": "scale back",
+        "ko": "(규모를) 줄이다, 축소하다",
+        "sentence": "How Americans are scaling back holiday plans",
+        "match": "scaling back",
+        "link": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
         "source": "CNBC"
       }
     ]
