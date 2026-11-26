@@ -1309,7 +1309,8 @@
     "2026-11-23": [],
     "2026-11-24": [],
     "2026-11-25": [],
-    "2026-11-26": []
+    "2026-11-26": [],
+    "2026-11-27": []
   },
   "articles": {
     "2026-10-11": [
@@ -2238,6 +2239,32 @@
         "link": "https://www.theguardian.com/environment/2026/nov/24/missed-opportunities-cop31-oceans-fossil-fuels",
         "summary": "The collapse of the ‘Antalya pact’ took away the chance of a unifying effort to deal with a number of issues The “Antalya pact” was supposed to be the keystone document agreed at the UN’s Cop31 climate summit in Turkey, but in the final day…"
       }
+    ],
+    "2026-11-27": [
+      {
+        "label": "BBC World",
+        "section": "top",
+        "guid": "https://www.bbc.co.uk/news/articles/cmlyd76kyx44o#0",
+        "title": "Gérard Depardieu to stand trial for alleged rape of actress in 2018, court rules",
+        "link": "https://www.bbc.co.uk/news/articles/cmlyd76kyx44o?at_medium=RSS&at_campaign=rss",
+        "summary": "A Paris appeals court rules Depardieu will go on trial for the alleged rape of Charlotte Arnould."
+      },
+      {
+        "label": "BBC Business",
+        "section": "business",
+        "guid": "https://www.bbc.co.uk/news/articles/cq772vk664yvo#1",
+        "title": "Trump's accounts traded Nvidia shares 44 times this year, records show",
+        "link": "https://www.bbc.co.uk/news/articles/cq772vk664yvo?at_medium=RSS&at_campaign=rss",
+        "summary": "A review of the US president's financial disclosures shows Donald Trump's investment portfolios have regularly traded shares in the tech giant."
+      },
+      {
+        "label": "Guardian Environment",
+        "section": "environment",
+        "guid": "https://www.theguardian.com/environment/2026/nov/26/burnham-urged-to-act-extinction-windemere-arctic-char-paul-whitehouse",
+        "title": "Paul Whitehouse urges PM to act over ‘imminent extinction’ of Windermere’s ice-age fish",
+        "link": "https://www.theguardian.com/environment/2026/nov/26/burnham-urged-to-act-extinction-windemere-arctic-char-paul-whitehouse",
+        "summary": "Experts say arctic char is threatened by pollution in England’s biggest lake as comedian unveils sculpture UK politics live – latest updates An ancient fish species that has survived in Windermere for more than 11,000 years is at risk of “i…"
+      }
     ]
   },
   "articles_used": [
@@ -2258,6 +2285,7 @@
     "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo#0",
     "https://www.bbc.co.uk/news/articles/cm4g1zrl2nrqo#0",
     "https://www.bbc.co.uk/news/articles/cmewv2kzq2e5o#3",
+    "https://www.bbc.co.uk/news/articles/cmlyd76kyx44o#0",
     "https://www.bbc.co.uk/news/articles/cmn04705rd8jo#0",
     "https://www.bbc.co.uk/news/articles/cmn06w5x9g25o#0",
     "https://www.bbc.co.uk/news/articles/cmp8ggn9gpjjo#1",
@@ -2265,6 +2293,7 @@
     "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo#0",
     "https://www.bbc.co.uk/news/articles/cmzxjvpqrjxro#0",
     "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo#0",
+    "https://www.bbc.co.uk/news/articles/cq772vk664yvo#1",
     "https://www.bbc.co.uk/news/articles/cqm2l304w0x9o#2",
     "https://www.bbc.co.uk/news/articles/cqn498mng08ro#1",
     "https://www.bbc.co.uk/news/articles/cqp8gjz4k7g6o#3",
@@ -2331,6 +2360,7 @@
     "https://www.theguardian.com/environment/2026/nov/21/climate-talks-stall-countries-mull-showdown-saudi-arabia-over-fossil-fuels",
     "https://www.theguardian.com/environment/2026/nov/24/missed-opportunities-cop31-oceans-fossil-fuels",
     "https://www.theguardian.com/environment/2026/nov/24/summer-heat-deaths-record-high-england",
+    "https://www.theguardian.com/environment/2026/nov/26/burnham-urged-to-act-extinction-windemere-arctic-char-paul-whitehouse",
     "https://www.theguardian.com/environment/2026/oct/20/jackdaw-north-sea-gas-field-to-get-go-ahead-in-blow-to-climate-campaigners",
     "https://www.theguardian.com/film/2026/nov/12/to-hold-a-mountain-film-mileva-gara-jovanovic",
     "https://www.theguardian.com/football/2026/oct/10/why-premier-league-in-clutches-of-global-mega-rich",
@@ -2837,6 +2867,14 @@
         "previous": "3.1%"
       },
       {
+        "title": "Euro Summit",
+        "country": "EUR",
+        "date": "2026-11-26T04:15:00-05:00",
+        "impact": "Low",
+        "forecast": "",
+        "previous": ""
+      },
+      {
         "title": "BOE Financial Stability Report",
         "country": "GBP",
         "date": "2026-11-26T05:30:00-05:00",
@@ -2975,53 +3013,6 @@
     ]
   },
   "reports": {
-    "2026-11-13": [
-      {
-        "label": "밤사이 미국 시장",
-        "slot": "overnight",
-        "summary": [
-          "엔비디아(NVDA) CEO 스캔들과 이사회 조사로 AI 대장주가 홀로 밀렸지만, AMD·브로드컴과 반도체 장비주로 매수세가 번지며 4대 지수가 일제히 2% 넘게 반등했습니다.",
-          "중소형주(러셀2000 +3.15%)까지 가세하며 랠리의 저변이 넓어진 하루였습니다."
-        ],
-        "date": "2026-11-11",
-        "guid": "naver:market:38119",
-        "title": "유안타 AI 미국 주식시장 마감 시황 (26.11.10)",
-        "link": "https://stock.naver.com/research/market/38119",
-        "by": "유안타증권"
-      },
-      {
-        "label": "증권사 경제분석",
-        "slot": "",
-        "summary": [
-          "미국 경제, 소비 뿐만 아니라 투자도 K자형으로 양극화",
-          "미국 경제는 내수 중심으로 견조한 흐름을 이어가며 잠재성장률 이상의 성장률을 달성할 것으로 기대한다.",
-          "다만 성장을 주도하는 소비와 투자 모두 양극화되며 K자형 경제 구도는 점차 강화될 가능성이 높다.",
-          "한편 최근 4분기 동안 미국 GDP는 비주거용 투자의 기여도가 높아졌고, 이는 AI 관련 데이터센터 및 인프라 구축 수요 영향이 컸다.",
-          "AI 투자 사이클이 지속되는 동안 투자 중심의 경제 성장은 이어질 전망이다."
-        ],
-        "date": "2026-11-10",
-        "guid": "naver:economy:14017",
-        "title": "AI 시대의 미국, 과도기 국면 중 세 가지 구조적 변화",
-        "link": "https://stock.naver.com/research/economy/14017",
-        "by": "하나증권"
-      },
-      {
-        "label": "증권사 투자전략",
-        "slot": "",
-        "summary": [
-          "민주당 전환 주요 5개 주에 개발 계획 49% 집중",
-          "이번 선거로 민주당이 주지사 직을 새로 확보한 5개 주에 개발 계획 49%(92.2GW) 집중 → 이들 지역의 정책 변화가 미국 신규 공급의 핵심 변수",
-          "텍사스 50.2GW, 조지아 18.5GW, 오하이오 11.5GW가 전체 계획의 43% 차지 → 세주의 신규 승인 요건과 계약 조건을 우선 점검할 필요",
-          "선거 전부터 양당이 추진한 비용 분담에 승인 중단과 세제 축소 공약이 추가될 경우 → 신규 사업의 개발 비와 승인 대기 부담 확대 가능성",
-          "텍사스 당선인은 신규 승인 제한에서 착공 사업을 제외하는 구상을 제시했으나, 전력이나 환경 승인이 남은 사업은 기존 승인 보류의 영향받을 가능성 잔존"
-        ],
-        "date": "2026-11-10",
-        "guid": "naver:invest:40781",
-        "title": "미국 중간선거 이후 매크로, 시장 및 섹터별 영향",
-        "link": "https://stock.naver.com/research/invest/40781",
-        "by": "대신증권"
-      }
-    ],
     "2026-11-14": [
       {
         "label": "밤사이 미국 시장",
@@ -3673,11 +3664,78 @@
         "link": "https://stock.naver.com/research/invest/40952",
         "by": "대신증권"
       }
+    ],
+    "2026-11-27": [
+      {
+        "label": "밤사이 미국 시장",
+        "slot": "overnight",
+        "summary": [
+          "AI 회의론 여전한 가운데 저가 매수세 유입되며 전약후강.",
+          "증시도 AI vs.",
+          "3분기 GDP 성장률 잠정치 (2차, 연율) +4.3%로 발표.",
+          "10월 PCE 물가 대체로 예상에 부합: 근원 PCE +0.3% MoM, +3.3% YoY, 23년 11월 (+3.4%) 이후 최고",
+          "미국 10년물 국채수익률 4.85% (-7.6bp), 기술주 급락에 안전자산 선호심리 강화되며 하락"
+        ],
+        "date": "2026-11-26",
+        "guid": "naver:market:38299",
+        "title": "11/26 KB 리서치 모닝코멘트",
+        "link": "https://stock.naver.com/research/market/38299",
+        "by": "KB증권"
+      },
+      {
+        "label": "증권사 경제분석",
+        "slot": "",
+        "summary": [
+          "2026년 원화, 상반기 달러 영향력↑, 하반기 달러 영향력↓",
+          "2026년 상반기 달러-원 환율은 달러 인덱스와 동행 흐름.",
+          "중동 전쟁과 외국인의 국내주식 매도세 속에 6월 1,560원까지 상승",
+          "하반기에는 달러 영향력 축소.",
+          "연초 이후 원화가치 절상률은 7.5%로 주요 통화 중 최대."
+        ],
+        "date": "2026-11-25",
+        "guid": "naver:economy:14062",
+        "title": "[2027년 환율 전망] 흑자는 쌓여도, 원화를 움직이는 건 자금의 방향",
+        "link": "https://stock.naver.com/research/economy/14062",
+        "by": "하나증권"
+      },
+      {
+        "label": "증권사 투자전략",
+        "slot": "",
+        "summary": [
+          "2027년 글로벌 투자환경 및 투자전략",
+          "양호한 펀더멘탈 vs.",
+          "26~27년 전반적인 투자환경은 트럼프 행정부의 통상, 외교정책 피해를 최소화하기 위해 주요국들의 정책 대응(재정정책 강화)이 유동",
+          "26년 2월 말 발발한 이란 전쟁 장기화로 시차를 둔 실물 경제 영향 불가피",
+          "주요국 경기를 저해하지 않는 수준의 고용·소비, 제조업·서비스업 PMI 확인 가능할 것."
+        ],
+        "date": "2026-11-25",
+        "guid": "naver:invest:40951",
+        "title": "11월 MARKET INSIGHT LIVE 세미나 2027년 연간 전망 / 글로벌 투자환경 및 투자전략 피날레(Finale)",
+        "link": "https://stock.naver.com/research/invest/40951",
+        "by": "대신증권"
+      },
+      {
+        "label": "한국은행 통화정책",
+        "slot": "",
+        "summary": [
+          "금융통화위원회는 다음 통화정책방향 결정시까지 한국은행 기준금리를 현재의 3.00% 수준에서 3.25% 로 상향 조정하여 통화정책을 운용하기로 하였다.",
+          "세계경제는 중동지역의 긴장이 이어지고 있지만 견조한 AI 투자에 힘입어 양호한 성장세를 지속하고 물가는 에너지 가격 상승의 영향이 확대되면서 당분간 높은 오름세를 나타낼 것으로 예상된다.",
+          "국내경제는 수출과 투자 호조에 힘입어 높은 성장세를 지속하였다.",
+          "물가를 보면 소비자물가와 근원물가 ( 식료품 및 에너지 제외 지수 ) 모두 10 월 중 개인서비스 및 내구재 가격의 높은 상승세로 2% 대 후반 (2.8%) 의 오름세를 이어갔다.",
+          "금융 · 외환시장에서는 주요 가격변수의 변동성이 확대되었다."
+        ],
+        "date": "2026-11-26",
+        "guid": "https://www.bok.or.kr/portal/bbs/P0000559/view.do?nttId=11067084&menuNo=200690",
+        "title": "통화정책방향(2026.11.26)",
+        "link": "https://www.bok.or.kr/portal/bbs/P0000559/view.do?nttId=11067084&menuNo=200690",
+        "by": ""
+      }
     ]
   },
   "reports_used": [
     "https://www.bok.or.kr/portal/bbs/P0000559/view.do?nttId=11065823&menuNo=200690",
     "https://www.bok.or.kr/portal/bbs/P0000559/view.do?nttId=11066447&menuNo=200690",
+    "https://www.bok.or.kr/portal/bbs/P0000559/view.do?nttId=11067084&menuNo=200690",
     "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=11065913&menuNo=200433",
     "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=11065979&menuNo=200433",
     "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=11066699&menuNo=200433",
@@ -3715,6 +3773,7 @@
     "naver:economy:14055",
     "naver:economy:14056",
     "naver:economy:14057",
+    "naver:economy:14062",
     "naver:invest:40559",
     "naver:invest:40569",
     "naver:invest:40571",
@@ -3747,6 +3806,7 @@
     "naver:invest:40887",
     "naver:invest:40897",
     "naver:invest:40921",
+    "naver:invest:40951",
     "naver:invest:40952",
     "naver:market:38041",
     "naver:market:38056",
@@ -3769,10 +3829,10 @@
     "naver:market:38246",
     "naver:market:38266",
     "naver:market:38278",
-    "naver:market:38295"
+    "naver:market:38295",
+    "naver:market:38299"
   ],
   "sent": [
-    "2026-11-13",
     "2026-11-14",
     "2026-11-15",
     "2026-11-16",
@@ -3785,33 +3845,10 @@
     "2026-11-23",
     "2026-11-24",
     "2026-11-25",
-    "2026-11-26"
+    "2026-11-26",
+    "2026-11-27"
   ],
   "markets_history": {
-    "2026-11-06": {
-      "KOSPI": "5,383.80",
-      "KOSDAQ": "678.41",
-      "KR 3Y": "3.67%",
-      "US 2Y": "4.46%",
-      "US 10Y": "4.84%",
-      "US 30Y": "5.25%",
-      "10Y-2Y spread": "+38bp",
-      "USD/KRW": "1,344.7",
-      "USD/JPY": "158.46",
-      "USD/EUR": "0.8910",
-      "S&P 500": "7,353.80",
-      "나스닥": "24,315.00",
-      "다우": "51,521.28",
-      "유로스톡스 50": "6,231.54",
-      "니케이 225": "61,077.90",
-      "상해종합": "3,689.91",
-      "항셍": "24,796.98",
-      "WTI": "$90.75",
-      "브렌트유": "$98.42",
-      "금": "$4,111.00",
-      "구리 (경기 선행)": "$6.2135",
-      "VIX (공포 지수)": "26.95"
-    },
     "2026-11-07": {
       "KOSPI": "5,059.69",
       "KOSDAQ": "644.27",
@@ -4291,6 +4328,30 @@
       "금": "$3,575.00",
       "구리 (경기 선행)": "$5.4010",
       "VIX (공포 지수)": "28.25"
+    },
+    "2026-11-27": {
+      "KOSPI": "4,711.21",
+      "KOSDAQ": "655.71",
+      "KR 3Y": "3.63%",
+      "US 2Y": "4.61%",
+      "US 10Y": "4.85%",
+      "US 30Y": "5.24%",
+      "10Y-2Y spread": "+24bp",
+      "USD/KRW": "1,344.7",
+      "USD/JPY": "159.26",
+      "USD/EUR": "0.9112",
+      "S&P 500": "7,182.78",
+      "나스닥": "23,585.80",
+      "다우": "50,182.95",
+      "유로스톡스 50": "6,014.74",
+      "니케이 225": "57,499.16",
+      "상해종합": "3,476.88",
+      "항셍": "22,226.88",
+      "WTI": "$84.91",
+      "브렌트유": "$96.53",
+      "금": "$3,566.20",
+      "구리 (경기 선행)": "$5.3480",
+      "VIX (공포 지수)": "26.80"
     }
   },
   "estate": {
@@ -4725,153 +4786,238 @@
           "others": []
         }
       ]
+    },
+    "2026-11-27": {
+      "ydp": [
+        {
+          "title": "서울 아파트값 ‘역대 최장 상승’ 기록 멈추나…보합 근접, 광진·영등포 하락 전환",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5VRjFxZE5Fa1JBS2k0d0VSemVxUmQzS3pFdUFtR3BUcUFBVE1MWUpzay1GYUFpeDlodTBaZm8wenU4d0NlTDdFWlM0RFJYR2poZGNWLUpHbV9hQdIBX0FVX3lxTE5QUmh4QWFrcmVLcENJNXNaQmI1RVVsSTctcWwxNFRQRjlkeEZtbXZ4UldrRHdLUnQyWkxjbTNWV0pHdzEwWHZwd19oRmtwQ1Y2U1RDT25rSWRiWHh6R29n?oc=5",
+          "outlet": "경향신문",
+          "outlets": 11,
+          "date": "11/26",
+          "others": [
+            "뉴시스",
+            "대한경제",
+            "서울경제",
+            "스트레이트뉴스"
+          ]
+        },
+        {
+          "title": "영등포, 신길13구역 재건축 관리처분계획 인가",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5yWDg4Q2V1eGIwSVAxcUo0UVJOdEI1SHpVNXdMTXEtTVRvYTNocTVzeHA1QnBkd1JUWTVMX283ZGVEdk9TdDhrOTlnOEJQSnBLLUdfUVZoQjFGSU1pbEtMTzZOTnVJRHl3bjQtMWVNUdIBb0FVX3lxTE5yWDg4Q2V1eGIwSVAxcUo0UVJOdEI1SHpVNXdMTXEtTVRvYTNocTVzeHA1QnBkd1JUWTVMX283ZGVEdk9TdDhrOTlnOEJQSnBLLUdfUVZoQjFGSU1pbEtMTzZOTnVJRHl3bjQtMWVNUQ?oc=5",
+          "outlet": "서울일보",
+          "outlets": 6,
+          "date": "11/24",
+          "others": [
+            "사건의내막",
+            "서울시티",
+            "영등포시대",
+            "영등포신문"
+          ]
+        },
+        {
+          "title": "‘종부세 내는 1주택자’ 1.5배로 급증…서대문·영등포도 낸다",
+          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBQdGpXMnlGa1VNSTdiNnpfOVZFc2twZDNyU3huVHE3R0xDY1NlV2hWZlJkVWVPZmlPYk5WOUI2V2o2X1lwZmZfTmcwd3hrZVpYcTkyc1NZRUctSEdPN2szQXY1ZUd3X3lhaFg0TUR3UmNiem1Zc1HSAWZBVV95cUxPYlpEVU9qbzVlVE1Jc3dVX1l3UW1QRFRiMkpfVV9FSjdYbTdWTkRUWnE2eWl3X3FRSDZWTlpjMVhSWTNYcmNKdXNMTlRJOERQeXZva0xLQ2xITm1GMjRwaDFBdmxnYnc?oc=5",
+          "outlet": "동아일보",
+          "outlets": 2,
+          "date": "11/26",
+          "others": [
+            "서울경제"
+          ]
+        },
+        {
+          "title": "서울 공급 감소 속 신축 아파트… ‘해링턴 플레이스 문래’ 23일부터 청약",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1BTktQeFhlQmhtV0JrS1dXVkxpSm5fQWxwYmJLdjZTVkRWd1hobW51aDJkNWRRNUJJQllqTDJpQzgyUXNubDl4WUJ3aEp3Zzk4UmNtM1BuQnpFVjVmZlFuc0pGVlEwR0Ji0gFsQVVfeXFMUEpvcWp2Y2pfSGRCSEE2NHB3NlZYZUtWTnh4SDExUWc2OU8xdklKR2pNaFZFczZRa2JqR0g3MmNOX3hQbFpqXzdqdE1VVkdIUkhvb282ZkVVLVhWN1pIcGpINEFHRjRjbElCckJr?oc=5",
+          "outlet": "리얼캐스트",
+          "outlets": 3,
+          "date": "11/22",
+          "others": [
+            "뉴스웨이",
+            "비즈트리뷴"
+          ]
+        },
+        {
+          "title": "영등포.광진구까지 집값 하락…정부 \"공공주택 공급 대폭 확대\" - 머니투데이",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9USnJMV1pSMGxDY1VzY0RsOHJhbkF6Tkk3TTJidGU4NmNhNmFyN2YtYTFsQndxZWpianU4MFliVXFsczhVWlliQkhtdngzUmhTNWVab1RiUTNWWmdrcjBUSHFKZ3dldG45d1HSAW9BVV95cUxNZjVYVEZSS2hwVHloQkZBNi0zamtCRkNvWDdfZkdsZDUtbG4wXzUxVDdXc2xwRXhTeWNYa2wzazNzN0tIT2Z5YktBbWpEblZVQVNmNEdTWEx5NXZZNEstSUNadnlxc2NDcXByX3VkNDg?oc=5",
+          "outlet": "머니투데이",
+          "outlets": 1,
+          "date": "11/26",
+          "others": []
+        },
+        {
+          "title": "신통기획 투자가치 분석#1 - 후보 예상 지역 (개포동, 사근동, 대림동, 신월동)",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxORjllYVpUbW5vSVBYVUVDdC1CTG5pZ01FVHBDZk1NWmNtR1RNMmlLZ05kMnpiSnhzdVlNRWp2Z09rOEZzaGViUUJ4cFI3NC0zaG1xdWVUTm16SmEycGJIMUVpMVVsNUN5TmFjTXVlWEpPX1B1NWVMLWwyWks3X3k0Yg?oc=5",
+          "outlet": "네이버 프리미엄콘텐츠",
+          "outlets": 1,
+          "date": "11/26",
+          "others": []
+        }
+      ],
+      "areas": [
+        {
+          "title": "경기 집값 '남고북저'…연초 비슷했는데 동탄 10억, 일산 제자리",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1ESDBSQzFRMGVqUzlPa1ZqUTVDZEVQS2UzLUJHMWNxUWRkRFBNZ2ZoRnRtSHEzTzJsV1RhZWRBcjBNNkRzV1FyWTVXUG1GVXc4WTVCS0thOWhtOWpyNDlVU9IBeEFVX3lxTE5VbUNSTlBCRTBtNUt6SVlHbDUybTZKRE14bTU1VGJud1VWYzZ1Ni04TmU5WVNkVW1QSmJlVFdvYm5EekN0QjZuUWl0NDZCNlJjMXlZNUtPRnJKNGxLRGVfcE9SdHFzbkpBUjRJc3RrdWhkTTNhLUEzOQ?oc=5",
+          "outlet": "뉴시스",
+          "outlets": 3,
+          "date": "11/25",
+          "others": [
+            "서울뉴스통신",
+            "와이드경제"
+          ]
+        },
+        {
+          "title": "[단독]“서울보다 셔세권” 사내대출 718억 동탄·영통·분당으로 [부동산360]",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE56MDBNZFIycjROQnM1b1VQRWFtdGtqNnJrbzg3bC1vSVlKdEY4NGZqcnJZdWJTeHVRRzdFYi1mSzN3ZUg4S0IxUS1kSGFKVGY3VkxxazJn?oc=5",
+          "outlet": "헤럴드경제",
+          "outlets": 2,
+          "date": "11/26",
+          "others": [
+            "창원특례신문"
+          ]
+        },
+        {
+          "title": "사당·흑석·사근·전농 재개발 싹 다 '스톱'···집주인들 왜 돌아섰나",
+          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9zblZ0UXV2OWw3Uzk4T1ZwMjB4NGJYckVtbWp3TE4xSjBqOC1QQzNvTGk2V3ZKNGdoUGt6YnlVblBGbk93aEQwS2NoN3BtMnpCUXdaem5pLUlDdlFEN0J2eWdoUGV1N1hDUzRZUUowemxCbmtyOVHSAXZBVV95cUxPc25WdFF1djlsN1M5OE9WcDIweDRiWHJFbW1qd0xOMUowajgtUEMzb0xpNld2SjRnaFBremJ5VW5QRm5Pd2hEMEtjaDdwbTJ6QlF3WnpuaS1JQ3ZRRDdCdnlnaFBldTdYQ1M0WVFKMHpsQm5rcjlR?oc=5",
+          "outlet": "시사저널e",
+          "outlets": 1,
+          "date": "11/26",
+          "others": []
+        },
+        {
+          "title": "내년 공시가 현실화율 동결에도 동탄 보유세 ‘비상’",
+          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE05aVpCbTJHYW1vZWo5SS1ac0swSDBpeHgxX2w4ZjJ0eXBHTkJvMXNLQjNkSW5LcUxFTzNaZTNwSVZNVlBuY1EzX0lOZVUtMDdtRXZkMVE3bw?oc=5",
+          "outlet": "헤럴드경제",
+          "outlets": 2,
+          "date": "11/23",
+          "others": [
+            "JTBC"
+          ]
+        }
+      ],
+      "metro": [
+        {
+          "title": "서울 아파트값 94주째 오르긴했는데… 상승폭 '0.01%' - 머니투데이",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9vMnNVMkVPSUI4Q2RwaHRCak5nZldLSFljZGZURmRTM0VVOVZJNnBESFIzQXhSNW1nbTNoWHNoNFBKdmhQOWprZXNGc0dMdkFaQXFpNkVYaGp5bm5TV1BjQ1ZhNTFYbmhkQ1HSAW9BVV95cUxPUXB2Z2tZRDNWVV9OdTRaYzVFd1JFc0tldzN1d1NMbm14MFJaN0ZsSFpXVDM1R21IaGxWZWtCWU9QZWs0SzZfaEwwdVBDRXFRUlhiUW9heklZeGY2N3RGc3lLWjNxcWRFeG1lZ1h2bHc?oc=5",
+          "outlet": "머니투데이",
+          "outlets": 16,
+          "date": "11/26",
+          "others": [
+            ":: 위즈경제 ::",
+            "Chosunbiz",
+            "Investing.com 한국어",
+            "KBS 뉴스"
+          ]
+        },
+        {
+          "title": "서울 집값 뛰자 전용 59㎡ 이하 아파트 거래 절반…청약도 소형 대세",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE16OHpxa2VYYms2SUdhUlV1Y1ljSlIxQWVhU2JXbE50V3ViOU05c3hvdFBoSTg5WU41NEs1QkFLWm1yZ1lWYzJIZGhKb3ptSmpqWHB0MHdkVjd1aVU?oc=5",
+          "outlet": "뉴스1",
+          "outlets": 4,
+          "date": "11/23",
+          "others": [
+            "2news.co.kr",
+            "Queen 이코노미퀸",
+            "이로운넷"
+          ]
+        },
+        {
+          "title": "'보합' 문턱 서울 아파트값‥금리 인상에 강북도 꺾일까",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0wU0ZETm1LVGYzb2VZNi1FU1gtcTU2ajdqWlpCSWdPaVJIaDJ0ZDRuWUx0RHowY1B5TV9WMU5tbHJpZkhrbF9JeGVfWlllM0cxU3h0UFFoNDhBdDh0MzJZTndXYldwLVdyeVIteXEyVWo2bS1jNGVZMdIBeEFVX3lxTE5OY3RvT0VYN3dPSFZKX0o0UVBmRGF1cGZpVk5KdzhuanpPaTV0aHMweWpJM0ZNRURHZ1R5U0xrVy00cTNIMk8xdHhjejFiVEdnNW85cWdvRl93ZTE4OS1zT1RlV2pyYVhaS0g4X004c1lvcVVnZ2ZoLQ?oc=5",
+          "outlet": "MBC 뉴스",
+          "outlets": 2,
+          "date": "11/26",
+          "others": [
+            "조세금융신문"
+          ]
+        },
+        {
+          "title": "서울 강동구 초등학교·아파트 단지 일대 멧돼지 출몰… 차량 충돌 후 도주",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9BamdfY1BpTml0SFZLbUJVbkdVZUprOFJ4RVlQZ1JWQ3E4OXlnRmZ6WEpLRGtwVDR3bmpxRHlzc08wcEVjZ0t6c0M4TVREeUYzWjZKNkZkNC0?oc=5",
+          "outlet": "포커스타임즈",
+          "outlets": 2,
+          "date": "11/26",
+          "others": [
+            "주간조선"
+          ]
+        },
+        {
+          "title": "서울 아파트 거래량 5월 대비 반토막…강남권 거래 절벽 심화",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5DYVZ6MkRuYW1xMTByNzktM3JjTkMtakZDcFF6TWxrd1BZSURpb1F4OW9wWVVjazRTYlVjN25ublpZY2tWdmRycGV1ODB2dkJfNXliZDY0YzhxUnNKclBIWENsLW1meGVSdFhCZVFLSGV3eEU?oc=5",
+          "outlet": "데이터투자",
+          "outlets": 1,
+          "date": "11/25",
+          "others": []
+        }
+      ],
+      "invest": [
+        {
+          "title": "국토부 \"재초환 현행법대로 부과 원칙\"…완화·폐지는 국회 몫",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4yS0NMZFA3LU5GNnVCbTlXWTQzQmJvWjZpNEhwSWdqTThUMHg2UjMybVRTQlhmYzBtTVdhQ294d0dwTldEempCbnlwaUMwMzdsckh6LW5KcWl4Rm1RY2N6dmIzYi1aVHRta2t3QlYzRC1vUDVmQUlVVdIBeEFVX3lxTE4yS0NMZFA3LU5GNnVCbTlXWTQzQmJvWjZpNEhwSWdqTThUMHg2UjMybVRTQlhmYzBtTVdhQ294d0dwTldEempCbnlwaUMwMzdsckh6LW5KcWl4Rm1RY2N6dmIzYi1aVHRta2t3QlYzRC1vUDVmQUlVVQ?oc=5",
+          "outlet": "뉴시스",
+          "outlets": 15,
+          "date": "11/26",
+          "others": [
+            "sisakoreanews.kr",
+            "국제뉴스",
+            "데일리포스트",
+            "디벨로퍼뉴스"
+          ]
+        },
+        {
+          "title": "내년 수도권 공공주택 5만6000가구 입주자 모집···“토허구역 연장, 연말쯤 결정”",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5mdDB2YTdYUjduc1RHWUtkRWpBRTRVM2FrMmM3d3BXUzBNQ1ZMT0MwdGJiZFBSQjcyTG5JcjlKYkREVzJRWW9IaU0yS0NWeEJHOFRnTEoyQzhIUdIBX0FVX3lxTE9sVGR2TXloUnlkRUxSV19yYVVpSi1wc0NXWHlRR09UdkU0Q0p5cUNhQzVtX2dVc185M3ptVzh2aFF1WFlONE9ra0Rha0xGYVh2NWRWaTZheWMzbi1NdEtr?oc=5",
+          "outlet": "경향신문",
+          "outlets": 7,
+          "date": "11/26",
+          "others": [
+            "뉴스N연합",
+            "대한민국 정책브리핑",
+            "매일경제",
+            "하나뉴스"
+          ]
+        },
+        {
+          "title": "주식 팔고 결국 부동산으로…정부 대출 규제의 '머니무브' 역설",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5LWnUtYy1uU2hKWHE5UHJjR0ltWXRjMEdZdnBOSVNGdzlUVzNvSXZnSFBULTlvdHFDcUNuREphRUEwY2k5MlFwcTdGNVdJZTczcm8yT0RyRV9fNWpnQWc?oc=5",
+          "outlet": "아시아타임즈",
+          "outlets": 5,
+          "date": "11/26",
+          "others": [
+            "뉴스스페이스",
+            "더퍼블릭",
+            "쿠키뉴스",
+            "한국부동산뉴스"
+          ]
+        },
+        {
+          "title": "‘경희궁 에피트’ 26일 1순위 청약…전용 84㎡ 24억 원대",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1pV0pDUE14UHZfd0pfcjZZMGI3bHliYVc4bGlVbWlmajVhRmYxcVkwd2ltS1B5QURreU1pNnZqb0hUMk94WWhVUUJlVG1NR2dzM1HSAVNBVV95cUxOd08talpiOV80dlpwaHBKblVNWmZ2SktYWWxnSFF5ZENxT1ktZkl1M2YtYUZQb3JFVWNzTl90THp0S2xaNEJmSGZoVjBXLXkyUHBsaw?oc=5",
+          "outlet": "서울경제",
+          "outlets": 8,
+          "date": "11/25",
+          "others": [
+            "뉴스핌",
+            "데일리안",
+            "서울경제TV",
+            "위키트리"
+          ]
+        },
+        {
+          "title": "배지환 수원시의원 \"정부 부동산 규제에 주민 주거 불안 심화\"",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5SOHpqVTNlWnl2dUVWUWdvQk5xdEZpbUhZOU03ZWVoLXkyLUhpSkkyRVJSOGl0ZjRzR2xHY2dXbTdlbDJvT1pkNGJfVUVrZVBzRjhXdC00LXM5cUpzb3JWMEZTZGFKRHJrMXc?oc=5",
+          "outlet": "미디어와이",
+          "outlets": 4,
+          "date": "11/26",
+          "others": [
+            "www.dt.co.kr",
+            "경기시사투데이",
+            "뉴스로드"
+          ]
+        }
+      ]
     }
   },
   "estate_seen": [
-    [
-      "2026-11-15",
-      "서울 독산·대림·쌍문·천호·대조·용두동 토지거래허가구역 지정"
-    ],
-    [
-      "2026-11-15",
-      "해링턴 플레이스 문래 청약 (’26. 11/23~26)"
-    ],
-    [
-      "2026-11-15",
-      "\"아파트 2채에 현금 22억까지?\" 영등포 재개발구역 상가주택 경매"
-    ],
-    [
-      "2026-11-15",
-      "신길13구역, 최고 35층 아파트 586세대로 공공재건축"
-    ],
-    [
-      "2026-11-15",
-      "[단독] 영등포·강릉 지주택도 비리 의혹…‘셀프 계약’ 막을 법 없다"
-    ],
-    [
-      "2026-11-15",
-      "경기 용인시 수지구(水枝區) · 서울이 멈춘 11월에도 수지는 올랐다 — 주간 +0.36%, 9~10월 84㎡ 거래 10건 중 4건이 신고가"
-    ],
-    [
-      "2026-11-15",
-      "[아유경제_재개발] 사당17구역 재개발, 정비업자 탐색 절차 ‘스타트’"
-    ],
-    [
-      "2026-11-15",
-      "[그래픽] 동탄·기흥 묶자 '풍선효과'…경기 비규제 12곳 집값 규제선 돌파"
-    ],
-    [
-      "2026-11-15",
-      "서울 청약자 4년 만에 최저…강남 ‘로또 청약’은 북적"
-    ],
-    [
-      "2026-11-15",
-      "서울 아파트 매물 8만 건 돌파…정부, 수도권 4만 4천 가구 입주로 집값 안정 승부수"
-    ],
-    [
-      "2026-11-15",
-      "서울 전월세 매물 늘었다지만…경기도 전세수급지수 5년 만에 ‘최악’"
-    ],
-    [
-      "2026-11-15",
-      "경기 아파트 매매가 상승률 9주 연속 서울 웃돌아"
-    ],
-    [
-      "2026-11-15",
-      "전월세, 3년10개월 만에 최대 상승…6년간 대출 53% 급증"
-    ],
-    [
-      "2026-11-15",
-      "[분양캘린더] ‘제일풍경채 광주 포에듀’ 등 10곳서 1681가구 청약"
-    ],
-    [
-      "2026-11-15",
-      "[아주부동산 PICK] 3기 신도시 교통 인프라 선입주 후대책… 정부는 뒷짐"
-    ],
-    [
-      "2026-11-15",
-      "서울 아파트값, 이재명 정부서 가장 빨리 올랐다"
-    ],
-    [
-      "2026-11-15",
-      "서울 독산·대림·쌍문·천호·대조·용두동 토지거래허가구역 지정"
-    ],
-    [
-      "2026-11-15",
-      "해링턴 플레이스 문래 청약 (’26. 11/23~26)"
-    ],
-    [
-      "2026-11-15",
-      "\"아파트 2채에 현금 22억까지?\" 영등포 재개발구역 상가주택 경매"
-    ],
-    [
-      "2026-11-15",
-      "신길13구역, 최고 35층 아파트 586세대로 공공재건축"
-    ],
-    [
-      "2026-11-15",
-      "[단독] 영등포·강릉 지주택도 비리 의혹…‘셀프 계약’ 막을 법 없다"
-    ],
-    [
-      "2026-11-15",
-      "서울 영등포구(永登浦區) · 84㎡ 거래 절반 가까이 15억 원 위로 — 중위가 14.30억, 1년 새 19% 올라 대출 한도 4억 구간 돌입"
-    ],
-    [
-      "2026-11-15",
-      "[아유경제_재개발] 사당17구역 재개발, 시공자 선정 향해 ‘집중’"
-    ],
-    [
-      "2026-11-15",
-      "[아유경제_재개발] 사당17구역 재개발, 정비업자 탐색 절차 ‘스타트’"
-    ],
-    [
-      "2026-11-15",
-      "[그래픽] 동탄·기흥 묶자 '풍선효과'…경기 비규제 12곳 집값 규제선 돌파"
-    ],
-    [
-      "2026-11-15",
-      "서울만 바라볼 때 아니다? 수원·동탄 집값 흔들 2대 변수…2027년 부동산 승부처는"
-    ],
-    [
-      "2026-11-15",
-      "정부 “서울 아파트값 상승 둔화·매물 증가…집값 하향 안정 지표 확대”"
-    ],
-    [
-      "2026-11-15",
-      "서울 아파트 매매가격 92주 연속 상승"
-    ],
-    [
-      "2026-11-15",
-      "강남3구 이어 성동·강동도 하락…수도권 4만호 입주 예고"
-    ],
-    [
-      "2026-11-15",
-      "3분기 서울 아파트 거래 44% 급감…전국도 24.5% 줄었다"
-    ],
-    [
-      "2026-11-15",
-      "내년 전셋값 4.5% 상승 전망…서울 하반기 입주 38%가 반포"
-    ],
-    [
-      "2026-11-15",
-      "서울 청약자 4년 만에 최저…강남 ‘로또 청약’은 북적"
-    ],
-    [
-      "2026-11-15",
-      "'연 7%' 목전 주담대 변동금리, 고정형 추월…복잡해진 대출 셈법"
-    ],
-    [
-      "2026-11-15",
-      "[분양캘린더] ‘제일풍경채 광주 포에듀’ 등 10곳서 1681가구 청약"
-    ],
-    [
-      "2026-11-15",
-      "작년 전세보증금 6년 전보다 35% 올라…보증금 대출은 53%↑"
-    ],
-    [
-      "2026-11-15",
-      "10월 서울 아파트 토지거래허가 신청 3,947건… 2개월 연속 증가세 이어가"
-    ],
     [
       "2026-11-20",
       "영등포구 도림동 133-1 재개발, 7층 묶였던 저층주거지에 최고 45층 1645세대"
@@ -4943,105 +5089,185 @@
     [
       "2026-11-20",
       "서울시민 10명중 8명 \"정부 공급 대책, 집값 안정 효과 없을 것\" … 30대 여성 \"자산있는 사람만 혜택\""
+    ],
+    [
+      "2026-11-27",
+      "서울 아파트값 ‘역대 최장 상승’ 기록 멈추나…보합 근접, 광진·영등포 하락 전환"
+    ],
+    [
+      "2026-11-27",
+      "영등포, 신길13구역 재건축 관리처분계획 인가"
+    ],
+    [
+      "2026-11-27",
+      "‘종부세 내는 1주택자’ 1.5배로 급증…서대문·영등포도 낸다"
+    ],
+    [
+      "2026-11-27",
+      "서울 공급 감소 속 신축 아파트… ‘해링턴 플레이스 문래’ 23일부터 청약"
+    ],
+    [
+      "2026-11-27",
+      "영등포.광진구까지 집값 하락…정부 \"공공주택 공급 대폭 확대\" - 머니투데이"
+    ],
+    [
+      "2026-11-27",
+      "신통기획 투자가치 분석#1 - 후보 예상 지역 (개포동, 사근동, 대림동, 신월동)"
+    ],
+    [
+      "2026-11-27",
+      "경기 집값 '남고북저'…연초 비슷했는데 동탄 10억, 일산 제자리"
+    ],
+    [
+      "2026-11-27",
+      "[단독]“서울보다 셔세권” 사내대출 718억 동탄·영통·분당으로 [부동산360]"
+    ],
+    [
+      "2026-11-27",
+      "사당·흑석·사근·전농 재개발 싹 다 '스톱'···집주인들 왜 돌아섰나"
+    ],
+    [
+      "2026-11-27",
+      "내년 공시가 현실화율 동결에도 동탄 보유세 ‘비상’"
+    ],
+    [
+      "2026-11-27",
+      "서울 아파트값 94주째 오르긴했는데… 상승폭 '0.01%' - 머니투데이"
+    ],
+    [
+      "2026-11-27",
+      "서울 집값 뛰자 전용 59㎡ 이하 아파트 거래 절반…청약도 소형 대세"
+    ],
+    [
+      "2026-11-27",
+      "'보합' 문턱 서울 아파트값‥금리 인상에 강북도 꺾일까"
+    ],
+    [
+      "2026-11-27",
+      "서울 강동구 초등학교·아파트 단지 일대 멧돼지 출몰… 차량 충돌 후 도주"
+    ],
+    [
+      "2026-11-27",
+      "서울 아파트 거래량 5월 대비 반토막…강남권 거래 절벽 심화"
+    ],
+    [
+      "2026-11-27",
+      "국토부 \"재초환 현행법대로 부과 원칙\"…완화·폐지는 국회 몫"
+    ],
+    [
+      "2026-11-27",
+      "내년 수도권 공공주택 5만6000가구 입주자 모집···“토허구역 연장, 연말쯤 결정”"
+    ],
+    [
+      "2026-11-27",
+      "주식 팔고 결국 부동산으로…정부 대출 규제의 '머니무브' 역설"
+    ],
+    [
+      "2026-11-27",
+      "‘경희궁 에피트’ 26일 1순위 청약…전용 84㎡ 24억 원대"
+    ],
+    [
+      "2026-11-27",
+      "배지환 수원시의원 \"정부 부동산 규제에 주민 주거 불안 심화\""
     ]
   ],
   "estate_deals": {
-    "2026-11-20": {
+    "2026-11-27": {
       "areas": [
         {
           "label": "영등포역 일대",
-          "total": 158,
+          "total": 181,
           "new": [
             {
               "code": "11560",
-              "apt": "양평현대6차",
-              "dong": "양평동3가",
-              "area": 60.0,
-              "floor": "20",
-              "price": 147000,
+              "apt": "현대1차",
+              "dong": "문래동6가",
+              "area": 64.4,
+              "floor": "1",
+              "price": 107300,
+              "date": "2026-11-20",
+              "cancel": false,
+              "id": "11560|현대1차|64.4|1|2026-11-20|107300"
+            },
+            {
+              "code": "11560",
+              "apt": "성원",
+              "dong": "당산동5가",
+              "area": 85.0,
+              "floor": "10",
+              "price": 142500,
+              "date": "2026-11-19",
+              "cancel": false,
+              "id": "11560|성원|85.0|10|2026-11-19|142500"
+            },
+            {
+              "code": "11560",
+              "apt": "삼성래미안",
+              "dong": "신길동",
+              "area": 84.9,
+              "floor": "18",
+              "price": 131000,
+              "date": "2026-11-19",
+              "cancel": false,
+              "id": "11560|삼성래미안|84.9|18|2026-11-19|131000"
+            },
+            {
+              "code": "11560",
+              "apt": "당산푸르지오",
+              "dong": "영등포동8가",
+              "area": 85.0,
+              "floor": "4",
+              "price": 120000,
               "date": "2026-11-18",
               "cancel": false,
-              "id": "11560|양평현대6차|60.0|20|2026-11-18|147000"
+              "id": "11560|당산푸르지오|85.0|4|2026-11-18|120000"
             },
             {
               "code": "11560",
-              "apt": "아크로타워스퀘어",
-              "dong": "영등포동7가",
-              "area": 84.7,
-              "floor": "25",
-              "price": 218000,
-              "date": "2026-11-13",
+              "apt": "더샵파크프레스티지",
+              "dong": "신길동",
+              "area": 85.0,
+              "floor": "11",
+              "price": 169000,
+              "date": "2026-11-17",
               "cancel": false,
-              "id": "11560|아크로타워스퀘어|84.7|25|2026-11-13|218000"
+              "id": "11560|더샵파크프레스티지|85.0|11|2026-11-17|169000"
             },
             {
               "code": "11560",
-              "apt": "아크로타워스퀘어",
-              "dong": "영등포동7가",
-              "area": 59.9,
+              "apt": "문래미원",
+              "dong": "문래동6가",
+              "area": 59.4,
+              "floor": "9",
+              "price": 102000,
+              "date": "2026-11-16",
+              "cancel": false,
+              "id": "11560|문래미원|59.4|9|2026-11-16|102000"
+            },
+            {
+              "code": "11560",
+              "apt": "당산푸르지오",
+              "dong": "영등포동8가",
+              "area": 85.0,
               "floor": "14",
-              "price": 183000,
+              "price": 187000,
               "date": "2026-11-11",
               "cancel": false,
-              "id": "11560|아크로타워스퀘어|59.9|14|2026-11-11|183000"
+              "id": "11560|당산푸르지오|85.0|14|2026-11-11|187000"
             },
             {
               "code": "11560",
-              "apt": "양평현대6차",
-              "dong": "양평동3가",
-              "area": 84.9,
-              "floor": "9",
-              "price": 156500,
-              "date": "2026-11-07",
-              "cancel": false,
-              "id": "11560|양평현대6차|84.9|9|2026-11-07|156500"
-            },
-            {
-              "code": "11560",
-              "apt": "힐스테이트클래시안",
+              "apt": "선원가와인",
               "dong": "신길동",
-              "area": 59.9,
-              "floor": "10",
-              "price": 173000,
-              "date": "2026-11-05",
-              "cancel": false,
-              "id": "11560|힐스테이트클래시안|59.9|10|2026-11-05|173000"
-            },
-            {
-              "code": "11560",
-              "apt": "당산2가현대홈타운",
-              "dong": "당산동2가",
-              "area": 82.8,
-              "floor": "19",
-              "price": 158000,
-              "date": "2026-11-05",
-              "cancel": false,
-              "id": "11560|당산2가현대홈타운|82.8|19|2026-11-05|158000"
-            },
-            {
-              "code": "11560",
-              "apt": "우성3",
-              "dong": "신길동",
-              "area": 83.7,
+              "area": 80.4,
               "floor": "4",
-              "price": 139500,
-              "date": "2026-11-05",
+              "price": 89000,
+              "date": "2026-11-11",
               "cancel": false,
-              "id": "11560|우성3|83.7|4|2026-11-05|139500"
-            },
-            {
-              "code": "11560",
-              "apt": "당산현대3차",
-              "dong": "당산동4가",
-              "area": 84.9,
-              "floor": "7",
-              "price": 130000,
-              "date": "2026-11-05",
-              "cancel": false,
-              "id": "11560|당산현대3차|84.9|7|2026-11-05|130000"
+              "id": "11560|선원가와인|80.4|4|2026-11-11|89000"
             }
           ],
-          "n_new": 18,
+          "n_new": 24,
           "first": false,
           "watch": [
             {
@@ -5063,13 +5289,13 @@
                 "apt": "아크로타워스퀘어",
                 "dong": "영등포동7가",
                 "area": 84.7,
-                "floor": "8",
-                "price": 209000,
-                "date": "2026-10-21",
+                "floor": "3",
+                "price": 202500,
+                "date": "2026-10-28",
                 "cancel": false,
-                "id": "11560|아크로타워스퀘어|84.7|8|2026-10-21|209000"
+                "id": "11560|아크로타워스퀘어|84.7|3|2026-10-28|202500"
               },
-              "n": 3
+              "n": 4
             },
             {
               "label": "영등포 푸르지오 (당산)",
@@ -5215,48 +5441,48 @@
             },
             {
               "ym": "2026-10",
-              "v": 168421,
-              "n": 77
+              "v": 172941,
+              "n": 83
             }
           ],
           "empty": false
         },
         {
           "label": "사당·이수역",
-          "total": 56,
+          "total": 63,
           "new": [
             {
               "code": "11590",
-              "apt": "대성유니드",
+              "apt": "사당우성3",
               "dong": "사당동",
-              "area": 84.9,
-              "floor": "1",
-              "price": 125000,
-              "date": "2026-11-09",
+              "area": 59.9,
+              "floor": "15",
+              "price": 165800,
+              "date": "2026-11-24",
               "cancel": false,
-              "id": "11590|대성유니드|84.9|1|2026-11-09|125000"
+              "id": "11590|사당우성3|59.9|15|2026-11-24|165800"
             },
             {
               "code": "11590",
-              "apt": "사당휴먼시아",
+              "apt": "래미안로이파크",
               "dong": "사당동",
               "area": 85.0,
-              "floor": "11",
-              "price": 140000,
-              "date": "2026-10-31",
+              "floor": "5",
+              "price": 218000,
+              "date": "2026-11-19",
               "cancel": false,
-              "id": "11590|사당휴먼시아|85.0|11|2026-10-31|140000"
+              "id": "11590|래미안로이파크|85.0|5|2026-11-19|218000"
             },
             {
               "code": "11590",
-              "apt": "이수역리가",
+              "apt": "대림(169-8)",
               "dong": "사당동",
-              "area": 84.8,
-              "floor": "8",
-              "price": 184000,
-              "date": "2026-10-28",
+              "area": 84.9,
+              "floor": "14",
+              "price": 180000,
+              "date": "2026-11-17",
               "cancel": false,
-              "id": "11590|이수역리가|84.8|8|2026-10-28|184000"
+              "id": "11590|대림(169-8)|84.9|14|2026-11-17|180000"
             }
           ],
           "n_new": 7,
@@ -5287,14 +5513,24 @@
                 "apt": "래미안로이파크",
                 "dong": "사당동",
                 "area": 85.0,
-                "floor": "16",
-                "price": 229000,
-                "date": "2026-10-17",
+                "floor": "5",
+                "price": 218000,
+                "date": "2026-11-19",
                 "cancel": false,
-                "id": "11590|래미안로이파크|85.0|16|2026-10-17|229000"
+                "id": "11590|래미안로이파크|85.0|5|2026-11-19|218000"
               },
-              "prev": null,
-              "n": 1
+              "prev": {
+                "code": "11590",
+                "apt": "래미안로이파크",
+                "dong": "사당동",
+                "area": 85.0,
+                "floor": "15",
+                "price": 229500,
+                "date": "2026-11-09",
+                "cancel": false,
+                "id": "11590|래미안로이파크|85.0|15|2026-11-09|229500"
+              },
+              "n": 3
             },
             {
               "label": "사당 우성2단지",
@@ -5390,43 +5626,43 @@
         },
         {
           "label": "동탄2신도시",
-          "total": 489,
+          "total": 566,
           "new": [
             {
               "code": "41597",
-              "apt": "동탄역 더 힐",
-              "dong": "청계동",
-              "area": 84.5,
-              "floor": "7",
-              "price": 90000,
-              "date": "2026-11-19",
-              "cancel": false,
-              "id": "41597|동탄역 더 힐|84.5|7|2026-11-19|90000"
-            },
-            {
-              "code": "41597",
-              "apt": "동탄2신도시 베라체",
-              "dong": "목동",
-              "area": 60.0,
+              "apt": "레이크힐 반도유보라 아이비파크 10.2",
+              "dong": "산척동",
+              "area": 85.0,
               "floor": "14",
-              "price": 70000,
-              "date": "2026-11-19",
+              "price": 68000,
+              "date": "2026-11-26",
               "cancel": false,
-              "id": "41597|동탄2신도시 베라체|60.0|14|2026-11-19|70000"
+              "id": "41597|레이크힐 반도유보라 아이비파크 10.2|85.0|14|2026-11-26|68000"
             },
             {
               "code": "41597",
-              "apt": "동탄역센트럴자이(A-10)",
-              "dong": "영천동",
-              "area": 72.8,
-              "floor": "16",
-              "price": 135000,
-              "date": "2026-11-18",
+              "apt": "한화 포레나 동탄호수",
+              "dong": "장지동",
+              "area": 84.0,
+              "floor": "9",
+              "price": 99500,
+              "date": "2026-11-25",
               "cancel": false,
-              "id": "41597|동탄역센트럴자이(A-10)|72.8|16|2026-11-18|135000"
+              "id": "41597|한화 포레나 동탄호수|84.0|9|2026-11-25|99500"
+            },
+            {
+              "code": "41597",
+              "apt": "한신더휴",
+              "dong": "목동",
+              "area": 76.5,
+              "floor": "25",
+              "price": 95000,
+              "date": "2026-11-25",
+              "cancel": false,
+              "id": "41597|한신더휴|76.5|25|2026-11-25|95000"
             }
           ],
-          "n_new": 72,
+          "n_new": 77,
           "first": false,
           "watch": [
             {
@@ -5492,8 +5728,8 @@
             },
             {
               "ym": "2026-06",
-              "v": 79553,
-              "n": 1005
+              "v": 79540,
+              "n": 1004
             },
             {
               "ym": "2026-07",
@@ -5512,8 +5748,8 @@
             },
             {
               "ym": "2026-10",
-              "v": 91906,
-              "n": 197
+              "v": 93197,
+              "n": 202
             }
           ],
           "empty": false
@@ -5524,11 +5760,13 @@
   },
   "estate_sent": [
     "2026-11-15",
-    "2026-11-20"
+    "2026-11-20",
+    "2026-11-27"
   ],
   "estate_sig": {
     "2026-11-15": "b0af962358",
-    "2026-11-20": "b0af962358"
+    "2026-11-20": "b0af962358",
+    "2026-11-27": "b0af962358"
   },
   "estate_deals_seen2": [
     "000ba2854a03",
@@ -5546,6 +5784,7 @@
     "02b55a66aafd",
     "02cf6aafe497",
     "02fa0d077feb",
+    "03be89d0ae82",
     "03c8dd877bad",
     "03cd31293eb6",
     "03d7579cd97d",
@@ -5559,6 +5798,7 @@
     "057f7d9113db",
     "05a5e1285dc5",
     "05a622d2074a",
+    "05acea3be7e0",
     "05b3686b48ed",
     "05d35b5504ab",
     "062a480893dc",
@@ -5566,14 +5806,18 @@
     "0658dc1d22c6",
     "06710aba1b6f",
     "0697d223ec71",
+    "06a66751acd5",
     "06d0e3ff918f",
+    "0703e41045f7",
     "0710ac9e2105",
     "0726e3197e02",
     "07c27d033c67",
     "07d26914f434",
     "07e1c66c573f",
     "0955b1d336b4",
+    "0957ea5d0e5a",
     "0a0c877fa301",
+    "0a1f6d5d1d88",
     "0a4690c003db",
     "0a8e69aef83f",
     "0ab1e4758062",
@@ -5586,6 +5830,7 @@
     "0b47c9b8c85b",
     "0b76f9888474",
     "0b77ce556290",
+    "0b91a9fbf4d3",
     "0be8820eb1a7",
     "0bfbb73f8017",
     "0c20e86c599a",
@@ -5610,6 +5855,7 @@
     "0f254e09455c",
     "0f323d37bf20",
     "0f9206baf448",
+    "0f963671faf4",
     "0fc988c7649c",
     "1000a375f177",
     "104b039db7f7",
@@ -5621,17 +5867,21 @@
     "10e0a44457d1",
     "11186b52934b",
     "113cc5f21979",
+    "1197eda8019f",
     "11b125534b72",
     "11d288cda82d",
     "11d7ff06b142",
+    "11dd421de154",
     "125b2bb3604d",
     "125c75c59305",
     "126049d2499a",
     "1260f78eb891",
+    "1279cae01362",
     "12bb0df42b6e",
     "12bce20e138c",
     "12e941da4d03",
     "13000074efa1",
+    "130dec771cfa",
     "1347f63b1140",
     "134b8fa9575b",
     "13605e6d4fb1",
@@ -5653,10 +5903,12 @@
     "151e995080d0",
     "15452eca629a",
     "1585098a5148",
+    "15d5486286fe",
     "15fe2c83a5bd",
     "16079cd271be",
     "16195df7f9c0",
     "162ef804f333",
+    "1657ae1e9eea",
     "1674ac3785c4",
     "16f2a3622c60",
     "16f40dd56bfe",
@@ -5669,6 +5921,7 @@
     "184b17309bc8",
     "18b1830e6014",
     "19178d1b38e1",
+    "193999603546",
     "193a235fc2ad",
     "1992e89fd7c6",
     "19b260a788d5",
@@ -5681,8 +5934,10 @@
     "1b334d7ee526",
     "1b431f349d49",
     "1b7c5e8cc4c4",
+    "1b835e90d9c9",
     "1bbc80ea8b9b",
     "1be092bce810",
+    "1bfcca5c78fc",
     "1c518fed56f8",
     "1c971d995734",
     "1cc7776315d6",
@@ -5692,14 +5947,17 @@
     "1d309369cb73",
     "1d49b9acd436",
     "1d95764d3adf",
+    "1da85525d326",
     "1dc29e1215d7",
     "1de97e26e586",
+    "1df5a14ce5d8",
     "1e081dde581b",
     "1e578c1a53e7",
     "1e7b7add74c8",
     "1e84b81849bc",
     "1ea734c1bd40",
     "1ecde21b7a87",
+    "1f21756600b9",
     "1f3c24447f87",
     "1f4c7cdb4548",
     "1fe1c70f0d42",
@@ -5711,6 +5969,8 @@
     "20b059fbccc1",
     "20cbd436df74",
     "210d4e4d4376",
+    "212426b4bcc2",
+    "212688cdd4d3",
     "2155813a778b",
     "21612f3cf4e7",
     "21914daa0789",
@@ -5723,6 +5983,7 @@
     "22bbbce67a52",
     "2306661f3bb4",
     "23555b3e44c5",
+    "2366b38e228b",
     "237176aa2ac7",
     "23b773796296",
     "23c56302990b",
@@ -5756,7 +6017,10 @@
     "280fb136b894",
     "2822625d6ea0",
     "284be2d06607",
+    "287fdce35afa",
     "28a5f7d7cef9",
+    "28e8f5e33299",
+    "28e97dab8d14",
     "28ea5b92b1b8",
     "2992c722eb05",
     "2997e2a6d678",
@@ -5766,6 +6030,7 @@
     "2a263161427b",
     "2a2e447e0db7",
     "2a69633acbf9",
+    "2a85ee0b6b5a",
     "2a899e1fbed5",
     "2ac3096416c3",
     "2b14ddc38a1b",
@@ -5773,6 +6038,7 @@
     "2bdc5803ab00",
     "2bfa3ca00446",
     "2c348a9c7920",
+    "2c3fbe23d1c5",
     "2c45c399b384",
     "2c4dd27529fe",
     "2c4f333ee59f",
@@ -5788,6 +6054,7 @@
     "2e1925261ef7",
     "2e20a63fb7b4",
     "2e3749223764",
+    "2e47d06f6f8a",
     "2e6e5601a100",
     "2e848d25d37b",
     "2ea350e49af7",
@@ -5795,6 +6062,7 @@
     "2eaf74fd7e19",
     "2eb8166c91e8",
     "2ebe0c1d6160",
+    "2ef55661f356",
     "2f9e08d2a4df",
     "2faa7d1d6d09",
     "2fca00acb55c",
@@ -5806,22 +6074,29 @@
     "317fa3d3fb37",
     "3194d7ebf2c0",
     "31cb88d8d7db",
+    "31da2995c2f7",
+    "320ecde0a00a",
     "323c49dc8112",
     "32601e3d239b",
     "327a64d61253",
+    "33078e6e1f41",
     "336af525c7d2",
     "33b552af8dc6",
+    "33bf32237db3",
     "34169f53efcb",
     "346680426b3c",
     "346f2b57f119",
     "34854256c74f",
     "34a0f72ad0ac",
+    "34baf23dc303",
+    "34d7354f90d2",
     "34f0c5f09006",
     "34fc25fa3761",
     "35359e6c4c5c",
     "3549e5f0b0d3",
     "356f13ee4e7a",
     "358a0b0cd51c",
+    "358b284b3404",
     "35f40490f725",
     "35f8ec38e489",
     "36310b04482a",
@@ -5833,6 +6108,7 @@
     "3747e638da65",
     "3755fbb62da0",
     "377cdfb2f681",
+    "37a7f2768c71",
     "37f1d3918e39",
     "37f207b16271",
     "3800c7086230",
@@ -5848,6 +6124,7 @@
     "3930e7e9807d",
     "39462a914237",
     "3953e054c85a",
+    "39ecce479ad3",
     "39f817f98aba",
     "3a00efc66a3e",
     "3a2e82870ad8",
@@ -5857,9 +6134,11 @@
     "3a91683e9299",
     "3ac33b2553bf",
     "3add6eb8df4d",
+    "3b194b8c3e23",
     "3b1c957e4dee",
     "3b3429cb7e66",
     "3b3b1083f5d0",
+    "3b54033d168a",
     "3b5ed79a485c",
     "3b981e5a8e89",
     "3baf3d228ece",
@@ -5869,8 +6148,10 @@
     "3c8f5326c8f4",
     "3ca01af99ef7",
     "3ccb707fa690",
+    "3d077aa50b19",
     "3d0ea155766d",
     "3d3051bcca10",
+    "3dffd9aea108",
     "3e14e34ee45d",
     "3e8194b48246",
     "3ea195cf23e1",
@@ -5886,8 +6167,10 @@
     "3ff74e45bc3c",
     "401a48137e55",
     "4056f0eb0a9e",
+    "4086763cfba2",
     "408a8abe1993",
     "40a9a72fc0a0",
+    "40b2aca25df4",
     "40d520d344f0",
     "40d6e68ad4e6",
     "40f1e0ce2001",
@@ -5897,9 +6180,12 @@
     "417b7169410e",
     "417d9230fc80",
     "4232ae82e761",
+    "423388e8bbdb",
     "42523154c13c",
     "4261e4b8b504",
+    "42723026d2d8",
     "430379121fe6",
+    "430f6779c561",
     "432781fb8756",
     "432b0f1a5f3e",
     "43324de908f6",
@@ -5909,6 +6195,7 @@
     "438178d8e604",
     "43be08027324",
     "43d60a70543d",
+    "43db423f4a2d",
     "43e803dbbf9e",
     "441d5bec3dfb",
     "4441dc654f7d",
@@ -5916,12 +6203,15 @@
     "44533260c4c2",
     "44c87b519532",
     "44ef103e71da",
+    "45232fdc6a95",
     "4533dabe48aa",
     "453e3fea2bda",
     "45941777bc16",
     "45c057354475",
     "45cadc9b1022",
     "45cf1a703791",
+    "45ec7b6e1104",
+    "45f373444e66",
     "464e272cd93f",
     "466a81245631",
     "4675fb37b642",
@@ -5930,6 +6220,7 @@
     "4738373b29dc",
     "473df54555d4",
     "475722daca0d",
+    "4772353d5860",
     "47befa6ae396",
     "47c11aecc3a8",
     "47c6e25b1d6a",
@@ -5963,12 +6254,17 @@
     "4d8271501885",
     "4d97a6f1a43b",
     "4e13535fa998",
+    "4e6acab01f14",
+    "4e75b50ae8ee",
+    "4f3c8ec857cb",
+    "4f48e3ef39a2",
     "4f64ba1a03c3",
     "4f66aa5a8079",
     "4f979ab9ef0b",
     "4fade62698ae",
     "4fae42a5a64a",
     "4fd3d2e887d8",
+    "4fec65aac7f8",
     "508a9628ef85",
     "50a04f5acd42",
     "50b09e34d373",
@@ -5978,10 +6274,13 @@
     "5217b6e4526a",
     "521e57f10925",
     "523610857302",
+    "52536f57a362",
+    "527af5d93041",
     "52a66b1f54f8",
     "52be6e000138",
     "52c945468a0c",
     "52e7658864b2",
+    "531e14e4d3ae",
     "534dcf0c8567",
     "5356d23c7f30",
     "535a22be827e",
@@ -6007,6 +6306,7 @@
     "55b89a1ec485",
     "55dfbdd59d85",
     "5605a7a3bed7",
+    "5628089de17a",
     "5647f602f045",
     "564b9dd67106",
     "565017adf73c",
@@ -6020,6 +6320,7 @@
     "577a139ce33a",
     "577c8d0147aa",
     "57abd756b558",
+    "57d9a691a0fb",
     "57dc558f0646",
     "57e990da9423",
     "58cbf6808d82",
@@ -6039,7 +6340,6 @@
     "5ad1ed861ed8",
     "5af60a74db5f",
     "5afece3b46f4",
-    "5b1a52f6b2ce",
     "5b1d5dcd4aaf",
     "5b8c63c32ba7",
     "5c3e16f2469b",
@@ -6054,9 +6354,11 @@
     "5e177e54fd97",
     "5e4a0712200d",
     "5e5b84bd4b10",
+    "5e63c6168b6c",
     "5eab5243d0c0",
     "5eb0cd3b8fca",
     "5ee478082e0c",
+    "5ef7f320d165",
     "5ef959b6e781",
     "5f3f35bc5419",
     "5f701a048015",
@@ -6075,6 +6377,7 @@
     "612d0aea9591",
     "616db0baa8b1",
     "61735d739ab8",
+    "6174bbb04f3d",
     "619b216d66a9",
     "6209d6e8465b",
     "6264d8f375e7",
@@ -6082,6 +6385,7 @@
     "628dac1c70f4",
     "62ef09302973",
     "62f7aef90453",
+    "630649a49427",
     "63253acf633f",
     "63353a754f12",
     "634070d10953",
@@ -6089,10 +6393,12 @@
     "6388dca700de",
     "639b32745535",
     "63af70bb2e65",
+    "63b3cc702e39",
     "63b41a74a10b",
     "63c0fe8d9f0e",
     "63d49e3c3e79",
     "63f3a10f3615",
+    "641ea8a66edc",
     "646aaf2007dc",
     "6499976105dc",
     "64dee4cf31fc",
@@ -6105,12 +6411,15 @@
     "65b5cc5547ec",
     "65cf662d145a",
     "661a91c43334",
+    "665500d621bf",
     "66b8dcab9556",
+    "66c81277aa6b",
     "66c9e72f8b18",
     "66ef42d0733a",
     "67070323da92",
     "670da6cad72c",
     "672dfa70ace2",
+    "674c34ea6b48",
     "6799528aeb63",
     "67b3a9503875",
     "67b692254a98",
@@ -6133,6 +6442,7 @@
     "6a6fcf05868e",
     "6a89fcdc85a5",
     "6aa323e7cbd6",
+    "6ab46d22ebe2",
     "6b0013681b52",
     "6b0fe3dc8535",
     "6b3ef89e9f98",
@@ -6162,10 +6472,13 @@
     "6f7663f36b09",
     "6fafeae0da50",
     "70027fc880ed",
+    "7026553de54e",
     "7052fb2af70a",
+    "7074663ebef1",
     "707876f7841b",
     "709deaa41eb3",
     "70cd4f41873e",
+    "70daaeb3698d",
     "70f18b690626",
     "70f1eaf20846",
     "710e172c0401",
@@ -6176,11 +6489,14 @@
     "71d0d8bb2106",
     "71dcaf81a834",
     "71dd441e8c63",
+    "71f82749569c",
     "726ffb104255",
     "729727b3fe61",
+    "72d3004f9fca",
     "72ddfe0fa432",
     "72ed28ad15d0",
     "730dbf4cf5ba",
+    "731f50d6e0c3",
     "732cffd651e7",
     "734a9fb90911",
     "7355477b57d2",
@@ -6216,18 +6532,24 @@
     "7937a4f1fec9",
     "794e4ab8e116",
     "7970b869da16",
+    "79acfdb88cf5",
     "79bd3e7b1c5b",
     "79fcb29b28de",
     "7a2964f4b8ed",
     "7a5c6e9bdc15",
+    "7a7c0019c9fc",
     "7aa289fb5b0d",
     "7aa431a4a6da",
     "7aa7976f53c0",
+    "7af43bb8ac8f",
+    "7af7aa45dd8e",
     "7afebed52836",
     "7b293d4e2656",
     "7b48786b50b8",
     "7b772acbed4c",
+    "7ba8b4c39d59",
     "7bbc1e9a353c",
+    "7bfc28d21e9d",
     "7c01c0c51349",
     "7cdbb7eeaf83",
     "7cdee58fa4ba",
@@ -6235,10 +6557,12 @@
     "7cee8364187c",
     "7d577b24862b",
     "7da90e883238",
+    "7dbf270f0757",
     "7dc024365c5d",
     "7dc6cd6d86ad",
     "7dffa4b04a0a",
     "7e1677718ae4",
+    "7e2a295d9738",
     "7e2b95e75871",
     "7e36bbfda8db",
     "7e88bccbf1fd",
@@ -6247,13 +6571,16 @@
     "7ed4d2e7498f",
     "7f04adc08903",
     "7f324df37102",
+    "7f3aa7f4377a",
     "7f495cf9169f",
     "7f5572450b1e",
+    "7f69951e7861",
     "7fc7dbcbae9c",
     "7fd8637b2d21",
     "7fdeee626035",
     "7fe68f4dd89b",
     "80324272a932",
+    "807a7e3f5877",
     "80e3aee67ad9",
     "80ead067c250",
     "810d98d4c06a",
@@ -6267,6 +6594,7 @@
     "823be3901cbd",
     "824edc93bc12",
     "8273bd65891c",
+    "827ba8591e73",
     "82b97efa6cc4",
     "82da216d61c9",
     "8308f28dbaf0",
@@ -6275,6 +6603,7 @@
     "835ee6213ecf",
     "837aa87a8fe7",
     "83945c6561e9",
+    "83fc7905af26",
     "842c620f1ca9",
     "84692b8a32fb",
     "84bb3d5b6365",
@@ -6286,12 +6615,14 @@
     "860cffc48158",
     "861e4d249acc",
     "863bc482a861",
+    "867961ea28f9",
     "868c0a111888",
     "86c6ddff837d",
     "8722731df2d4",
     "8730489d27b7",
     "87393dcab496",
     "877eef680d71",
+    "8783aeb75d00",
     "87a596300c66",
     "87b125cd97d5",
     "87d5997d2a5a",
@@ -6300,9 +6631,11 @@
     "883b0e6ee021",
     "886849db94bf",
     "88bc378959be",
+    "88eaddba5fb3",
     "88ebb1e128c6",
     "88ec7e00c0cc",
     "892c9cb6dbcf",
+    "89325ca93cd5",
     "895d422088d5",
     "897448cee06f",
     "899611d82c26",
@@ -6315,26 +6648,32 @@
     "8bbeac873a9a",
     "8be58550e034",
     "8c303e714844",
+    "8c39d787de9a",
     "8c42dabf037a",
     "8c4dee739516",
     "8c751bb8e89e",
     "8ced7e42109f",
+    "8cf211f3a205",
     "8d177545f523",
     "8d1f8ea38e79",
     "8d25b7e43be7",
     "8d7b5c5a92bc",
     "8d92a95728b7",
     "8da29ab7371c",
+    "8dbb17676972",
     "8dcb7863497a",
     "8e248f0d46b8",
     "8eba7316ccb3",
     "8ee09090272c",
     "8ef88e49b934",
+    "8f0b567e28ac",
     "8f0f54d8f060",
     "8fded63010ee",
     "908175ee951e",
+    "90d54d7f5a34",
     "910823c18952",
     "91514a70e932",
+    "915b77ac2bcc",
     "917a62f04905",
     "917f53b41f75",
     "919321b0254b",
@@ -6344,7 +6683,9 @@
     "923329eb9223",
     "92612e12abe6",
     "92a79bf62306",
+    "92b39333dde2",
     "92c4d3bc3de0",
+    "92db1d5f299c",
     "9315a8e8d1b7",
     "9319379b94c7",
     "93197bf48a3f",
@@ -6362,9 +6703,13 @@
     "94f658195fde",
     "94f8c71bd187",
     "9539019cecfe",
+    "95bc820b7878",
+    "95db4c52f0f6",
     "95f40b645ac5",
     "95fa4dab796c",
+    "965071936262",
     "96624c770193",
+    "966a2e7c3cb7",
     "96a6404d26fa",
     "96ab67f51919",
     "96bf4c60b49d",
@@ -6381,6 +6726,7 @@
     "98fe8f9a21a4",
     "99711b420e7f",
     "99848ad5b507",
+    "99a8a5879411",
     "99c21d80b650",
     "99fe518b7695",
     "9a0518738a7f",
@@ -6401,25 +6747,32 @@
     "9bed663f7f5a",
     "9c233aac3cb2",
     "9c57906bf759",
+    "9c935c3ae9ac",
     "9cac920ea998",
+    "9cf116bf054a",
     "9d1c9c2ea5d0",
+    "9d22fbaf95dd",
     "9d2395d298a9",
     "9d60d7dbd01c",
+    "9d65ac25e2ab",
     "9dbbe73c4659",
     "9dcf5b32bab3",
     "9ddf6e184a67",
     "9e1ccbd7faea",
     "9e4d86162555",
     "9e5fc0994352",
+    "9e7344e0187d",
     "9e76a7cbcadd",
     "9edeca820ffd",
     "9efcf2bac2d7",
     "9f92d4e78eae",
     "a03ca4550ae8",
     "a06d5c0c0922",
+    "a07354e75ac3",
     "a076a96110bb",
     "a07f6ad20a40",
     "a0a301abde3a",
+    "a0d0894e5064",
     "a0efe7fca09f",
     "a10fdcb29e4e",
     "a11c2e586e71",
@@ -6431,11 +6784,14 @@
     "a1f848efe89f",
     "a294598447b0",
     "a2a13782fe14",
+    "a2c78ca58b97",
     "a2ec534c5d6d",
     "a328d88a1e5e",
     "a33ad7bb799d",
     "a346cbd1ed6a",
+    "a3964af7fce1",
     "a3becd9dd93e",
+    "a3f696528d71",
     "a3fae95022fe",
     "a4465cd378f9",
     "a4918c42778c",
@@ -6448,14 +6804,19 @@
     "a5584930b61a",
     "a5680fb11097",
     "a57a1f95c24e",
+    "a5ac66421a1f",
     "a60bcee4158e",
     "a61f1eb2638a",
+    "a627d6caaf70",
     "a63dae0d0fe2",
+    "a670e9a90380",
     "a6905b18b0ce",
     "a6bb14a3db7f",
     "a6ec93a44aa1",
     "a6ed4a8f83d9",
     "a6ee4d8b60c6",
+    "a6fd09a7046c",
+    "a70fabdcfcff",
     "a75ca52bcbf9",
     "a7cdfdfd5fd4",
     "a803c410a00e",
@@ -6468,10 +6829,14 @@
     "a870d7d0a8e4",
     "a8a3a91be8c5",
     "a8b839ec4d9c",
+    "a8ee22ae382a",
+    "a93c824facc6",
     "a96d24fec682",
     "a9726f6a9a2b",
     "a97616801278",
+    "a99d1983df10",
     "a9b842c32b9b",
+    "a9bf3de081d2",
     "aa13b3931266",
     "aa1cbfc935e4",
     "aa286856368d",
@@ -6484,15 +6849,19 @@
     "ab66a26742b6",
     "ab98417a9e30",
     "abd2a8b95bc0",
+    "abeb76ba27e0",
     "ac188c8bc5ec",
     "ac24909d2f99",
     "ac3dc9b041d7",
+    "ac93e6f86d8a",
     "ac9ef64b4e10",
     "acb6ea23d9c9",
+    "acc68c3f35e7",
     "acea14a69dc3",
     "acec070aa2d6",
     "ad081f82c74b",
     "ad3a44a3b696",
+    "ad4a8b3309cd",
     "ad6cc7f34f7d",
     "ad756a3b4418",
     "ad83c32917d4",
@@ -6501,6 +6870,7 @@
     "ae0776188800",
     "ae1acbbe0671",
     "ae403de10cf2",
+    "ae43e6d0d8a7",
     "ae7ecb700856",
     "ae91ac12979b",
     "aeb98f37ecb5",
@@ -6509,21 +6879,29 @@
     "b05b3a10856d",
     "b090eb7b894b",
     "b0c02ac97aaa",
+    "b11f697c74ba",
     "b134d454fa32",
     "b1584c2bd3a9",
     "b1896eee1b51",
+    "b1a058c8b4be",
     "b223108ec609",
+    "b2455d53019f",
+    "b26c38564949",
     "b27f94f51545",
     "b2fe22f643e6",
     "b3275a2970b6",
     "b32f16a654b9",
     "b35baf6e5414",
+    "b379fb4f21a5",
     "b3a4a1f56e29",
+    "b3b3751900c6",
     "b3b83a65ab79",
     "b3bc23f0cb10",
+    "b45396477a63",
     "b46b11e9bbb9",
     "b4a5e07b1034",
     "b4d9593f6425",
+    "b4dd043d3058",
     "b50397a28003",
     "b530f012670a",
     "b531e8a88c95",
@@ -6532,6 +6910,7 @@
     "b57b7c16224b",
     "b59e687c6618",
     "b5a946279d73",
+    "b5aaefb0de03",
     "b5caeb3431dc",
     "b5db59b6cb99",
     "b5f49bc602a6",
@@ -6556,6 +6935,7 @@
     "b9593bfc95a5",
     "b95a04d7b345",
     "b99174f4c4e7",
+    "b991b2f71342",
     "b9aa7c61ed13",
     "b9ac50c71b49",
     "b9b65b338fa5",
@@ -6569,6 +6949,7 @@
     "ba82aca710cd",
     "ba85109c0319",
     "bab6614e8716",
+    "bad09c22c1f7",
     "bae67f8a1bb7",
     "bb05cea40f18",
     "bb574a4f76ae",
@@ -6578,13 +6959,16 @@
     "bbdcf279e770",
     "bc320355677d",
     "bc39a8c40875",
+    "bc5bc327fa8f",
     "bc7371d4c0be",
     "bc9f3489b99e",
     "bd51e7cb1b3e",
+    "bd5d5650bf50",
     "bd85e3726c92",
     "bdb424c28dda",
     "be0dbda31340",
     "be1b0b3bd68e",
+    "be3a34be1b2f",
     "be4ac7f830cb",
     "be52c8f3c94f",
     "be5ff7f9cb5b",
@@ -6594,6 +6978,7 @@
     "bfbb58df6b58",
     "bfc378e92c10",
     "bfdf0a6198ff",
+    "bfea170fde48",
     "bff63237608c",
     "c000df6fe357",
     "c017f9151b0b",
@@ -6613,13 +6998,16 @@
     "c1eaa39e199b",
     "c29c4525b22d",
     "c2a364cfc6e6",
+    "c2a7d6e7f6fd",
     "c2bedec4a1af",
+    "c2c38b150b33",
     "c2e7d4440c8a",
     "c2f155d8d97e",
     "c306a70d9a71",
     "c354a2919678",
     "c36242846e29",
     "c3957031429a",
+    "c42c37e2db13",
     "c439594ec87a",
     "c445e61053ac",
     "c4483f7dd872",
@@ -6636,17 +7024,23 @@
     "c694d9022fe4",
     "c6bb38f337f6",
     "c6cb64059b83",
+    "c6e7cd84e12c",
     "c727b19a638c",
     "c775046e7fd8",
     "c78d9d87b35a",
+    "c7be3df1a53c",
     "c7c3f76f1976",
     "c82c99405dfe",
+    "c8381b6010e0",
     "c8494fd61d15",
     "c85bf9d323f2",
+    "c893631f95e2",
     "c8a2c47f484b",
     "c8a6ebde10d3",
+    "c8f5362fcf2a",
     "c94b604f1ba9",
     "c9aabf25e019",
+    "ca306ab6257c",
     "ca614f2630f8",
     "ca73f3154b4f",
     "ca75aafa1718",
@@ -6656,6 +7050,7 @@
     "cadd7d5abc3d",
     "caf556e97f91",
     "cafd74f4e82b",
+    "cafec55a0327",
     "cb04764d42f0",
     "cb366c8c2e5a",
     "cb3d15b46e25",
@@ -6671,8 +7066,11 @@
     "cd9d011b6816",
     "cdac2695216c",
     "cdbe120c2377",
+    "cdcf0101c058",
+    "cde9846c6fe2",
     "ce0d49b97a7a",
     "ce365127448a",
+    "ce8f40466480",
     "ced38c875a84",
     "cf064666070f",
     "cf3ba4fc92a2",
@@ -6685,24 +7083,32 @@
     "d03e0d65fbfd",
     "d04b9bd3992e",
     "d05c7ddc84c3",
+    "d0772cecd82a",
+    "d07dbe0a5f0b",
     "d08cfebab90e",
     "d0decd42417c",
     "d0dfa438d113",
     "d0e7fabc18b7",
+    "d0ecb7d0918c",
+    "d0f67328c3fc",
     "d18123545c1b",
     "d19867ad7775",
     "d19bbd686fff",
     "d19d55e4b02a",
+    "d1b89830e225",
     "d1ca0c4c1bc0",
     "d25413ac19ef",
+    "d2576aabdc70",
     "d2b83a1f3bb2",
     "d32ec653ecc1",
+    "d33e2dc7ace2",
     "d35ad8c13ab7",
     "d390fbcc5fed",
     "d395c60bd687",
     "d39b99274de4",
     "d4015044155a",
     "d41ff561fe27",
+    "d4b63ab8d42f",
     "d4bb459ff151",
     "d4e335f10260",
     "d4edf85d47b2",
@@ -6717,7 +7123,9 @@
     "d5e33f3fb94c",
     "d5e9514f63c8",
     "d61803256700",
+    "d657c3ebe649",
     "d67e6c7edf8a",
+    "d6aa3585e547",
     "d6aa90c8d842",
     "d6c69e2163ad",
     "d70659359d3b",
@@ -6725,12 +7133,14 @@
     "d72f2139c6c4",
     "d756c6ff192a",
     "d78efe57976f",
+    "d7b68e5d9f3a",
     "d7bde1a05c98",
     "d808bf041d2e",
     "d8d61e3d47e5",
     "d9457d37951b",
     "d960eeff160c",
     "d967bb4e8252",
+    "d9b1168e77d7",
     "d9d7a64ec71a",
     "da341bed90a8",
     "da9d10814cc9",
@@ -6747,6 +7157,7 @@
     "dc8ccb728a80",
     "dcda475868b0",
     "dd5f0744f0f8",
+    "ddb9e4860285",
     "ddcd310d37f1",
     "ddf6db8d7834",
     "de2790d2a0f0",
@@ -6758,6 +7169,7 @@
     "decafa152031",
     "df0d6a05f094",
     "dfea65692a43",
+    "dff5c6317fae",
     "e00d94bd9738",
     "e020a3a997e4",
     "e023d46957c4",
@@ -6766,12 +7178,15 @@
     "e05cc67c33ac",
     "e0a9c5a69fb6",
     "e0af07c8e9b7",
+    "e0b90af2b742",
     "e0ca14ad11c5",
     "e17f3d726014",
     "e19cfec3b0de",
     "e1b0471a548c",
     "e1eb4d2e1475",
+    "e1f3c6a070fd",
     "e265738e675d",
+    "e2af1c71c71a",
     "e2de62a058a7",
     "e2f4f3030597",
     "e3050aa59945",
@@ -6797,6 +7212,7 @@
     "e6896a68cfd7",
     "e6aec7f14fba",
     "e6be509df5bc",
+    "e6cccc446e92",
     "e6fdea8b97de",
     "e74ef0ebae11",
     "e78b70dbcaae",
@@ -6819,10 +7235,14 @@
     "eb8c5029dc53",
     "eb9cb3abeef2",
     "eb9ea800d239",
+    "ebce5413207d",
     "ec3cf483835b",
     "ec4dd8663f06",
+    "ecb2c31fbb0e",
     "ecdcce778d25",
+    "ecf51e4fffcc",
     "ed1be0a8cce3",
+    "ed2a9722cff3",
     "ed2f3ac7d1f1",
     "ed33d7abfbf3",
     "ed9adc385abb",
@@ -6830,11 +7250,14 @@
     "ede742e32d40",
     "ee18b722a4a3",
     "ee2aee057e55",
+    "ee30d4f74eb5",
     "eed215df9ea3",
+    "eef25585fc3c",
     "ef2960124c17",
     "ef43cc81c248",
     "ef4b7c55f15d",
     "ef6b7cc41194",
+    "ef7228cdf573",
     "ef99cf4c0fc3",
     "f006fb632dfc",
     "f00784d9f05f",
@@ -6843,7 +7266,9 @@
     "f0abe331aeed",
     "f0d7e777e75d",
     "f165ee580aa3",
+    "f18d4b23a21a",
     "f2cd191005c1",
+    "f2ff0d0a25c6",
     "f32a9092225a",
     "f34de725f3cb",
     "f362d7b7caf7",
@@ -6855,6 +7280,8 @@
     "f46bec85cf58",
     "f46f769b36a2",
     "f4ba222cb452",
+    "f50934ae2d2f",
+    "f52588b2a5ae",
     "f53c38c78064",
     "f540e9122119",
     "f5885d5134a2",
@@ -6873,6 +7300,7 @@
     "f89c63ce9a12",
     "f89eb3fcb9ea",
     "f8bd49a3edeb",
+    "f8f68ff5e387",
     "f935b6a34a38",
     "f97394c7e009",
     "f979bf0e4932",
@@ -6880,6 +7308,8 @@
     "f9b03333e626",
     "f9c9cb9807a8",
     "f9eea8874268",
+    "f9fbfce6b965",
+    "fa3353d897d4",
     "fa6d0abd33e1",
     "fadbb8c9e09d",
     "faf7c11889ac",
@@ -6890,6 +7320,8 @@
     "fb4ae65ee7a2",
     "fb5788342dd0",
     "fb5dec8147bf",
+    "fb5fe92c4538",
+    "fb662e449112",
     "fb77aca7c252",
     "fbc3fa70ae92",
     "fc11bb182f29",
@@ -6912,6 +7344,7 @@
     "fe1478ef91aa",
     "fe44692aed4e",
     "fe74a7adedb6",
+    "fe7dd9c874a3",
     "fed428a0cdb6",
     "ff737dc254b2",
     "ff977c839991",
@@ -7115,6 +7548,24 @@
         "sentence": "How Americans are scaling back holiday plans",
         "match": "scaling back",
         "link": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
+        "source": "CNBC"
+      }
+    ],
+    "2026-11-27": [
+      {
+        "en": "unveil",
+        "ko": "공개하다, 발표하다",
+        "sentence": "Experts say arctic char is threatened by pollution in England’s biggest lake as comedian unveils sculpture UK politics live – latest updates An ancient fish species that has survived in Windermere for more than 11,000 years is at risk of “i",
+        "match": "unveils",
+        "link": "https://www.theguardian.com/environment/2026/nov/26/burnham-urged-to-act-extinction-windemere-arctic-char-paul-whitehouse",
+        "source": "Guardian Environment"
+      },
+      {
+        "en": "bet on",
+        "ko": "~에 걸다, ~을 예상하고 투자하다",
+        "sentence": "Liesman: Why Greenspan could bet on productivity — and Warsh needs to hike",
+        "match": "bet on",
+        "link": "https://www.cnbc.com/2026/11/25/kevin-warsh-greenspan-fed-rates-ai-inflation.html",
         "source": "CNBC"
       }
     ]
