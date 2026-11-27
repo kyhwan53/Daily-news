@@ -1310,7 +1310,8 @@
     "2026-11-24": [],
     "2026-11-25": [],
     "2026-11-26": [],
-    "2026-11-27": []
+    "2026-11-27": [],
+    "2026-11-28": []
   },
   "articles": {
     "2026-10-11": [
@@ -2265,6 +2266,32 @@
         "link": "https://www.theguardian.com/environment/2026/nov/26/burnham-urged-to-act-extinction-windemere-arctic-char-paul-whitehouse",
         "summary": "Experts say arctic char is threatened by pollution in England’s biggest lake as comedian unveils sculpture UK politics live – latest updates An ancient fish species that has survived in Windermere for more than 11,000 years is at risk of “i…"
       }
+    ],
+    "2026-11-28": [
+      {
+        "label": "BBC World",
+        "section": "top",
+        "guid": "https://www.bbc.co.uk/news/articles/ckd71ypy9e8eo#0",
+        "title": "'We couldn't give up that easily': Marching bands scramble to cover costs after Thanksgiving parade rearranged",
+        "link": "https://www.bbc.co.uk/news/articles/ckd71ypy9e8eo?at_medium=RSS&at_campaign=rss",
+        "summary": "Stormy weather in New York City prompted organisers to push back the Macy's parade by two days - leaving some musicians stuck."
+      },
+      {
+        "label": "Guardian Business",
+        "section": "business",
+        "guid": "https://www.theguardian.com/business/2026/nov/27/norse-atlantic-airways-files-for-bankruptcy-cancels-all-future-flights",
+        "title": "Norse Atlantic Airways files for bankruptcy and cancels all future flights",
+        "link": "https://www.theguardian.com/business/2026/nov/27/norse-atlantic-airways-files-for-bankruptcy-cancels-all-future-flights",
+        "summary": "Norwegian airline tells customers not to come to airports after surging fuel costs caused by Iran war ruin finances Norse Atlantic Airways has filed for bankruptcy and cancelled all future flights after surging fuel costs caused by the Iran…"
+      },
+      {
+        "label": "NPR Climate",
+        "section": "environment",
+        "guid": "https://www.npr.org/2026/11/27/nx-s1-6054884/thanksgiving-weather-black-friday",
+        "title": "From Thanksgiving blackouts to Black Friday, a holiday hit by wild weather and economic woes",
+        "link": "https://www.npr.org/2026/11/27/nx-s1-6054884/thanksgiving-weather-black-friday",
+        "summary": "A storm battered much of the country on Thursday, knocking out power to thousands of homes and disrupting travel. Today, Black Friday shopping deals kick off, and on Saturday New York City will hold the postponed Macy's Thanksgiving Day Par…"
+      }
     ]
   },
   "articles_used": [
@@ -2280,6 +2307,7 @@
     "https://www.bbc.co.uk/news/articles/c9p8gz7zx4peo#0",
     "https://www.bbc.co.uk/news/articles/ck20v651473qo#3",
     "https://www.bbc.co.uk/news/articles/ck79py02p1jlo#0",
+    "https://www.bbc.co.uk/news/articles/ckd71ypy9e8eo#0",
     "https://www.bbc.co.uk/news/articles/ckpdw4d0z2dwo#1",
     "https://www.bbc.co.uk/news/articles/ckr5g8edl94eo#0",
     "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo#0",
@@ -2340,12 +2368,14 @@
     "https://www.npr.org/2026/11/16/nx-s1-6042888/how-the-u-s-influence-is-and-isnt-felt-at-this-years-un-climate-talks",
     "https://www.npr.org/2026/11/18/nx-s1-6044242/putin-to-meet-with-trump-and-xi-after-ukrainian-attack-on-russian-bridge",
     "https://www.npr.org/2026/11/23/nx-s1-6050273/cop31-ends-with-no-deal-after-negotiators-fail-to-reach-an-agreement-on-fossil-fuels",
+    "https://www.npr.org/2026/11/27/nx-s1-6054884/thanksgiving-weather-black-friday",
     "https://www.npr.org/sections/planet-money/2026/10/09/nx-s1-5995606/why-american-investors-love-european-defense-startups",
     "https://www.npr.org/sections/planet-money/2026/10/16/nx-s1-6001828/what-this-bankruptcy-says-about-ai-startups",
     "https://www.npr.org/sections/planet-money/2026/11/02/g-s1-151009/two-economists-studied-californias-billionaire-tax-they-reached-wildly-different-conclusions",
     "https://www.theguardian.com/australia-news/2026/oct/21/odds-of-fifth-interest-rate-hike-this-year-likely-to-shorten-as-rba-deputy-warns-inflation-outlook-worsening",
     "https://www.theguardian.com/business/2026/nov/01/investors-take-out-36bn-from-binance-after-record-hack-that-stole-billions",
     "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+    "https://www.theguardian.com/business/2026/nov/27/norse-atlantic-airways-files-for-bankruptcy-cancels-all-future-flights",
     "https://www.theguardian.com/business/2026/oct/17/why-britain-should-reject-the-lure-of-cheap-and-scary-chinese-ai",
     "https://www.theguardian.com/business/2026/oct/23/oil-five-month-high-fears-us-renews-strikes-iran",
     "https://www.theguardian.com/business/live/2026/oct/12/uk-growth-inflation-pressures-oil-price-sveriges-riksbank-nobel-prize-economic-sciences-awarded-latest-news-updates",
@@ -2973,7 +3003,7 @@
       {
         "title": "Italian 10-y Bond Auction",
         "country": "EUR",
-        "date": "2026-11-27T05:33:00-05:00",
+        "date": "2026-11-27T05:05:00-05:00",
         "impact": "Low",
         "forecast": "",
         "previous": "4.49|1.6"
@@ -3013,52 +3043,6 @@
     ]
   },
   "reports": {
-    "2026-11-14": [
-      {
-        "label": "밤사이 미국 시장",
-        "slot": "overnight",
-        "summary": [
-          "젠슨 황 CEO 사퇴에 따른 불확실성을 반영하며 약세.",
-          "AMD, 브로드컴 반사이익 기대감에 나란히 5% 급등.",
-          "젠슨 황 사태로 네오클라우드 기업에 대한 우려도 확대되는 가운데, 네비우스 매출 가이던스 부진에 -16%대",
-          "한편, 최근 이란에 유화적 분위기를 보여왔던 트럼프 대통령의 태도가 급변하며 유가 상승 및 국채금리 급등",
-          "미국 10년물 국채수익률 5.13% (+13.5bp), 미-이란 협상 기대 후퇴에 따른 유가 상승 영향에 급등"
-        ],
-        "date": "2026-11-13",
-        "guid": "naver:market:38143",
-        "title": "11/13 KB 리서치 모닝코멘트",
-        "link": "https://stock.naver.com/research/market/38143",
-        "by": "KB증권"
-      },
-      {
-        "label": "증권사 경제분석",
-        "slot": "",
-        "summary": [
-          "월에 이어 10 월에도 인플레이션 전방위 확산",
-          "미국 10 월 CPI 는 +0.4%MoM, Core CPI 는 +0.3%MoM 상승했다.",
-          "월 에너지 가격 상승률이 +5.2%MoM → +0.7%MoM 으로 크게 둔화되면서 헤드라인 인플레이션 상승 속도는 완만해졌으나, 그 외 품목들은 높은 상승세를 이어갔다.",
-          "Core 상품 부문은 9 월 보다는 상승세가 약간 낮아졌으나 +0.2%로 여전히 높은 수준을 지속했다.",
-          "서비스 물가에서도 주거비가 +0.4% → +0.3%로 둔화된 것을 제외하면 다른 부분에서는 여전히 우려되는 수준이었으며, 주거비 마저도 자가주거비는 2 개월 연속 +0.3% 상승했다."
-        ],
-        "date": "2026-11-11",
-        "guid": "naver:economy:14022",
-        "title": "미국 CPI: 뒤늦은 전쟁의 대가",
-        "link": "https://stock.naver.com/research/economy/14022",
-        "by": "대신증권"
-      },
-      {
-        "label": "증권사 투자전략",
-        "slot": "",
-        "summary": [
-          "Part II 글로벌 IT SW 16"
-        ],
-        "date": "2026-11-12",
-        "guid": "naver:invest:40808",
-        "title": "[2027 해외기업 전망] 글로벌 탑픽스 (Global Top Picks)",
-        "link": "https://stock.naver.com/research/invest/40808",
-        "by": "신한투자증권"
-      }
-    ],
     "2026-11-15": [
       {
         "label": "밤사이 미국 시장",
@@ -3730,6 +3714,53 @@
         "link": "https://www.bok.or.kr/portal/bbs/P0000559/view.do?nttId=11067084&menuNo=200690",
         "by": ""
       }
+    ],
+    "2026-11-28": [
+      {
+        "label": "밤사이 미국 시장",
+        "slot": "overnight",
+        "summary": [
+          "AI 대장주(엔비디아 -3.91%, 마이크론 -4.57%)에서 빠진 자금이 소재·산업재와 중소형주(러셀2000 +0.71%)로 옮겨간 하루였습니다.",
+          "추수감사절을 앞두고 전날 기술주 급락 충격을 딛고 전통 경기민감주가 지수를 떠받쳤습니다."
+        ],
+        "date": "2026-11-27",
+        "guid": "naver:market:38328",
+        "title": "유안타 AI 미국 주식시장 마감 시황 (26.11.27)",
+        "link": "https://stock.naver.com/research/market/38328",
+        "by": "유안타증권"
+      },
+      {
+        "label": "증권사 경제분석",
+        "slot": "",
+        "summary": [
+          "글로벌 금융위기 혹은 IT버블 국면과 유사한 현 주가 급락 추세",
+          "AI 사이클을 등에 얻고 강한 상승세를 보이던 나스닥지수는 물론 한국, 대만 증시가 높은 변동성을 동반한 급락 장세가 지속되고 있다.",
+          "관심은 현재 미국과 한국의 주가 급락 현상이 금융위기 혹은 경기침체를 의미하는지다.",
+          "그러나 결론적으로 주가 급락 현상에도 불구하고 한-미 경제가 경기침체에 진입하거나 또 다른 금융위기를 맞이할 가능성은 현재로서는 낮다는 판단이다.",
+          "미국 경제의 경우 AI 투자를 둘러싼 각종 불확실성 리스크가 증가하고 있지만 경기 침체의 징후는 아직 가시화되고 있지 않다."
+        ],
+        "date": "2026-11-25",
+        "guid": "naver:economy:14060",
+        "title": "현 주가 급락 장세, 위기 혹은 경기침체를 의미하나?",
+        "link": "https://stock.naver.com/research/economy/14060",
+        "by": "iM증권"
+      },
+      {
+        "label": "증권사 투자전략",
+        "slot": "",
+        "summary": [
+          "증시 Comment (전일 아시아 증시)",
+          "AI 산업의 성장성에 대한 의구심이 반도체를 넘어 증시 전반으로 확산되며 하락.",
+          "메모리 반도체 공급 과잉 경고와 AI 기업의 공모가 하회 등으로 투자심리가 얼어붙은 가운데, 젠슨 황 CEO의 복귀 기대에 따른 상승분을 반납하며 매도 사이드카까지 발동.",
+          "KOSDAQ은 개인 순매도와 반도체 소부장 중심의 약세에 전 거래일 대비 2.29% 하락한 650.64P로 마감",
+          "미중 무역갈등 재점화 우려와 AI 기술주 투자심리 악화에 하락."
+        ],
+        "date": "2026-11-26",
+        "guid": "naver:invest:40960",
+        "title": "[IBKS Daily] Start with IBKS(2026.11.26) 미국 10월 PCE 물가 3.8% 상승",
+        "link": "https://stock.naver.com/research/invest/40960",
+        "by": "IBK투자증권"
+      }
     ]
   },
   "reports_used": [
@@ -3773,6 +3804,7 @@
     "naver:economy:14055",
     "naver:economy:14056",
     "naver:economy:14057",
+    "naver:economy:14060",
     "naver:economy:14062",
     "naver:invest:40559",
     "naver:invest:40569",
@@ -3808,6 +3840,7 @@
     "naver:invest:40921",
     "naver:invest:40951",
     "naver:invest:40952",
+    "naver:invest:40960",
     "naver:market:38041",
     "naver:market:38056",
     "naver:market:38069",
@@ -3830,10 +3863,10 @@
     "naver:market:38266",
     "naver:market:38278",
     "naver:market:38295",
-    "naver:market:38299"
+    "naver:market:38299",
+    "naver:market:38328"
   ],
   "sent": [
-    "2026-11-14",
     "2026-11-15",
     "2026-11-16",
     "2026-11-17",
@@ -3846,33 +3879,10 @@
     "2026-11-24",
     "2026-11-25",
     "2026-11-26",
-    "2026-11-27"
+    "2026-11-27",
+    "2026-11-28"
   ],
   "markets_history": {
-    "2026-11-07": {
-      "KOSPI": "5,059.69",
-      "KOSDAQ": "644.27",
-      "KR 3Y": "3.62%",
-      "US 2Y": "4.51%",
-      "US 10Y": "4.86%",
-      "US 30Y": "5.26%",
-      "10Y-2Y spread": "+35bp",
-      "USD/KRW": "1,358.7",
-      "USD/JPY": "158.33",
-      "USD/EUR": "0.8957",
-      "S&P 500": "7,376.92",
-      "나스닥": "24,579.43",
-      "다우": "51,286.21",
-      "유로스톡스 50": "6,170.49",
-      "니케이 225": "57,434.77",
-      "상해종합": "3,649.18",
-      "항셍": "24,481.86",
-      "WTI": "$90.73",
-      "브렌트유": "$98.14",
-      "금": "$4,073.60",
-      "구리 (경기 선행)": "$6.2595",
-      "VIX (공포 지수)": "24.73"
-    },
     "2026-11-08": {
       "KOSPI": "5,059.69",
       "KOSDAQ": "644.27",
@@ -4352,6 +4362,30 @@
       "금": "$3,566.20",
       "구리 (경기 선행)": "$5.3480",
       "VIX (공포 지수)": "26.80"
+    },
+    "2026-11-28": {
+      "KOSPI": "4,915.68",
+      "KOSDAQ": "708.99",
+      "KR 3Y": "3.69%",
+      "US 2Y": "4.69%",
+      "US 10Y": "4.94%",
+      "US 30Y": "5.33%",
+      "10Y-2Y spread": "+25bp",
+      "USD/KRW": "1,334.9",
+      "USD/JPY": "159.54",
+      "USD/EUR": "0.9127",
+      "S&P 500": "7,297.49",
+      "나스닥": "24,129.50",
+      "다우": "50,774.94",
+      "유로스톡스 50": "6,089.20",
+      "니케이 225": "58,711.11",
+      "상해종합": "3,606.49",
+      "항셍": "22,694.77",
+      "WTI": "$83.33",
+      "브렌트유": "$95.27",
+      "금": "$3,650.00",
+      "구리 (경기 선행)": "$5.5160",
+      "VIX (공포 지수)": "23.81"
     }
   },
   "estate": {
@@ -7567,6 +7601,24 @@
         "match": "bet on",
         "link": "https://www.cnbc.com/2026/11/25/kevin-warsh-greenspan-fed-rates-ai-inflation.html",
         "source": "CNBC"
+      }
+    ],
+    "2026-11-28": [
+      {
+        "en": "push back",
+        "ko": "반발하다; 연기하다",
+        "sentence": "Stormy weather in New York City prompted organisers to push back the Macy's parade by two days - leaving some musicians stuck.",
+        "match": "push back",
+        "link": "https://www.bbc.co.uk/news/articles/ckd71ypy9e8eo?at_medium=RSS&at_campaign=rss",
+        "source": "BBC World"
+      },
+      {
+        "en": "surge",
+        "ko": "급등하다; 급증",
+        "sentence": "Norwegian airline tells customers not to come to airports after surging fuel costs caused by Iran war ruin finances Norse Atlantic Airways has filed for bankruptcy and cancelled all future flights after surging fuel costs caused by the Iran",
+        "match": "surging",
+        "link": "https://www.theguardian.com/business/2026/nov/27/norse-atlantic-airways-files-for-bankruptcy-cancels-all-future-flights",
+        "source": "Guardian Business"
       }
     ]
   }
