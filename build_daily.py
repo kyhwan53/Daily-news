@@ -264,12 +264,15 @@ def render_email(queue, articles, day, markets_html="", reports_html="", cards_h
             for a in items
         )
     read = article_cards([a for a in articles if a.get("section") != "business"])
-    econ_article = article_cards([a for a in articles if a.get("section") == "business"])
-    # All economy content together, after the reading and study cards; earnings sit at the bottom of the block
-    banner = ("<div style='font-size:15px;font-weight:700;color:#fff;background:#1f2937;border-radius:8px;"
-              "padding:8px 14px;margin:26px 0 4px'>ECONOMY · 경제</div>")
-    economy = (banner + econ_article + global_html + reports_html + markets_html + earnings_html) if (
-        econ_article or global_html or reports_html or markets_html or earnings_html) else ""
+    english_article = article_cards([a for a in articles if a.get("section") == "business"])
+    # Two blocks under banners: STUDY (the English business article is reading practice, next to the phrase
+    # cards drawn from articles) and ECONOMY (data, reports, earnings; earnings last)
+    def banner(text, color):
+        return (f"<div style='font-size:15px;font-weight:700;color:#fff;background:{color};border-radius:8px;"
+                f"padding:8px 14px;margin:26px 0 4px'>{text}</div>")
+    study = banner("STUDY · 영어·일본어 공부", "#2f6fed") + english_article + cards_html if (english_article or cards_html) else ""
+    economy = (banner("ECONOMY · 경제", "#1f2937") + global_html + reports_html + markets_html + earnings_html) if (
+        global_html or reports_html or markets_html or earnings_html) else ""
     return (
         "<div style='max-width:600px;margin:0 auto;background:#f4f6f8;padding:18px;"
         "font-family:Segoe UI,Arial,sans-serif;color:#111'>"
@@ -280,7 +283,7 @@ def render_email(queue, articles, day, markets_html="", reports_html="", cards_h
             f" · about {total} min</div>{listen}") if queue else "")
         + "<div style='font-size:12px;font-weight:700;letter-spacing:.06em;color:#6b7280;margin:16px 0 6px'>READ</div>"
         f"{read or '<div style=color:#6b7280>No new articles today.</div>'}"
-        f"{cards_html}"
+        f"{study}"
         f"{economy}"
         f"{portfolio_html}"
         "<div style='font-size:12px;color:#6b7280;margin-top:14px;line-height:1.5'>"
@@ -344,9 +347,9 @@ def main():
     hist[str(day)] = {n: v for key in ("korea", "yields", "fx", "world", "commodities") if markets.get(key) for n, v, _, _ in markets[key][1]}
     for old in sorted(hist)[:-21]:
         del hist[old]
-    cards.write_study_page()
-    news_en = news_english.pick(day, state, articles, markets.get("headlines") or [])
-    cards_html = (cards.render_english(cards.english(day), day) + news_english.render(news_en)
+    cards.write_study_page(day)
+    news_en = news_english.pick(articles, markets.get("headlines") or [])
+    cards_html = (cards.render_english(cards.english(day)) + news_english.render(news_en)
                   + cards.render_japanese(cards.japanese(day), day))
     weekly_html = cards.render_weekly(state, day) if day.weekday() == 6 else ""
     global_html = indicators.render_global(markets, reports.render(korea, "overnight"))

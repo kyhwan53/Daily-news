@@ -2,12 +2,11 @@
 economy headlines, shown with the sentence they were used in (no paid APIs: plain matching, no generation).
 
 Today's READ articles come first, then the global headlines, then a few extra business feeds so most
-days have a match. Picks are cached per day in state.json and skip anything shown in the last 30 days.
+days have a match. Nothing is stored: the section is shown in the email and that is all.
 """
 import re
 import tomllib
 import xml.etree.ElementTree as ET
-from datetime import date, timedelta
 from html import escape, unescape
 from pathlib import Path
 from urllib.parse import quote
@@ -18,7 +17,6 @@ with open(Path(__file__).parent / "content" / "news_english.toml", "rb") as f:
     EXPRS = tomllib.load(f)["expr"]
 
 PER_DAY = 2
-REPEAT_DAYS = 30
 EXTRA_FEEDS = [("CNBC Economy", "https://www.cnbc.com/id/20910258/device/rss/rss.html"),
                ("BBC Business", "https://feeds.bbci.co.uk/news/business/rss.xml"),
                ("Guardian Business", "https://www.theguardian.com/uk/business/rss")]
@@ -67,19 +65,15 @@ def _extra_texts():
     return out
 
 
-def pick(day, state, articles, headlines):
+def pick(articles, headlines):
     """Up to PER_DAY expressions found in today's texts: [{en, ko, sentence, match, link, source}]."""
-    cache = state.setdefault("news_english", {})
-    if str(day) in cache:
-        return cache[str(day)]
-    recent = {x["en"] for d, xs in cache.items() if date.fromisoformat(d) >= day - timedelta(days=REPEAT_DAYS) for x in xs}
     texts = [(_join(a["title"], a["summary"].rstrip("…")), a["link"], a["label"]) for a in articles]
     texts += [(t, link, label) for label, t, link in headlines]
     found = []  # (rank, expression, sentence, matched text, link, source)
     for rank, (text, link, label) in enumerate(texts + _extra_texts()):
         for sent in _sentences(text) or [text]:
             for e, rx in PATTERNS:
-                if e["en"] not in recent and (m := rx.search(sent)):
+                if m := rx.search(sent):
                     found.append((rank, e, sent, m.group(0), link, label))
     # Prefer today's articles, then multi-word expressions (more useful than single words), one per sentence
     found.sort(key=lambda f: (f[0] >= len(articles), " " not in f[1]["en"], f[0]))
@@ -92,9 +86,6 @@ def pick(day, state, articles, headlines):
         used_sent.add(sent)
         if len(picks) == PER_DAY:
             break
-    cache[str(day)] = picks
-    for old in sorted(cache)[:-60]:
-        del cache[old]
     return picks
 
 
